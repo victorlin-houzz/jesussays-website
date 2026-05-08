@@ -159,11 +159,23 @@ The existing `pages.yml` workflow handles deployment automatically on push.
 
 ---
 
-## 8. App Store Link
+## 8. App Store Link & Screenshots
 
-Bundle ID: `com.jesussays.jesussays`
-App Store URL: **TBD** — user must provide the numeric App Store ID.
-Placeholder used across all pages: `https://apps.apple.com/app/jesus-says/id[APP_ID]`
+**App Store URL:** `https://apps.apple.com/us/app/jesus-says-now/id6756906208`
+Used with UTM: `https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&utm_medium=cta&utm_campaign=organic`
+
+**App screenshots:** `~/Desktop/jesussays_appstore_submission/submission_2026_04_28/iphone_1290x2796/`
+Six slides:
+1. Build a Daily Faith Rhythm
+2. Read the Bible Verse by Verse
+3. Find Where to Start in Scripture
+4. Talk to Jesus by Voice
+5. A Sacred Space for Personal Reflection
+6. Receive Scripture for Your Exact Moment
+
+Screenshots will be copied to `assets/screenshots/` (web-optimized, max 800px wide) and used in:
+- Homepage app showcase section (slides 1, 4, 6 as representative)
+- A dedicated `/download.html` landing page (all 6 screenshots)
 
 ---
 
