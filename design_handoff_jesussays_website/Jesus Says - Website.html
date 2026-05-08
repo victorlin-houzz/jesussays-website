@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jesus Says — A daily companion for prayer, reflection, and scripture</title>
+<meta name="description" content="Receive Scripture for your exact moment. Talk to Jesus by voice. Build a daily faith rhythm with devotionals, prayer, and reflection. Free on iPhone." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream:        #EFE9DC;
+    --cream-2:      #F6F1E4;
+    --paper:        #FBF7EC;
+    --ink:          #1A1F4A;
+    --ink-2:        #2A2F5A;
+    --ink-soft:     #394074;
+    --gold:         #E89B2C;
+    --gold-soft:    #F4C875;
+    --warm-grey:    #6B6658;
+    --warm-grey-2:  #8B8676;
+    --line:         rgba(26,31,74,0.10);
+    --night:        #0F1437;
+    --night-2:      #161B45;
+
+    --serif: 'Merriweather', 'Iowan Old Style', Georgia, serif;
+    --sans:  'Lato', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+    --r-sm: 10px;
+    --r:    16px;
+    --r-lg: 24px;
+    --r-xl: 32px;
+
+    --maxw: 1240px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.55;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* ─── NAV ───────────────────────────────────────────── */
+  .nav-wrap {
+    position: sticky; top: 14px; z-index: 50;
+    padding: 0 20px;
+  }
+  .nav {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    background: rgba(251, 247, 236, 0.78);
+    -webkit-backdrop-filter: saturate(140%) blur(18px);
+    backdrop-filter: saturate(140%) blur(18px);
+    border: 1px solid rgba(26,31,74,0.08);
+    border-radius: 999px;
+    padding: 10px 12px 10px 22px;
+    display: flex; align-items: center; gap: 24px;
+    box-shadow: 0 14px 40px -22px rgba(26,31,74,0.30);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .brand-mark {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1.6px solid var(--ink); display: grid; place-items: center;
+    position: relative; flex-shrink: 0; background: transparent;
+  }
+  .brand-mark::after {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold); position: absolute; top: 5px;
+    box-shadow: 0 0 8px rgba(232,155,44,0.45);
+  }
+  .brand-mark svg { width: 18px; height: 18px; color: var(--ink); }
+  .brand-name {
+    font-family: var(--serif); font-weight: 700; font-size: 19px;
+    letter-spacing: -0.2px; color: var(--ink);
+  }
+  .nav-links {
+    display: flex; gap: 4px; margin-left: auto; align-items: center;
+    font-size: 14px; font-weight: 500;
+  }
+  .nav-links a {
+    padding: 8px 14px; border-radius: 999px; color: var(--ink-soft);
+    transition: background .18s, color .18s;
+  }
+  .nav-links a:hover { background: rgba(26,31,74,0.06); color: var(--ink); }
+  .nav-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--ink); color: #fff;
+    padding: 10px 18px; border-radius: 999px;
+    font-weight: 600; font-size: 14px;
+    transition: transform .18s, box-shadow .18s, background .18s;
+    box-shadow: 0 8px 24px -10px rgba(26,31,74,0.6);
+  }
+  .nav-cta:hover { background: var(--ink-2); transform: translateY(-1px); }
+  .nav-cta svg { width: 14px; height: 14px; }
+  .nav-burger { display: none; }
+
+  /* ─── HERO ──────────────────────────────────────────── */
+  .hero {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 70px 28px 40px;
+    display: grid; grid-template-columns: 1.05fr 1fr;
+    gap: 60px; align-items: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12.5px; font-weight: 700;
+    letter-spacing: 1.6px; text-transform: uppercase;
+    color: var(--ink); padding: 6px 12px;
+    background: var(--paper);
+    border: 1px solid var(--line); border-radius: 999px;
+  }
+  .eyebrow .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 10px rgba(232,155,44,.55);
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: clamp(44px, 5.4vw, 76px);
+    line-height: 1.02; letter-spacing: -1.4px;
+    margin: 18px 0 22px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .hero h1 em {
+    font-style: italic; font-weight: 400; color: var(--ink-soft);
+  }
+  .hero h1 .glow { position: relative; white-space: nowrap; }
+  .hero h1 .glow::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 6px;
+    height: 12px;
+    background: linear-gradient(90deg, transparent, rgba(232,155,44,0.35), transparent);
+    border-radius: 12px; z-index: -1;
+  }
+  .hero p.lede {
+    font-size: 19px; line-height: 1.55; color: var(--ink-soft);
+    max-width: 540px; margin: 0 0 32px;
+  }
+  .hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-apple {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--ink); color: #fff;
+    padding: 14px 22px 14px 18px; border-radius: 14px;
+    font-weight: 600; font-size: 16px;
+    box-shadow: 0 18px 40px -16px rgba(26,31,74,0.55);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn-apple:hover { transform: translateY(-2px); box-shadow: 0 24px 48px -16px rgba(26,31,74,0.6); }
+  .btn-apple .apple { width: 22px; height: 22px; }
+  .btn-apple .stack { display: flex; flex-direction: column; line-height: 1.05; text-align: left; }
+  .btn-apple .stack small { font-size: 11px; font-weight: 500; opacity: 0.78; letter-spacing: 0.4px; }
+  .btn-apple .stack span { font-family: var(--serif); font-weight: 700; font-size: 17px; letter-spacing: 0.1px; }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--ink); font-weight: 600; font-size: 15px;
+    padding: 12px 14px; border-radius: 12px;
+  }
+  .btn-ghost:hover { background: rgba(26,31,74,0.05); }
+  .btn-ghost .play {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--ink); color: #fff;
+    display: grid; place-items: center;
+  }
+  .btn-ghost .play svg { width: 9px; height: 9px; margin-left: 1px; }
+  .trust {
+    margin-top: 26px; display: flex; gap: 22px; flex-wrap: wrap;
+    font-size: 13px; color: var(--warm-grey); font-weight: 500;
+  }
+  .trust span { display: inline-flex; align-items: center; gap: 8px; }
+  .trust svg { width: 14px; height: 14px; color: var(--ink-soft); opacity: .7; }
+
+  /* phone */
+  .phone-stage {
+    position: relative; display: grid; place-items: center;
+    perspective: 1400px;
+  }
+  .phone {
+    width: 320px; aspect-ratio: 320 / 658;
+    border-radius: 48px; padding: 8px;
+    background: linear-gradient(160deg, #2c2f4a, #14172e);
+    box-shadow:
+      0 60px 120px -30px rgba(26,31,74,0.45),
+      0 30px 60px -20px rgba(26,31,74,0.25),
+      inset 0 0 0 1px rgba(255,255,255,0.06);
+    position: relative;
+    transform: rotate(-2deg);
+  }
+  .phone .screen {
+    width: 100%; height: 100%; border-radius: 40px;
+    overflow: hidden; background: var(--cream); position: relative;
+  }
+  .phone .screen img { width: 100%; height: 100%; object-fit: cover; }
+  .phone .notch {
+    position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+    width: 96px; height: 26px; background: #0a0c1d; border-radius: 14px; z-index: 2;
+  }
+  .phone-glow {
+    position: absolute; inset: 30px; z-index: -1; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(232,155,44,0.20), transparent 70%);
+    filter: blur(40px);
+  }
+  /* floating cards */
+  .float-card {
+    position: absolute; background: var(--paper);
+    border: 1px solid var(--line); border-radius: 18px;
+    padding: 14px 16px; box-shadow: 0 22px 50px -18px rgba(26,31,74,0.30);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .float-card .ic {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(26,31,74,0.08); display: grid; place-items: center;
+    color: var(--ink);
+  }
+  .float-card .ic svg { width: 18px; height: 18px; }
+  .float-card.gold .ic { background: rgba(232,155,44,0.18); color: #B16D00; }
+  .float-card .t { font-family: var(--serif); font-weight: 700; font-size: 14px; color: var(--ink); }
+  .float-card .s { font-size: 12px; color: var(--warm-grey); }
+  .fc-1 { left: -28px; top: 60px; transform: rotate(-3deg); }
+  .fc-2 { right: -34px; top: 50%; transform: rotate(2deg); }
+  .fc-3 { left: 8px; bottom: 48px; transform: rotate(-1.5deg); }
+
+  /* ─── QUIET BAND ────────────────────────────────────── */
+  .quiet {
+    margin-top: 24px;
+    padding: 90px 28px;
+    text-align: center;
+    background:
+      radial-gradient(ellipse at top, rgba(232,155,44,0.10), transparent 60%),
+      var(--paper);
+    border-block: 1px solid var(--line);
+  }
+  .quiet .verse {
+    max-width: 880px; margin: 0 auto;
+    font-family: var(--serif); font-style: italic; font-weight: 400;
+    font-size: clamp(26px, 3.4vw, 42px);
+    line-height: 1.35; color: var(--ink);
+    letter-spacing: -0.4px;
+    text-wrap: balance;
+  }
+  .quiet .verse .quote { color: var(--gold); font-style: normal; }
+  .quiet .attr {
+    margin-top: 24px; font-size: 13px; font-weight: 700; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--warm-grey);
+  }
+  .quiet .attr::before {
+    content: ''; display: inline-block; width: 28px; height: 1px;
+    background: var(--warm-grey-2); vertical-align: middle; margin-right: 12px;
+  }
+
+  /* ─── SECTIONS ──────────────────────────────────────── */
+  section.block { max-width: var(--maxw); margin: 0 auto; padding: 110px 28px 30px; }
+  .sec-head {
+    display: flex; align-items: end; justify-content: space-between; gap: 30px;
+    margin-bottom: 56px;
+    border-bottom: 1px solid var(--line); padding-bottom: 22px;
+  }
+  .sec-head .left { max-width: 720px; }
+  .sec-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1.8px;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .sec-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+  }
+  .sec-head h2 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: clamp(32px, 3.8vw, 52px); line-height: 1.05;
+    letter-spacing: -0.8px; margin: 14px 0 12px; color: var(--ink);
+    text-wrap: balance;
+  }
+  .sec-head .right {
+    font-size: 16px; color: var(--ink-soft); max-width: 380px; line-height: 1.55;
+    padding-bottom: 6px;
+  }
+
+  /* ─── FEATURES ──────────────────────────────────────── */
+  .features {
+    display: grid; grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 280px;
+    gap: 18px;
+  }
+  .feat {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 26px;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+  }
+  .feat:hover { transform: translateY(-3px); box-shadow: 0 24px 50px -28px rgba(26,31,74,0.30); }
+  .feat .num {
+    font-family: var(--serif); font-style: italic; font-weight: 400;
+    font-size: 13px; color: var(--warm-grey-2);
+  }
+  .feat h3 {
+    font-family: var(--serif); font-weight: 700; font-size: 22px;
+    line-height: 1.18; letter-spacing: -0.3px;
+    color: var(--ink); margin: 10px 0 6px;
+    text-wrap: balance;
+  }
+  .feat p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+  .feat .icon {
+    position: absolute; top: 22px; right: 22px;
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(26,31,74,0.06);
+    display: grid; place-items: center; color: var(--ink);
+  }
+  .feat .icon svg { width: 22px; height: 22px; }
+
+  .feat.f1 { grid-column: span 3; grid-row: span 2; background: var(--night); color: #fff; padding: 36px; }
+  .feat.f1 h3 { color: #fff; font-size: 36px; line-height: 1.05; max-width: 320px; }
+  .feat.f1 p { color: rgba(246,241,228,0.72); font-size: 15.5px; max-width: 360px; }
+  .feat.f1 .icon { background: rgba(232,155,44,0.18); color: var(--gold); }
+  .feat.f1 .mic-stage {
+    position: absolute; right: -40px; bottom: -40px;
+    width: 280px; height: 280px;
+    background: radial-gradient(closest-side, rgba(232,155,44,0.45), transparent 70%);
+    border-radius: 50%;
+  }
+  .feat.f1 .mic {
+    position: absolute; right: 80px; bottom: 80px;
+    width: 110px; height: 110px; border-radius: 50%;
+    background: var(--gold); color: var(--ink);
+    display: grid; place-items: center;
+    box-shadow: 0 0 0 12px rgba(232,155,44,0.18), 0 30px 60px -10px rgba(232,155,44,0.45);
+  }
+  .feat.f1 .mic svg { width: 48px; height: 48px; }
+  .feat.f1 .mic::before {
+    content: ''; position: absolute; inset: -22px; border-radius: 50%;
+    border: 1px solid rgba(232,155,44,0.35);
+  }
+  .feat.f1 .mic::after {
+    content: ''; position: absolute; inset: -42px; border-radius: 50%;
+    border: 1px solid rgba(232,155,44,0.18);
+  }
+
+  .feat.f2 { grid-column: span 3; grid-row: span 1; }
+  .feat.f3 { grid-column: span 2; }
+  .feat.f4 { grid-column: span 2; }
+  .feat.f5 { grid-column: span 2; }
+  .feat.f6 { grid-column: span 3; background: var(--cream-2); }
+  .feat.f7 { grid-column: span 3; }
+
+  .feat .chip-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+  .feat .chip {
+    font-size: 12px; padding: 4px 10px; border-radius: 999px;
+    background: rgba(26,31,74,0.06); color: var(--ink-soft); font-weight: 500;
+  }
+
+  /* feature-2 verse card preview */
+  .verse-mini {
+    background: #fff; border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; margin-top: 14px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .verse-mini .vd {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+  }
+  .verse-mini .vt {
+    font-family: var(--serif); font-style: italic; font-size: 13.5px;
+    color: var(--ink); line-height: 1.4;
+  }
+  .verse-mini .vt b { font-style: normal; font-weight: 700; color: var(--gold); display:block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+
+  /* ─── DAY FLOW ──────────────────────────────────────── */
+  .day-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .day-card {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 28px 26px 0;
+    overflow: hidden; position: relative;
+    display: flex; flex-direction: column;
+  }
+  .day-card .step {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--warm-grey);
+  }
+  .day-card .step .n {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--ink); color: #fff;
+    display: grid; place-items: center; font-size: 11px;
+  }
+  .day-card h3 {
+    font-family: var(--serif); font-weight: 700; font-size: 26px;
+    margin: 14px 0 8px; letter-spacing: -0.4px; color: var(--ink);
+  }
+  .day-card p { color: var(--ink-soft); font-size: 14.5px; margin: 0 0 24px; }
+  .day-card .shot {
+    margin: 0 -26px -1px; padding: 0 26px;
+    height: 360px; overflow: hidden; position: relative;
+    border-top: 1px solid var(--line);
+  }
+  .day-card .shot .frame {
+    position: absolute; left: 50%; top: 30px; transform: translateX(-50%);
+    width: 220px; aspect-ratio: 220 / 460;
+    border-radius: 36px; padding: 5px;
+    background: linear-gradient(160deg, #2c2f4a, #14172e);
+    box-shadow: 0 30px 60px -16px rgba(26,31,74,0.35);
+    overflow: hidden;
+  }
+  .day-card .shot .frame .scr {
+    border-radius: 30px; overflow: hidden; height: 100%;
+  }
+  .day-card .shot .frame img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .day-card.evening { background: var(--night); color: #fff; }
+  .day-card.evening h3 { color: #fff; }
+  .day-card.evening p { color: rgba(246,241,228,0.72); }
+  .day-card.evening .step { color: var(--gold-soft); }
+  .day-card.evening .step .n { background: var(--gold); color: var(--ink); }
+  .day-card.evening .shot { border-top-color: rgba(255,255,255,0.08); }
+
+  /* ─── GALLERY ──────────────────────────────────────── */
+  .gallery-wrap { overflow: hidden; padding: 0; }
+  .gallery {
+    display: flex; gap: 28px; padding: 16px 28px 60px;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .gallery::-webkit-scrollbar { display: none; }
+  .g-phone {
+    flex-shrink: 0;
+    width: 280px; aspect-ratio: 280 / 580;
+    border-radius: 42px; padding: 7px;
+    background: linear-gradient(160deg, #2c2f4a, #14172e);
+    box-shadow: 0 40px 80px -20px rgba(26,31,74,0.35);
+    scroll-snap-align: center;
+    position: relative;
+    transition: transform .25s;
+  }
+  .g-phone:hover { transform: translateY(-6px); }
+  .g-phone .scr { width: 100%; height: 100%; border-radius: 36px; overflow: hidden; background: var(--cream); }
+  .g-phone .scr img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .g-phone .label {
+    position: absolute; left: 50%; bottom: -36px; transform: translateX(-50%);
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--warm-grey); white-space: nowrap;
+  }
+
+  /* ─── FAITH LIBRARY ─────────────────────────────────── */
+  .lib {
+    background: var(--paper);
+    border-block: 1px solid var(--line);
+    margin-top: 110px;
+    padding: 90px 0;
+  }
+  .lib .inner { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+  .lib-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 40px; }
+  .lib-col h4 {
+    font-family: var(--serif); font-weight: 700; font-size: 18px;
+    margin: 0 0 14px; color: var(--ink);
+    padding-bottom: 12px; border-bottom: 1px solid var(--line);
+  }
+  .lib-col h4 .dot {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold); margin-right: 8px; vertical-align: middle;
+  }
+  .lib-col ul { list-style: none; padding: 0; margin: 0; }
+  .lib-col li { padding: 7px 0; }
+  .lib-col a {
+    font-size: 14.5px; color: var(--ink-soft); display: inline-flex; align-items: center;
+    gap: 8px; transition: color .15s, gap .15s;
+  }
+  .lib-col a:hover { color: var(--ink); gap: 12px; }
+  .lib-col a::after {
+    content: '→'; opacity: 0; transition: opacity .15s;
+    font-family: var(--sans);
+  }
+  .lib-col a:hover::after { opacity: 0.6; }
+  .lib-foot { margin-top: 36px; text-align: center; }
+  .lib-foot a {
+    font-weight: 600; font-size: 14.5px; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 18px; border-radius: 999px;
+    background: var(--cream-2); border: 1px solid var(--line);
+  }
+  .lib-foot a:hover { background: var(--cream); }
+
+  /* ─── FAQ ───────────────────────────────────────────── */
+  .faq-list {
+    max-width: 880px; margin: 0 auto;
+    border-top: 1px solid var(--line);
+  }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    list-style: none; cursor: pointer;
+    padding: 22px 4px; display: flex; align-items: center; gap: 18px;
+    font-family: var(--serif); font-weight: 700; font-size: 19px;
+    color: var(--ink); letter-spacing: -0.2px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: ''; margin-left: auto; width: 14px; height: 14px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1F4A' stroke-width='2.4' stroke-linecap='round'><path d='M6 9l6 6 6-6'/></svg>") center/contain no-repeat;
+    transition: transform .2s;
+  }
+  .faq-item[open] summary::after { transform: rotate(180deg); }
+  .faq-item .ans {
+    padding: 0 4px 24px; color: var(--ink-soft); font-size: 16px; line-height: 1.6;
+    max-width: 720px;
+  }
+  .faq-item .ans p { margin: 0 0 10px; }
+
+  /* ─── FINAL CTA ─────────────────────────────────────── */
+  .final {
+    margin: 110px 28px 28px;
+    background: var(--night);
+    color: #fff;
+    border-radius: var(--r-xl);
+    padding: 90px 28px;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .final::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 30%, rgba(232,155,44,0.18), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(232,155,44,0.10), transparent 50%);
+  }
+  .final-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .final h2 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: clamp(36px, 4.6vw, 60px); line-height: 1.05;
+    letter-spacing: -1px; margin: 16px 0 18px;
+    text-wrap: balance;
+  }
+  .final p { color: rgba(246,241,228,0.78); font-size: 17px; max-width: 540px; margin: 0 auto 32px; }
+  .final .btn-apple { background: var(--gold); color: var(--ink); }
+  .final .btn-apple:hover { background: var(--gold-soft); }
+  .final .star {
+    width: 56px; height: 56px; border-radius: 50%;
+    border: 1.5px solid rgba(232,155,44,0.5);
+    display: inline-grid; place-items: center; position: relative;
+    margin-bottom: 6px;
+  }
+  .final .star::after {
+    content: ''; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--gold); box-shadow: 0 0 16px rgba(232,155,44,.7);
+  }
+  .final .star svg { width: 22px; height: 22px; color: rgba(232,155,44,0.9); position: absolute; }
+  .final small {
+    display: block; margin-top: 20px;
+    font-size: 13px; color: rgba(246,241,228,0.55);
+    letter-spacing: 0.4px;
+  }
+
+  /* ─── FOOTER ────────────────────────────────────────── */
+  footer.site {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: 60px 28px 60px;
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 48px;
+    border-top: 1px solid var(--line);
+    margin-top: 30px;
+  }
+  footer.site h5 {
+    font-family: var(--serif); font-weight: 700; font-size: 14px;
+    color: var(--ink); margin: 0 0 14px; letter-spacing: 0.2px;
+  }
+  footer.site ul { list-style: none; padding: 0; margin: 0; }
+  footer.site li { padding: 4px 0; }
+  footer.site a { font-size: 14px; color: var(--ink-soft); }
+  footer.site a:hover { color: var(--ink); }
+  footer.site .meta { font-size: 13px; color: var(--warm-grey); margin-top: 18px; max-width: 320px; line-height: 1.6; }
+  footer.site .legal {
+    grid-column: 1 / -1;
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 28px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--warm-grey);
+  }
+  footer.site .legal .links { display: flex; gap: 18px; }
+
+  /* ─── RESPONSIVE ────────────────────────────────────── */
+  @media (max-width: 980px) {
+    .nav { padding: 8px 8px 8px 18px; }
+    .nav-links { display: none; }
+    .nav-burger {
+      display: grid; place-items: center;
+      width: 38px; height: 38px; border-radius: 999px;
+      background: rgba(26,31,74,0.06); margin-left: auto;
+      cursor: pointer; border: none;
+    }
+    .nav-burger svg { width: 16px; height: 16px; color: var(--ink); }
+    .hero {
+      grid-template-columns: 1fr; gap: 40px; padding: 50px 24px 30px; text-align: center;
+    }
+    .hero p.lede { margin-left: auto; margin-right: auto; }
+    .hero-ctas { justify-content: center; }
+    .trust { justify-content: center; }
+    .phone-stage { order: -1; }
+    .features { grid-template-columns: repeat(2, 1fr); grid-auto-rows: auto; }
+    .feat { min-height: 220px; }
+    .feat.f1 { grid-column: span 2; grid-row: span 1; min-height: 380px; }
+    .feat.f2, .feat.f6, .feat.f7 { grid-column: span 2; }
+    .feat.f3, .feat.f4, .feat.f5 { grid-column: span 1; }
+    .day-grid { grid-template-columns: 1fr; }
+    .lib-grid { grid-template-columns: repeat(2, 1fr); }
+    .sec-head { flex-direction: column; align-items: flex-start; }
+    .sec-head .right { max-width: 100%; }
+    footer.site { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    section.block { padding: 80px 20px 20px; }
+    .hero h1 { font-size: 44px; letter-spacing: -1px; }
+    .features { grid-template-columns: 1fr; }
+    .feat.f1, .feat.f2, .feat.f6, .feat.f7,
+    .feat.f3, .feat.f4, .feat.f5 { grid-column: span 1; }
+    .lib-grid { grid-template-columns: 1fr; }
+    .final { margin: 80px 16px 16px; padding: 60px 22px; }
+    .fc-1, .fc-2, .fc-3 { display: none; }
+    .quiet { padding: 60px 20px; }
+    footer.site { grid-template-columns: 1fr; padding: 50px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ──────────────── NAV ──────────────── -->
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="#" class="brand" aria-label="Jesus Says — Home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C9 11 7 9 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C15 11 17 9 17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Jesus Says</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#day">A Daily Practice</a>
+      <a href="#screens">App Tour</a>
+      <a href="#library">Faith Library</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="nav-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208" rel="nofollow">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+      </svg>
+      Get the App
+    </a>
+    <button class="nav-burger" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</div>
+
+<!-- ──────────────── HERO ──────────────── -->
+<header class="hero">
+  <div>
+    <span class="eyebrow"><span class="dot"></span>Now on iPhone · Free</span>
+    <h1>Faith answers, <em>for</em> <span class="glow">real life.</span></h1>
+    <p class="lede">A daily companion for prayer, reflection, and scripture. Receive the verse for your exact moment. Talk to Jesus by voice. Build a quiet rhythm — one day at a time.</p>
+    <div class="hero-ctas">
+      <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=home-hero" rel="nofollow">
+        <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
+        <span class="stack"><small>Download on the</small><span>App Store</span></span>
+      </a>
+      <a class="btn-ghost" href="#screens">
+        <span class="play"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.5v9l8-4.5z"/></svg></span>
+        See a 30-second tour
+      </a>
+    </div>
+    <div class="trust">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Private by default</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Free to download</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>iPhone · iOS 16+</span>
+    </div>
+  </div>
+  <div class="phone-stage">
+    <div class="phone-glow"></div>
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen"><img src="site-assets/home.png" alt="Jesus Says home screen showing Verse of the Day and Reflect" /></div>
+    </div>
+    <!-- Floating context cards -->
+    <div class="float-card fc-1 gold" aria-hidden="true">
+      <div class="ic">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+      </div>
+      <div>
+        <div class="t">Talk to Jesus</div>
+        <div class="s">90-second voice prayer</div>
+      </div>
+    </div>
+    <div class="float-card fc-2" aria-hidden="true">
+      <div class="ic">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </div>
+      <div>
+        <div class="t">Verse for this moment</div>
+        <div class="s">— Matthew 11:28</div>
+      </div>
+    </div>
+    <div class="float-card fc-3" aria-hidden="true">
+      <div class="ic">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <div>
+        <div class="t">3-minute reflection</div>
+        <div class="s">Begin your morning rhythm</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ──────────────── QUIET BAND ──────────────── -->
+<section class="quiet" aria-label="Scripture">
+  <p class="verse"><span class="quote">&ldquo;</span>Come unto me, all ye that labour and are heavy laden, and I will give you rest.<span class="quote">&rdquo;</span></p>
+  <p class="attr">Matthew 11:28</p>
+</section>
+
+<!-- ──────────────── FEATURES ──────────────── -->
+<section class="block" id="features">
+  <div class="sec-head">
+    <div class="left">
+      <span class="sec-tag">What it does</span>
+      <h2>A quiet chapel in your pocket — built for the actual day you're having.</h2>
+    </div>
+    <div class="right">
+      Six small, intentional tools that work together. Use one of them, or all six. Either way, it earns its place on your home screen.
+    </div>
+  </div>
+
+  <div class="features">
+    <!-- F1: Voice Prayer (signature dark) -->
+    <article class="feat f1">
+      <div>
+        <div class="num">— 01</div>
+        <h3>Talk to Jesus, by voice.</h3>
+        <p>Speak what's on your heart for up to 90 seconds. Receive a Scripture-anchored response written for the moment you're in.</p>
+      </div>
+      <div class="mic-stage" aria-hidden="true"></div>
+      <div class="mic" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="2" width="6" height="12" rx="3"/>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+          <path d="M12 19v3"/>
+        </svg>
+      </div>
+    </article>
+
+    <!-- F2: Scripture for the moment -->
+    <article class="feat f2">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5z"/><path d="M9 7h7M9 11h7"/></svg>
+      </div>
+      <div>
+        <div class="num">— 02</div>
+        <h3>Receive Scripture for your exact moment.</h3>
+        <p>Anxious, grieving, hopeful, restless. Tell us where you are — get the verse that meets you there.</p>
+      </div>
+      <div class="verse-mini">
+        <div class="vd"></div>
+        <div class="vt"><b>For when you're weary</b>"…I will give you rest." — Matthew 11:28</div>
+      </div>
+    </article>
+
+    <!-- F3: Reflection journal -->
+    <article class="feat f3">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12H4z"/><path d="M16 4v4h4"/><path d="M8 13h8M8 17h5"/></svg>
+      </div>
+      <div>
+        <div class="num">— 03</div>
+        <h3>A sacred space for personal reflection.</h3>
+        <p>Private journaling for confession, gratitude, and the small honest things. Never leaves your device.</p>
+      </div>
+    </article>
+
+    <!-- F4: Devotion paths -->
+    <article class="feat f4">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5l6-2 6 2 6-2v13l-6 2-6-2-6 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg>
+      </div>
+      <div>
+        <div class="num">— 04</div>
+        <h3>Choose your devotion journey.</h3>
+        <p>Foundations · Daily Strength · Deep Study. Seven days at a time, paced for the season you're in.</p>
+      </div>
+    </article>
+
+    <!-- F5: Bible -->
+    <article class="feat f5">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M19 17H7a3 3 0 0 0-3 3"/></svg>
+      </div>
+      <div>
+        <div class="num">— 05</div>
+        <h3>The whole Bible — verse by verse.</h3>
+        <p>Old and New Testament, KJV, with a clean reader and a helpful "where do I start?" tap.</p>
+      </div>
+    </article>
+
+    <!-- F6: Daily rhythm -->
+    <article class="feat f6">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </div>
+      <div>
+        <div class="num">— 06</div>
+        <h3>Build a daily faith rhythm — sustainable.</h3>
+        <p>A morning verse, a mid-day check-in, an evening reflection. Five quiet minutes, not a guilt loop.</p>
+      </div>
+      <div class="chip-row">
+        <span class="chip">Streaks (no shame)</span>
+        <span class="chip">Smart reminders</span>
+        <span class="chip">Offline-friendly</span>
+      </div>
+    </article>
+
+    <!-- F7: Privacy -->
+    <article class="feat f7">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div>
+        <div class="num">— 07</div>
+        <h3>Private by default. No ads. No tracking.</h3>
+        <p>Anonymous account out of the box. Sign in with Apple is optional, only if you want purchases across devices.</p>
+      </div>
+      <div class="chip-row">
+        <span class="chip">On-device journal</span>
+        <span class="chip">No data sold</span>
+        <span class="chip">Delete anytime</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ──────────────── A DAY WITH JESUS SAYS ──────────────── -->
+<section class="block" id="day">
+  <div class="sec-head">
+    <div class="left">
+      <span class="sec-tag">A daily practice</span>
+      <h2>What a day with Jesus Says actually looks like.</h2>
+    </div>
+    <div class="right">
+      No marathon devotionals. Three small moments — morning, midday, evening — that become a rhythm without becoming a chore.
+    </div>
+  </div>
+  <div class="day-grid">
+    <article class="day-card">
+      <div class="step"><span class="n">1</span>Morning · 3 min</div>
+      <h3>Begin with a verse and a path.</h3>
+      <p>Pick today's reading from a journey paced for you — Foundations, Daily Strength, or Deep Study.</p>
+      <div class="shot">
+        <div class="frame"><div class="scr"><img src="site-assets/devotion-paths.png" alt="Choose your journey" /></div></div>
+      </div>
+    </article>
+    <article class="day-card">
+      <div class="step"><span class="n">2</span>Midday · 90 sec</div>
+      <h3>Speak what's on your heart.</h3>
+      <p>Open Personal Reflection, tap the mic, and pray out loud — anywhere, even on a walk.</p>
+      <div class="shot">
+        <div class="frame"><div class="scr"><img src="site-assets/reflection.png" alt="Personal reflection voice screen" /></div></div>
+      </div>
+    </article>
+    <article class="day-card evening">
+      <div class="step"><span class="n">3</span>Evening · 5 min</div>
+      <h3>Receive a verse, a why, and a prayer.</h3>
+      <p>Close the day with a Scripture chosen for what you said, plus a short reflection to carry into sleep.</p>
+      <div class="shot">
+        <div class="frame"><div class="scr"><img src="site-assets/result.png" alt="Reflection result with scripture" /></div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ──────────────── GALLERY ──────────────── -->
+<section class="block" id="screens">
+  <div class="sec-head">
+    <div class="left">
+      <span class="sec-tag">App tour</span>
+      <h2>See it all — six screens, one quiet aesthetic.</h2>
+    </div>
+    <div class="right">
+      Designed in serif type and ink-blue ink. Soft cream backgrounds. A single warm gold dot for the moments that matter.
+    </div>
+  </div>
+</section>
+<div class="gallery-wrap">
+  <div class="gallery">
+    <div class="g-phone"><div class="scr"><img src="site-assets/welcome.png" alt="Welcome screen" /></div><div class="label">Welcome</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/home.png" alt="Home" /></div><div class="label">Home · Verse of the Day</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/devotion-paths.png" alt="Devotion paths" /></div><div class="label">Devotion Journey</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/reflection.png" alt="Personal reflection" /></div><div class="label">Personal Reflection</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/result.png" alt="Reflection result" /></div><div class="label">Your Reflection</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/bible.png" alt="Holy Bible" /></div><div class="label">Holy Bible</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/journal.png" alt="My Journal" /></div><div class="label">Journal</div></div>
+    <div class="g-phone"><div class="scr"><img src="site-assets/chat.png" alt="Chat with Jesus" /></div><div class="label">Talk to Jesus</div></div>
+  </div>
+</div>
+
+<!-- ──────────────── FAITH LIBRARY (SEO) ──────────────── -->
+<section class="lib" id="library">
+  <div class="inner">
+    <div class="sec-head" style="margin-bottom: 20px;">
+      <div class="left">
+        <span class="sec-tag">Faith library</span>
+        <h2>Bible verses, prayers, and devotionals — for what you're walking through right now.</h2>
+      </div>
+      <div class="right">
+        Free articles to read on the web. The app goes deeper, but everything below stands on its own.
+      </div>
+    </div>
+    <div class="lib-grid">
+      <div class="lib-col">
+        <h4><span class="dot"></span>Bible verses by situation</h4>
+        <ul>
+          <li><a href="content/bible-verses-anxiety.html">For anxiety and worry</a></li>
+          <li><a href="content/bible-verses-for-strength-hard-times.html">For strength in hard times</a></li>
+          <li><a href="content/bible-verses-about-faith-and-trust.html">On faith and trust</a></li>
+          <li><a href="content/bible-verses-about-peace-and-fear.html">On peace and fear</a></li>
+        </ul>
+      </div>
+      <div class="lib-col">
+        <h4><span class="dot"></span>Prayer guides</h4>
+        <ul>
+          <li><a href="content/prayer-for-healing.html">A prayer for healing</a></li>
+          <li><a href="content/morning-prayer-for-protection.html">Morning prayer for protection</a></li>
+          <li><a href="content/night-prayer-for-sleep-and-anxiety.html">Night prayer for sleep</a></li>
+          <li><a href="content/prayer-for-depression-and-hopelessness.html">Prayer for hopelessness</a></li>
+          <li><a href="content/prayer-for-family-and-marriage.html">For family and marriage</a></li>
+        </ul>
+      </div>
+      <div class="lib-col">
+        <h4><span class="dot"></span>Confession + forgiveness</h4>
+        <ul>
+          <li><a href="content/confession-prayer-guide.html">Confession guide (Psalm 51)</a></li>
+          <li><a href="content/confession-prayer-after-failure.html">Confession after failure</a></li>
+          <li><a href="content/confession-prayer-for-addiction-recovery.html">For addiction recovery</a></li>
+          <li><a href="content/love-and-forgiveness.html">Love &amp; forgiveness in Scripture</a></li>
+        </ul>
+      </div>
+      <div class="lib-col">
+        <h4><span class="dot"></span>Daily devotionals</h4>
+        <ul>
+          <li><a href="content/daily-devotional-today.html">A devotional for today</a></li>
+          <li><a href="content/daily-devotional-on-financial-stress.html">For financial stress</a></li>
+          <li><a href="content/daily-devotional-on-forgiveness.html">On forgiveness</a></li>
+          <li><a href="content/daily-devotional-on-purpose.html">On purpose &amp; calling</a></li>
+          <li><a href="content/christian-advice-for-relationships.html">Christian advice for relationships</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lib-foot">
+      <a href="content/index.html">Browse the full library →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── FAQ ──────────────── -->
+<section class="block" id="faq">
+  <div class="sec-head">
+    <div class="left">
+      <span class="sec-tag">FAQ</span>
+      <h2>The fair questions to ask.</h2>
+    </div>
+    <div class="right">
+      A quick read before you download. If something's missing, write us — we'll add it.
+    </div>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary>Is Jesus Says free?</summary>
+      <div class="ans"><p>Yes — the core experience is free, including the Bible, daily devotional, and your first voice reflection. A 7-day free trial unlocks unlimited reflections, full devotion journeys, and journal history. Cancel anytime.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Is my voice and journal private?</summary>
+      <div class="ans"><p>Yes. Voice reflections are processed and immediately discarded — only the text response and your written notes persist, and only on your device by default. You can delete everything from Settings &rarr; Data.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Is this a replacement for church or a pastor?</summary>
+      <div class="ans"><p>No. Jesus Says is a companion for prayer and Scripture in the in-between moments — not a substitute for community, communion, or pastoral care. It's a doorway back into Scripture, not a destination.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>What translation of the Bible do you use?</summary>
+      <div class="ans"><p>We currently use the King James Version (KJV) for the in-app reader. Additional translations are coming.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Will it work on Android?</summary>
+      <div class="ans"><p>iPhone first. Android is on the roadmap — drop your email below and we'll let you know when it's ready.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How do I cancel my subscription?</summary>
+      <div class="ans"><p>Through the App Store: <em>Settings &rarr; your name &rarr; Subscriptions &rarr; Jesus Says</em>. Apple handles billing — we never see your card.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ──────────────── FINAL CTA ──────────────── -->
+<section class="final">
+  <div class="final-inner">
+    <span class="star" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+    </span>
+    <h2>Five minutes a day. <em style="font-style:italic; color: var(--gold-soft); font-weight:400;">A quieter year ahead.</em></h2>
+    <p>Download Jesus Says today. Free on iPhone. No ads, no tracking, no shame loops — just Scripture and the small daily practice that builds a year.</p>
+    <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=final" rel="nofollow">
+      <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+      </svg>
+      <span class="stack"><small>Download on the</small><span>App Store</span></span>
+    </a>
+    <small>iPhone · iOS 16+ · Free with optional 7-day trial</small>
+  </div>
+</section>
+
+<!-- ──────────────── FOOTER ──────────────── -->
+<footer class="site">
+  <div>
+    <div class="brand" style="margin-bottom: 14px;">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C9 11 7 9 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C15 11 17 9 17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Jesus Says</span>
+    </div>
+    <p class="meta">A daily companion for prayer, reflection, and scripture. A companion, not a replacement for church or pastoral care.</p>
+  </div>
+  <div>
+    <h5>App</h5>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#day">Daily Practice</a></li>
+      <li><a href="#screens">App Tour</a></li>
+      <li><a href="https://apps.apple.com/us/app/jesus-says-now/id6756906208" rel="nofollow">Download</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Library</h5>
+    <ul>
+      <li><a href="content/bible-verses-anxiety.html">Verses for anxiety</a></li>
+      <li><a href="content/prayer-for-healing.html">Prayer for healing</a></li>
+      <li><a href="content/daily-devotional-today.html">Today's devotional</a></li>
+      <li><a href="content/index.html">All articles</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Company</h5>
+    <ul>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="mailto:hello@jesussays.app">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+  </div>
+  <div class="legal">
+    <span>© 2026 Jesus Says</span>
+    <span class="links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="mailto:hello@jesussays.app">hello@jesussays.app</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // smooth open/close highlight on anchor click (offset for sticky nav)
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
