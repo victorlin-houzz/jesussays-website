@@ -1,0 +1,45 @@
+name: Publish New Article
+
+on:
+  schedule:
+    - cron: "0 9 * * 1,3,5"  # Mon, Wed, Fri at 9am UTC
+  workflow_dispatch:           # allow manual trigger from GitHub UI
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ARTICLES_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Configure git
+        run: |
+          git config user.name "Jesus Says Bot"
+          git config user.email "swissashley@gmail.com"
+
+      - name: Generate article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_article_api.py
+
+      - name: Check for new files
+        id: diff
+        run: |
+          git diff --quiet && git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git add content/ sitemap.xml llms.txt content/queue.json
+          git commit -m "content: publish $(date +%Y-%m-%d) article"
+          git push
