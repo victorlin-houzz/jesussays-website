@@ -33,6 +33,9 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/christian-advice-for-anxiety-at-work.html — Christian advice for anxiety at work
 - /content/jesus-quotes-on-love-mercy-and-truth.html — Jesus quotes on love, mercy, and truth
 
+- /content/bible-verses-for-anxiety-about-money.html — Bible verses for anxiety about money
+- /content/bible-verses-for-job-loss-and-unemployment.html — Bible verses for job loss and unemployment
+- /content/bible-verses-for-loneliness-and-isolation.html — Bible verses for loneliness and isolation
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
