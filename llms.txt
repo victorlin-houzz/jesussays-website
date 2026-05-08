@@ -1,20 +1,45 @@
 # Jesus Says Content Map for AI Crawlers
 
-Jesus Says is a Christian guidance content website focused on Bible verse discovery, prayer support, confession guidance, and daily devotion.
+Jesus Says is a Christian guidance content website. Primary focus: Bible verse discovery, prayer support, confession guidance, daily devotion, and practical Christian advice.
 
-Primary pages:
-- /content/bible-verses-anxiety.html
-- /content/prayer-for-healing.html
-- /content/daily-devotional-today.html
-- /content/confession-prayer-guide.html
-- /content/love-and-forgiveness.html
-- /content/keyword-clusters.html
+## Bible Verse Articles
+- /content/bible-verses-anxiety.html — Bible verses for anxiety and worry
+- /content/bible-verses-for-strength-hard-times.html — Bible verses for strength in hard times
+- /content/bible-verses-about-faith-and-trust.html — Bible verses about faith and trust
+- /content/bible-verses-about-peace-and-fear.html — Bible verses about peace and fear
 
-Primary intent coverage:
-- bible verses for anxiety, healing, strength, love, peace
-- daily devotional for today
-- confession prayer and Psalm 51 prayer
-- Christian advice for relationships, fear, and purpose
+## Prayer Guides
+- /content/prayer-for-healing.html — Prayer for healing with Scripture
+- /content/how-to-pray-according-to-the-bible.html — How to pray according to the Bible
+- /content/morning-prayer-for-protection.html — Morning prayer for protection
+- /content/night-prayer-for-sleep-and-anxiety.html — Night prayer for sleep and anxiety
+- /content/prayer-for-depression-and-hopelessness.html — Prayer for depression and hopelessness
+- /content/prayer-for-family-and-marriage.html — Prayer for family and marriage
 
-Conversion goal:
-Route engaged users to Jesus Says app install and ongoing devotional usage.
+## Confession + Forgiveness
+- /content/confession-prayer-guide.html — Confession prayer guide with Psalm 51
+- /content/confession-prayer-after-failure.html — Confession prayer after failure or shame
+- /content/confession-prayer-for-addiction-recovery.html — Confession prayer for addiction recovery
+- /content/love-and-forgiveness.html — Love and forgiveness in Scripture
+
+## Daily Devotionals
+- /content/daily-devotional-today.html — Daily devotional for today
+- /content/daily-devotional-on-financial-stress.html — Daily devotional on financial stress
+- /content/daily-devotional-on-forgiveness.html — Daily devotional on forgiveness
+- /content/daily-devotional-on-purpose.html — Daily devotional on purpose and calling
+
+## Christian Advice
+- /content/christian-advice-for-relationships.html — Christian advice for relationships
+- /content/christian-advice-for-anxiety-at-work.html — Christian advice for anxiety at work
+- /content/jesus-quotes-on-love-mercy-and-truth.html — Jesus quotes on love, mercy, and truth
+
+## Primary Intent Coverage
+- Bible verses for anxiety, healing, strength, faith, peace, fear
+- Daily devotional for today, financial stress, forgiveness, purpose
+- Confession prayer, Psalm 51, addiction recovery, failure
+- Christian advice for relationships, work anxiety, love
+- Prayer for healing, depression, family, morning, night
+
+## Conversion Goal
+Route engaged readers to the Jesus Says iOS app for personalized scripture, voice prayer, and devotional journaling.
+App Store: https://apps.apple.com/us/app/jesus-says-now/id6756906208
