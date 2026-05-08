@@ -1,0 +1,13 @@
+{"ts":"2026-05-08T22:32:39.199Z","cmd":"goto","args":"http://localhost:8091/","origin":"http://localhost:8091/","durationMs":192,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:32:59.038Z","cmd":"snapshot","args":"-i -a -o /tmp/landing-desktop.png","origin":"http://localhost:8091/","durationMs":189,"status":"error","hasCookies":false,"mode":"launched","error":"box: Error: strict mode violation: getByRole('link', { name: 'Daily Practice' }) resolved to 2 elements:\n    1) <a href=\"#day\">A Daily Practice</a> aka getByRole('link', { name: 'A Daily Practice' })\n    2) <a href=\"#day\">Daily Practice</a> aka getByRole('link', { name: 'Daily Practice', exact: true…"}
+{"ts":"2026-05-08T22:33:18.469Z","cmd":"screenshot","args":"/tmp/landing-desktop.png","origin":"http://localhost:8091/","durationMs":617,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:33:57.021Z","cmd":"console","args":"--errors","origin":"http://localhost:8091/","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:34:19.563Z","cmd":"viewport","args":"390x844","origin":"http://localhost:8091/","durationMs":15,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:34:19.916Z","cmd":"screenshot","args":"/tmp/landing-mobile.png","origin":"http://localhost:8091/","durationMs":304,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:34:55.949Z","cmd":"snapshot","args":"-i","origin":"http://localhost:8091/","durationMs":15,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:35:14.846Z","cmd":"click","args":"@e9","origin":"http://localhost:8091/","durationMs":62,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:35:15.606Z","cmd":"screenshot","args":"/tmp/landing-mobile-menu.png","origin":"http://localhost:8091/","durationMs":302,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:36:02.792Z","cmd":"js","args":"document.getElementById('mobile-menu').classList.contains('open')","origin":"http://localhost:8091/","durationMs":2,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:36:28.035Z","cmd":"js","args":"window.scrollTo(0, 0)","origin":"http://localhost:8091/","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:36:28.702Z","cmd":"screenshot","args":"/tmp/landing-menu-top.png","origin":"http://localhost:8091/","durationMs":311,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-08T22:37:15.493Z","cmd":"screenshot","args":"/tmp/landing-menu-viewport.png --viewport","origin":"http://localhost:8091/","durationMs":41,"status":"ok","hasCookies":false,"mode":"launched"}
