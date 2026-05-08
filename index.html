@@ -509,5 +509,80 @@
   </div>
 </footer>
 
+<script>
+(function() {
+  // Smooth scroll with sticky-nav offset
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var id = a.getAttribute('href');
+      if (id.length > 1) {
+        var t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // Mobile menu
+  var burger = document.getElementById('nav-burger');
+  var menu   = document.getElementById('mobile-menu');
+  var isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menu.removeAttribute('hidden');
+    menu.offsetHeight; // force reflow for CSS transition
+    menu.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    burger.setAttribute('aria-label', 'Close navigation menu');
+    document.body.classList.add('menu-open');
+    burger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    var firstLink = menu.querySelector('a');
+    if (firstLink) firstLink.focus();
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Open navigation menu');
+    document.body.classList.remove('menu-open');
+    burger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+    setTimeout(function() {
+      if (!isOpen) menu.setAttribute('hidden', '');
+    }, 300);
+    burger.focus();
+  }
+
+  burger.addEventListener('click', function() {
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && isOpen) closeMenu();
+  });
+
+  menu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      if (isOpen) closeMenu();
+    });
+  });
+
+  // Focus trap inside open menu
+  document.addEventListener('keydown', function(e) {
+    if (!isOpen || e.key !== 'Tab') return;
+    var focusable = menu.querySelectorAll('a, button');
+    var first = focusable[0];
+    var last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+    }
+  });
+})();
+</script>
 </body>
 </html>
