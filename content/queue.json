@@ -1,155 +1,55 @@
 [
-  {
-    "keyword": "bible verses for anxiety about money",
-    "slug": "bible-verses-for-anxiety-about-money",
-    "status": "published",
-    "published_date": "2026-05-08"
-  },
-  {
-    "keyword": "bible verses for job loss and unemployment",
-    "slug": "bible-verses-for-job-loss-and-unemployment",
-    "status": "published",
-    "published_date": "2026-05-08"
-  },
-  {
-    "keyword": "bible verses for loneliness and isolation",
-    "slug": "bible-verses-for-loneliness-and-isolation",
-    "status": "published",
-    "published_date": "2026-05-08"
-  },
-  {
-    "keyword": "bible verses for going through divorce",
-    "slug": "bible-verses-for-going-through-divorce",
-    "status": "pending"
-  },
-  {
-    "keyword": "bible verses for chronic illness and suffering",
-    "slug": "bible-verses-for-chronic-illness-and-suffering",
-    "status": "pending"
-  },
-  {
-    "keyword": "bible verses for infertility and loss",
-    "slug": "bible-verses-for-infertility-and-loss",
-    "status": "pending"
-  },
-  {
-    "keyword": "bible verses for grief and losing a parent",
-    "slug": "bible-verses-for-grief-and-losing-a-parent",
-    "status": "pending"
-  },
-  {
-    "keyword": "short prayer for a friend with cancer",
-    "slug": "short-prayer-for-friend-with-cancer",
-    "status": "pending"
-  },
-  {
-    "keyword": "prayer before surgery for peace",
-    "slug": "prayer-before-surgery-for-peace",
-    "status": "pending"
-  },
-  {
-    "keyword": "prayer for financial breakthrough",
-    "slug": "prayer-for-financial-breakthrough",
-    "status": "pending"
-  },
-  {
-    "keyword": "prayer for clarity in a difficult decision",
-    "slug": "prayer-for-clarity-in-difficult-decision",
-    "status": "pending"
-  },
-  {
-    "keyword": "bedtime prayer for children with anxiety",
-    "slug": "bedtime-prayer-for-children-with-anxiety",
-    "status": "pending"
-  },
-  {
-    "keyword": "prayer for someone with addiction",
-    "slug": "prayer-for-someone-with-addiction",
-    "status": "pending"
-  },
-  {
-    "keyword": "daily devotional for new moms",
-    "slug": "daily-devotional-for-new-moms",
-    "status": "pending"
-  },
-  {
-    "keyword": "morning devotional for men in recovery",
-    "slug": "morning-devotional-for-men-in-recovery",
-    "status": "pending"
-  },
-  {
-    "keyword": "daily devotional for single women trusting God",
-    "slug": "daily-devotional-for-single-women-trusting-god",
-    "status": "pending"
-  },
-  {
-    "keyword": "devotional for teens with anxiety",
-    "slug": "devotional-for-teens-with-anxiety",
-    "status": "pending"
-  },
-  {
-    "keyword": "daily devotional for grief",
-    "slug": "daily-devotional-for-grief",
-    "status": "pending"
-  },
-  {
-    "keyword": "what does the Bible say about depression",
-    "slug": "what-does-the-bible-say-about-depression",
-    "status": "pending"
-  },
-  {
-    "keyword": "what does the Bible say about comparison and envy",
-    "slug": "what-does-the-bible-say-about-comparison-and-envy",
-    "status": "pending"
-  },
-  {
-    "keyword": "what does the Bible say about social media",
-    "slug": "what-does-the-bible-say-about-social-media",
-    "status": "pending"
-  },
-  {
-    "keyword": "what does the Bible say about debt and money",
-    "slug": "what-does-the-bible-say-about-debt-and-money",
-    "status": "pending"
-  },
-  {
-    "keyword": "what does the Bible say about digital rest and Sabbath",
-    "slug": "what-does-the-bible-say-about-digital-rest-sabbath",
-    "status": "pending"
-  },
-  {
-    "keyword": "Christian advice for setting dating boundaries",
-    "slug": "christian-advice-for-setting-dating-boundaries",
-    "status": "pending"
-  },
-  {
-    "keyword": "Christian mindfulness vs secular mindfulness",
-    "slug": "christian-mindfulness-vs-secular-mindfulness",
-    "status": "pending"
-  },
-  {
-    "keyword": "Christian advice for digital burnout and screen time",
-    "slug": "christian-advice-for-digital-burnout-screen-time",
-    "status": "pending"
-  },
-  {
-    "keyword": "what the Bible says about loneliness in marriage",
-    "slug": "bible-verses-for-loneliness-in-marriage",
-    "status": "pending"
-  },
-  {
-    "keyword": "how to pray for a prodigal child",
-    "slug": "how-to-pray-for-prodigal-child",
-    "status": "pending"
-  },
-  {
-    "keyword": "Christian grief counseling what Scripture says",
-    "slug": "christian-grief-counseling-scripture",
-    "status": "pending"
-  },
-  {
-    "keyword": "bible verses for new beginnings and fresh start",
-    "slug": "bible-verses-for-new-beginnings-fresh-start",
-    "status": "pending"
-  }
+  {"keyword": "bible verses for anxiety about money", "slug": "bible-verses-for-anxiety-about-money", "status": "published", "published_date": "2026-05-08"},
+  {"keyword": "bible verses for job loss and unemployment", "slug": "bible-verses-for-job-loss-and-unemployment", "status": "published", "published_date": "2026-05-08"},
+  {"keyword": "bible verses for loneliness and isolation", "slug": "bible-verses-for-loneliness-and-isolation", "status": "published", "published_date": "2026-05-08"},
+
+  {"keyword": "prayer for someone who hurt you deeply", "slug": "prayer-for-someone-who-hurt-you-deeply", "status": "pending", "volume_est": 3600, "source": "research-2026-05"},
+  {"keyword": "how do Christians deal with loneliness", "slug": "how-do-christians-deal-with-loneliness", "status": "pending", "volume_est": 3400, "source": "research-2026-05"},
+  {"keyword": "how do Christians deal with doubt", "slug": "how-do-christians-deal-with-doubt", "status": "pending", "volume_est": 3100, "source": "research-2026-05"},
+  {"keyword": "how do Christians deal with grief", "slug": "how-do-christians-deal-with-grief", "status": "pending", "volume_est": 2900, "source": "research-2026-05"},
+  {"keyword": "what would Jesus say about social media", "slug": "what-would-jesus-say-about-social-media", "status": "pending", "volume_est": 2500, "source": "research-2026-05"},
+  {"keyword": "bible verse when you feel like giving up on someone", "slug": "bible-verse-when-you-feel-like-giving-up", "status": "pending", "volume_est": 2400, "source": "research-2026-05"},
+  {"keyword": "how do Christians deal with anger", "slug": "how-do-christians-deal-with-anger", "status": "pending", "volume_est": 2200, "source": "research-2026-05"},
+  {"keyword": "bible verse for betrayal by a friend", "slug": "bible-verse-for-betrayal-by-a-friend", "status": "pending", "volume_est": 2100, "source": "research-2026-05"},
+  {"keyword": "what would Jesus say about money", "slug": "what-would-jesus-say-about-money", "status": "pending", "volume_est": 2100, "source": "research-2026-05"},
+  {"keyword": "what would Jesus say about mental health", "slug": "what-would-jesus-say-about-mental-health", "status": "pending", "volume_est": 1900, "source": "research-2026-05"},
+  {"keyword": "bible verse when you feel invisible", "slug": "bible-verse-when-you-feel-invisible", "status": "pending", "volume_est": 1900, "source": "research-2026-05"},
+  {"keyword": "what would Jesus say about depression", "slug": "what-would-jesus-say-about-depression", "status": "pending", "volume_est": 1800, "source": "research-2026-05"},
+  {"keyword": "how do Christians handle toxic relationships", "slug": "how-do-christians-handle-toxic-relationships", "status": "pending", "volume_est": 1700, "source": "research-2026-05"},
+  {"keyword": "scripture for feeling stuck in life", "slug": "scripture-for-feeling-stuck-in-life", "status": "pending", "volume_est": 1600, "source": "research-2026-05"},
+  {"keyword": "scripture for grief after miscarriage", "slug": "scripture-for-grief-after-miscarriage", "status": "pending", "volume_est": 1400, "source": "research-2026-05"},
+  {"keyword": "bible verse for workplace conflict", "slug": "bible-verse-for-workplace-conflict", "status": "pending", "volume_est": 1200, "source": "research-2026-05"},
+  {"keyword": "is it a sin to feel lonely", "slug": "is-it-a-sin-to-feel-lonely", "status": "pending", "type": "aeo", "source": "research-2026-05"},
+  {"keyword": "is it a sin to doubt God", "slug": "is-it-a-sin-to-doubt-god", "status": "pending", "type": "aeo", "source": "research-2026-05"},
+  {"keyword": "is it a sin to be angry", "slug": "is-it-a-sin-to-be-angry", "status": "pending", "type": "aeo", "source": "research-2026-05"},
+  {"keyword": "how do you pray when you don't know what to say", "slug": "how-to-pray-when-you-dont-know-what-to-say", "status": "pending", "type": "aeo", "source": "research-2026-05"},
+  {"keyword": "what would Jesus say about addiction", "slug": "what-would-jesus-say-about-addiction", "status": "pending", "type": "aeo", "source": "research-2026-05"},
+
+  {"keyword": "bible verses for going through divorce", "slug": "bible-verses-for-going-through-divorce", "status": "pending"},
+  {"keyword": "bible verses for chronic illness and suffering", "slug": "bible-verses-for-chronic-illness-and-suffering", "status": "pending"},
+  {"keyword": "bible verses for infertility and loss", "slug": "bible-verses-for-infertility-and-loss", "status": "pending"},
+  {"keyword": "bible verses for grief and losing a parent", "slug": "bible-verses-for-grief-and-losing-a-parent", "status": "pending"},
+  {"keyword": "short prayer for a friend with cancer", "slug": "short-prayer-for-friend-with-cancer", "status": "pending"},
+  {"keyword": "prayer before surgery for peace", "slug": "prayer-before-surgery-for-peace", "status": "pending"},
+  {"keyword": "prayer for financial breakthrough", "slug": "prayer-for-financial-breakthrough", "status": "pending"},
+  {"keyword": "prayer for clarity in a difficult decision", "slug": "prayer-for-clarity-in-difficult-decision", "status": "pending"},
+  {"keyword": "bedtime prayer for children with anxiety", "slug": "bedtime-prayer-for-children-with-anxiety", "status": "pending"},
+  {"keyword": "prayer for someone with addiction", "slug": "prayer-for-someone-with-addiction", "status": "pending"},
+  {"keyword": "daily devotional for new moms", "slug": "daily-devotional-for-new-moms", "status": "pending"},
+  {"keyword": "morning devotional for men in recovery", "slug": "morning-devotional-for-men-in-recovery", "status": "pending"},
+  {"keyword": "daily devotional for single women trusting God", "slug": "daily-devotional-for-single-women-trusting-god", "status": "pending"},
+  {"keyword": "devotional for teens with anxiety", "slug": "devotional-for-teens-with-anxiety", "status": "pending"},
+  {"keyword": "daily devotional for grief", "slug": "daily-devotional-for-grief", "status": "pending"},
+  {"keyword": "what does the Bible say about depression", "slug": "what-does-the-bible-say-about-depression", "status": "pending"},
+  {"keyword": "what does the Bible say about comparison and envy", "slug": "what-does-the-bible-say-about-comparison-and-envy", "status": "pending"},
+  {"keyword": "what does the Bible say about social media", "slug": "what-does-the-bible-say-about-social-media", "status": "pending"},
+  {"keyword": "what does the Bible say about debt and money", "slug": "what-does-the-bible-say-about-debt-and-money", "status": "pending"},
+  {"keyword": "what does the Bible say about digital rest and Sabbath", "slug": "what-does-the-bible-say-about-digital-rest-sabbath", "status": "pending"},
+  {"keyword": "Christian advice for setting dating boundaries", "slug": "christian-advice-for-setting-dating-boundaries", "status": "pending"},
+  {"keyword": "Christian mindfulness vs secular mindfulness", "slug": "christian-mindfulness-vs-secular-mindfulness", "status": "pending"},
+  {"keyword": "Christian advice for digital burnout and screen time", "slug": "christian-advice-for-digital-burnout-screen-time", "status": "pending"},
+  {"keyword": "what the Bible says about loneliness in marriage", "slug": "bible-verses-for-loneliness-in-marriage", "status": "pending"},
+  {"keyword": "how to pray for a prodigal child", "slug": "how-to-pray-for-prodigal-child", "status": "pending"},
+  {"keyword": "Christian grief counseling what Scripture says", "slug": "christian-grief-counseling-scripture", "status": "pending"},
+  {"keyword": "bible verses for new beginnings and fresh start", "slug": "bible-verses-for-new-beginnings-fresh-start", "status": "pending"}
 ]
