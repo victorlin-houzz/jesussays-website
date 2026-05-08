@@ -1,0 +1,20 @@
+# Jesus Says Content Map for AI Crawlers
+
+Jesus Says is a Christian guidance content website focused on Bible verse discovery, prayer support, confession guidance, and daily devotion.
+
+Primary pages:
+- /content/bible-verses-anxiety.html
+- /content/prayer-for-healing.html
+- /content/daily-devotional-today.html
+- /content/confession-prayer-guide.html
+- /content/love-and-forgiveness.html
+- /content/keyword-clusters.html
+
+Primary intent coverage:
+- bible verses for anxiety, healing, strength, love, peace
+- daily devotional for today
+- confession prayer and Psalm 51 prayer
+- Christian advice for relationships, fear, and purpose
+
+Conversion goal:
+Route engaged users to Jesus Says app install and ongoing devotional usage.
