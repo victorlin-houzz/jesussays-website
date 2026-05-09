@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Confession Prayer Guide Using Psalm 51 — Jesus Says 2026</title>
-  <meta name="description" content="A practical confession prayer guide rooted in Psalm 51: steps for honest repentance, receiving mercy, and returning to joy. Biblical and beginner-friendly.">
-  <meta name="keywords" content="confession prayer guide, jesus says, bible, prayer, christian">
-  <link rel="canonical" href="https://jesussays.app/content/confession-prayer-guide.html">
-  <link rel="stylesheet" href="/assets/landing.css" />
+#!/usr/bin/env python3
+"""One-shot migration: upgrade all content/*.html articles from site.css to landing.css."""
+import sys
+from pathlib import Path
+
+CONTENT_DIR = Path("content")
+SKIP = {"index.html", "keyword-clusters.html"}
+
+ARTICLE_STYLE = """\
   <style>
     .art-page { max-width: 680px; margin: 80px auto 110px; padding: 0 28px; }
     .art-back {
@@ -69,40 +68,10 @@
       .art-page .faq { padding: 22px 18px; }
       .art-page .app-cta { padding: 32px 22px; }
     }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "headline": "Confession Prayer Guide (Psalm 51)",
-        "description": "A practical confession prayer guide rooted in Psalm 51: steps for honest repentance, receiving mercy, and returning to joy. Biblical and beginner-friendly.",
-        "author": {"@type": "Organization", "name": "Jesus Says"},
-        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jesussays.app/content/confession-prayer-guide.html"}
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How do I start a confession prayer?", "acceptedAnswer": {"@type": "Answer", "text": "Begin with God's character, not your failure. Psalm 51:1 opens with 'Have mercy on me, O God, according to your unfailing love.' Start by naming who God is — merciful, faithful, patient — before naming what you did. This grounds confession in grace rather than performance anxiety or self-punishment."}},
-          {"@type": "Question", "name": "What is Psalm 51 and why is it used for confession?", "acceptedAnswer": {"@type": "Answer", "text": "Psalm 51 is David's prayer after the prophet Nathan confronted him about his sin with Bathsheba. It moves through honest acknowledgment, appeal to God's mercy, request for inner renewal, and a return to joy. It is the Bible's fullest model for how to confess deeply and receive restoration completely."}},
-          {"@type": "Question", "name": "Do I need to confess every sin I can remember?", "acceptedAnswer": {"@type": "Answer", "text": "Scripture does not require exhaustive memory. 1 John 1:9 promises cleansing from 'all unrighteousness,' not just named sins. Confess what the Spirit brings to mind specifically, acknowledge your general tendency to drift, and trust that Christ's atonement covers what you cannot recall. Thoroughness over anxiety is the goal."}},
-          {"@type": "Question", "name": "What does 'create in me a clean heart' mean in Psalm 51?", "acceptedAnswer": {"@type": "Answer", "text": "David asks for more than forgiveness — he wants transformation at the level of desire and motive. 'Clean heart' (verse 10) means a heart that wants what God wants. Confession is not only erasing past wrongs; it is asking God to reshape your inner life so the same sin becomes less desirable over time."}},
-          {"@type": "Question", "name": "How often should I practice confession prayer?", "acceptedAnswer": {"@type": "Answer", "text": "Daily short confession keeps the conscience tender, and deeper periodic confession — weekly or monthly — helps address patterns. The early church confessed before communion. The goal is not rule-keeping but maintaining an open, honest posture before God that prevents shame from accumulating and hardening over weeks or months."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://jesussays.app/"},
-          {"@type": "ListItem", "position": 2, "name": "Confession Prayer Guide (Psalm 51)", "item": "https://jesussays.app/content/confession-prayer-guide.html"}
-        ]
-      }
-    ]
-  }
-  </script>
-</head>
-<body>
+  </style>"""
+
+MOBILE_MENU = """\
+
 <!-- Mobile menu overlay -->
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
   <a href="/">Home</a>
@@ -151,46 +120,9 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
       Faith Library
     </a>
+"""
 
-  <h1>Confession Prayer Guide (Psalm 51)</h1>
-  <p>Confession prayer follows a clear biblical pattern: acknowledge the sin honestly, appeal to God's mercy rather than your own goodness, ask for inner renewal, and return to action. Psalm 51 is the fullest model in Scripture — David moves from guilt to joy in one prayer, and you can follow the same path today.</p>
-  <h2>What does the Bible say about how to confess sin?</h2>
-  <ol>
-    <li><strong>Psalm 51:1</strong> — "Have mercy on me, O God, according to your unfailing love." Begin with God's character before your failure; it anchors the prayer in grace, not performance.</li>
-    <li><strong>Psalm 51:10</strong> — "Create in me a clean heart, O God, and renew a right spirit within me." Ask for transformation of desire, not just forgiveness of action.</li>
-    <li><strong>1 John 1:9</strong> — "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness." Confession is a promise with a guaranteed response.</li>
-    <li><strong>Proverbs 28:13</strong> — "Whoever conceals their sins does not prosper, but the one who confesses and renounces them finds mercy." Hiding deepens the wound; naming it begins healing.</li>
-    <li><strong>James 5:16</strong> — "Confess your sins to each other and pray for each other so that you may be healed." Some confession belongs in community, not just in private prayer.</li>
-  </ol>
-  <h2>How to confess biblically in three steps</h2>
-  <ol>
-    <li>Acknowledge the sin without excuse — name it specifically, own it fully, and resist the urge to explain it away with circumstances.</li>
-    <li>Ask for mercy through Christ — place the sin under the cross explicitly rather than hoping God overlooks it; 1 John 1:9 makes this a promise.</li>
-    <li>Turn toward one concrete act of obedience today — confession without direction often loops back; a specific next step anchors repentance in the real world.</li>
-  </ol>
-  <h2>What prayer should I say after confession?</h2>
-  <p>After naming the sin and receiving forgiveness, close with a prayer of renewal drawn from Psalm 51: "Have mercy on me, O God. Create in me a clean heart, and renew a right spirit within me. Help me walk in truth and restore the joy of Your salvation. Amen." Speak it slowly; let each line land before moving to the next.</p>
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <h3>How do I start a confession prayer?</h3>
-    <p>Begin with God's character, not your failure. Psalm 51:1 opens with "Have mercy on me, O God, according to your unfailing love." Start by naming who God is — merciful, faithful, patient — before naming what you did. This grounds confession in grace rather than performance anxiety or self-punishment.</p>
-    <h3>What is Psalm 51 and why is it used for confession?</h3>
-    <p>Psalm 51 is David's prayer after the prophet Nathan confronted him about his sin with Bathsheba. It moves through honest acknowledgment, appeal to God's mercy, request for inner renewal, and a return to joy. It is the Bible's fullest model for how to confess deeply and receive restoration completely.</p>
-    <h3>Do I need to confess every sin I can remember?</h3>
-    <p>Scripture does not require exhaustive memory. 1 John 1:9 promises cleansing from "all unrighteousness," not just named sins. Confess what the Spirit brings to mind specifically, acknowledge your general tendency to drift, and trust that Christ's atonement covers what you cannot recall. Thoroughness over anxiety is the goal.</p>
-    <h3>What does "create in me a clean heart" mean in Psalm 51?</h3>
-    <p>David asks for more than forgiveness — he wants transformation at the level of desire and motive. "Clean heart" (verse 10) means a heart that wants what God wants. Confession is not only erasing past wrongs; it is asking God to reshape your inner life so the same sin becomes less desirable over time.</p>
-    <h3>How often should I practice confession prayer?</h3>
-    <p>Daily short confession keeps the conscience tender, and deeper periodic confession — weekly or monthly — helps address patterns. The early church confessed before communion. The goal is not rule-keeping but maintaining an open, honest posture before God that prevents shame from accumulating and hardening over weeks or months.</p>
-  </section>
-  <section class="app-cta">
-    <h2>Get Daily Scripture for Your Exact Moment</h2>
-    <p>Jesus Says brings personalized Bible verses, prayer prompts, and confession journaling to your phone.</p>
-      <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=content-confession-prayer-guide" rel="nofollow" style="background:var(--gold);color:var(--ink);display:inline-flex;">
-        <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-        <span class="stack"><small>Download on the</small><span>App Store</span></span>
-      </a>
-  </section>
+FOOTER_AND_JS = """\
   </div>
 </main>
 
@@ -283,4 +215,85 @@
 })();
 </script>
 </body>
-</html>
+</html>"""
+
+
+def migrate(path: Path) -> bool:
+    slug = path.stem
+    html = path.read_text(encoding="utf-8")
+
+    changed = False
+
+    # 1. Replace stylesheet + inject article styles
+    old_css = '  <link rel="stylesheet" href="/assets/site.css">'
+    new_css = '  <link rel="stylesheet" href="/assets/landing.css" />\n' + ARTICLE_STYLE
+    if old_css in html:
+        html = html.replace(old_css, new_css)
+        changed = True
+
+    # 2. Replace <body> + <main class="container"> + nav back-link
+    old_open = '<body>\n<main class="container">\n  <nav><a href="/">← Home</a></nav>'
+    if old_open in html:
+        html = html.replace(old_open, '<body>' + MOBILE_MENU)
+        changed = True
+
+    # 3. Replace old .cta App Store button with .btn-apple
+    old_cta = (
+        '    <a class="cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208'
+        '?utm_source=website&utm_medium=cta&utm_campaign=organic" rel="nofollow">'
+        'Download Jesus Says — Free</a>'
+    )
+    new_cta = (
+        f'      <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208'
+        f'?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=content-{slug}"'
+        f' rel="nofollow" style="background:var(--gold);color:var(--ink);display:inline-flex;">\n'
+        f'        <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
+        f'<path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44'
+        f'-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57'
+        f'-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08'
+        f'l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>\n'
+        f'        <span class="stack"><small>Download on the</small><span>App Store</span></span>\n'
+        f'      </a>'
+    )
+    if old_cta in html:
+        html = html.replace(old_cta, new_cta)
+        changed = True
+
+    # 4. Replace </main>\n</body>\n</html> with footer + JS
+    old_end = '</main>\n</body>\n</html>'
+    if old_end in html:
+        html = html.replace(old_end, FOOTER_AND_JS)
+        changed = True
+
+    if changed:
+        path.write_text(html, encoding="utf-8")
+    return changed
+
+
+def main() -> None:
+    pages = sorted(
+        p for p in CONTENT_DIR.glob("*.html")
+        if p.name not in SKIP
+    )
+    migrated = 0
+    skipped = 0
+    failed = []
+    for p in pages:
+        if "landing.css" in p.read_text(encoding="utf-8"):
+            skipped += 1
+            continue
+        if migrate(p):
+            migrated += 1
+            print(f"  migrated  {p.name}")
+        else:
+            failed.append(p.name)
+            print(f"  SKIPPED   {p.name}  (pattern not found — check manually)")
+
+    print(f"\n{migrated} migrated, {skipped} already up-to-date, {len(failed)} failed.")
+    if failed:
+        print("Failed:", ", ".join(failed))
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
