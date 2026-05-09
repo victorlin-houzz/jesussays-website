@@ -5,7 +5,7 @@ This document is the complete playbook for the Hermes automated agent. Run it as
 **Mission:** Maximize organic traffic from Google/AI search → Jesus Says Now iOS app installs → paywall conversion.
 
 **Channels:**
-- Site: https://victorlin-houzz.github.io/jesussays-website/
+- Site: https://jesussays.app
 - App: https://apps.apple.com/us/app/jesus-says-now/id6756906208
 - X: https://x.com/JesusSaysNow
 - TikTok: https://www.tiktok.com/@jesus.says.now889
@@ -227,15 +227,38 @@ Full format: `https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_sour
 
 ---
 
+## Article HTML Standard
+
+Every article in `content/*.html` must use the site-wide design system, not the legacy `site.css`. The generator scripts handle this automatically. If writing or editing an article manually:
+
+**Required:**
+- `<link rel="stylesheet" href="/assets/landing.css" />` in `<head>` — never `site.css`
+- Page-specific `<style>` block with `.art-page`, `.art-back`, and section styles (copy from any recent article or from `generate_article.py`)
+- Sticky pill nav (`<div class="nav-wrap"><nav class="nav">...</nav></div>`)
+- Mobile menu overlay (`<div class="mobile-menu" id="mobile-menu" ...>`) with focus-trap JS at bottom of `<body>`
+- Article content wrapped in `<main><div class="art-page">...</div></main>`
+- `<a class="art-back" href="/content/">` breadcrumb at top of `.art-page`
+- App CTA using `<a class="btn-apple" ...>` inside `<section class="app-cta">`
+- Footer: `<footer class="site">` with four link columns + legal row
+
+**Canonical URL format:** `https://jesussays.app/content/[slug].html`
+
+**App Store UTM on article CTA:** `utm_campaign=content-[slug]`
+
+If an existing article still uses the old `site.css` layout, run the upgrade script or manually replace the head/body chrome using `content/index.html` as the reference.
+
+---
+
 ## Quality Standards
 
 Every published article must:
 - Pass `python3 scripts/check_aeo.py` (all 8 AEO checks)
+- Use `landing.css` (not `site.css`) with the full nav + footer chrome
 - Have 800-1000 words of body content
 - Include 4-6 Bible verses with specific references and applications
 - Include exactly 5 FAQ Q&A pairs
-- Use `<nav>` (not `<p>`) for the back-link to preserve direct-answer detection
-- Have the App Store CTA with `rel="nofollow"` and UTM parameters
+- Use `<a class="art-back" href="/content/">` for the back-link
+- Have the App Store CTA (`class="btn-apple"`) with `rel="nofollow"` and UTM parameters
 
 ---
 
