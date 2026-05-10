@@ -57,7 +57,7 @@ Required structure:
 <main class="container">
   <p><a href="/jesussays-website/">← Home</a></p>
   <h1>[Title matching the primary keyword intent]</h1>
-  <p>[Direct answer: 40-60 words, no preamble, answers the core question immediately]</p>
+  <p>[Intro paragraph: 35-75 words. First sentence directly answers the page's core question; if that is not possible, write a TLDR instead. Warm, clear, Christian, non-preachy.]</p>
   <h2>[Primary sub-question phrased as a user question, e.g. "What does the Bible say about X?"]</h2>
   <ol>
     <li><strong>Book Chapter:Verse</strong> — "verse text." One-sentence practical application.</li>
@@ -91,7 +91,9 @@ Rules:
 - Keep all scripture references from the original page
 - Warm, theologically sound, non-preachy tone
 - 800-1000 words total body content
-- Every H2 must stand alone as a complete answer to a specific question"""
+- Every H2 must stand alone as a complete answer to a specific question
+- The first paragraph immediately below <h1> must follow this prompt exactly in spirit: "Write me an intro for this piece of content that answers the question in the first sentence. If not possible write me a tldr."
+- Make that intro a single 35-75 word paragraph whose first sentence directly answers the core question when possible; otherwise write a TLDR."""
 
 
 def upgrade(path: Path) -> None:
