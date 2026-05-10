@@ -10,13 +10,13 @@ Claim labels:
 
 | Claim | Label | Source |
 |---|---|---|
-| Catholic prayer and meditation app | verified | App Store listing, hallowed.com, 2026-05-09 |
-| Audio-first: guided Rosary, Examen, saint stories, sleep meditations | verified | hallowed.com features page, 2026-05-09 |
+| Catholic prayer and meditation app | verified | App Store listing, hallow.app, 2026-05-09 |
+| Audio-first: guided Rosary, Examen, saint stories, sleep meditations | verified | hallow.app features page, 2026-05-09 |
 | Subscription: ~$11.99/month or ~$65.99/year (Hallow Plus) | inferred | App Store in-app purchase pricing; confirm current pricing before use |
 | Free tier is limited (preview content only) | inferred | App Store description implies subscription for full access |
-| Not AI conversation-based; structured content library | verified | No AI conversation feature in App Store or hallowed.com, 2026-05-09 |
-| Designed for Catholic prayer traditions | verified | App Store description, hallowed.com, 2026-05-09 |
-| Church/small group features (Hallow for Organizations) | verified | hallowed.com, 2026-05-09 |
+| Not AI conversation-based; structured content library | verified | No AI conversation feature in App Store or hallow.app, 2026-05-09 |
+| Designed for Catholic prayer traditions | verified | App Store description, hallow.app, 2026-05-09 |
+| Church/small group features (Hallow for Organizations) | verified | hallow.app, 2026-05-09 |
 | "Hallow is too expensive" | do-not-use | Attack language |
 
 ## Glorify
@@ -38,7 +38,7 @@ Claim labels:
 | Truly free (non-profit, Life.Church funded) | verified | youversion.com, App Store (no subscription paywall), 2026-05-09 |
 | 2,000+ Bible translations in 1,400+ languages | verified | youversion.com features, 2026-05-09 |
 | Reading plans, community features, verse of day, audio Bible | verified | App Store description, youversion.com, 2026-05-09 |
-| Bible Chat AI feature exists | verified | YouVersion has launched Bible Chat; confirm current state before use |
+| Bible Chat AI feature exists | inferred | YouVersion has launched Bible Chat; confirm current state before use |
 | "YouVersion is outdated" | do-not-use | Attack language |
 
 ## Jesus Says
