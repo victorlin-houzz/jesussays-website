@@ -40,6 +40,7 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/best-christian-ai-prayer-apps.html — Best Christian AI prayer app comparison 2026
 - /content/jesus-says-vs-hallow.html — Jesus Says vs Hallow: Hallow alternative for personalized Scripture reflection
 - /content/jesus-says-vs-glorify.html — Jesus Says vs Glorify: Glorify alternative for AI-personalized Scripture reflection
+- /content/jesus-says-vs-youversion.html — Jesus Says vs YouVersion: YouVersion alternative for AI-personalized Scripture reflection
 
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
