@@ -5,9 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Download Jesus Says — Bible Verses, Prayer &amp; Daily Devotion App</title>
   <meta name="description" content="Jesus Says brings personalized Bible verses, voice prayer, confession journaling, and daily devotionals to your iPhone. Free to download on the App Store." />
-  <meta name="keywords" content="jesus says app, bible app, daily devotional app, prayer app, christian app" />
-  <link rel="canonical" href="https://victorlin-houzz.github.io/download.html" />
-  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="canonical" href="https://jesussays.app/download.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Download Jesus Says — Daily Faith Companion" />
+  <meta property="og:description" content="Personalized Bible verses, voice prayer, confession journaling, and daily devotionals. Free on iPhone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jesussays.app/download.html" />
+  <link rel="stylesheet" href="/assets/landing.css" />
+  <style>
+    .dl-page { max-width: 800px; margin: 80px auto 110px; padding: 0 28px; }
+    .dl-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13.5px; font-weight: 600; color: var(--ink-soft);
+      margin-bottom: 36px; padding: 8px 14px; border-radius: 999px;
+      background: rgba(26,31,74,0.05); transition: background .15s, color .15s;
+    }
+    .dl-back:hover { background: rgba(26,31,74,0.10); color: var(--ink); }
+    .dl-hero { text-align: center; margin-bottom: 60px; }
+    .dl-hero h1 {
+      font-family: var(--serif); font-weight: 700;
+      font-size: clamp(30px, 4vw, 48px); line-height: 1.1;
+      letter-spacing: -0.6px; color: var(--ink);
+      margin: 0 0 16px; text-wrap: balance;
+    }
+    .dl-hero p {
+      font-family: var(--sans); font-size: 18px;
+      line-height: 1.65; color: var(--ink-soft);
+      max-width: 520px; margin: 0 auto 28px;
+    }
+    .dl-features { margin-bottom: 60px; }
+    .dl-features h2 {
+      font-family: var(--serif); font-weight: 700;
+      font-size: 22px; color: var(--ink); margin: 0 0 22px;
+    }
+    .dl-features ol {
+      font-family: var(--sans); font-size: 16px; line-height: 1.7;
+      color: var(--ink-soft); padding-left: 1.5rem; margin: 0;
+    }
+    .dl-features li { margin-bottom: 10px; }
+    .dl-features strong { color: var(--ink); }
+    .dl-screenshots {
+      display: flex; gap: 14px; overflow-x: auto;
+      padding: 8px 0 20px; scroll-snap-type: x mandatory;
+      margin-bottom: 40px;
+      scrollbar-width: thin;
+    }
+    .dl-screenshots img {
+      height: 420px; width: auto; border-radius: 22px;
+      box-shadow: 0 8px 32px -8px rgba(26,31,74,0.25);
+      scroll-snap-align: start; flex-shrink: 0;
+    }
+    .dl-avail { margin-bottom: 60px; }
+    .dl-avail h2 {
+      font-family: var(--serif); font-weight: 700;
+      font-size: 22px; color: var(--ink); margin: 0 0 16px;
+    }
+    .dl-avail ul {
+      font-family: var(--sans); font-size: 16px; line-height: 1.7;
+      color: var(--ink-soft); padding-left: 1.5rem; margin: 0;
+    }
+    .dl-avail li { margin-bottom: 6px; }
+    @media (max-width: 560px) {
+      .dl-page { margin-top: 48px; padding: 0 20px; }
+      .dl-screenshots img { height: 320px; }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -22,15 +84,66 @@
   </script>
 </head>
 <body>
-  <header class="container">
-    <p class="eyebrow"><a href="/">Jesus Says</a></p>
-    <h1>Your Daily Faith Companion</h1>
-    <p>Receive personalized Bible verses for your exact moment. Talk to Jesus by voice. Journal your confessions. Build a daily faith rhythm — one day at a time.</p>
-    <p><a class="cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-hero" rel="nofollow">Download on the App Store — Free</a></p>
-  </header>
 
-  <main class="container">
-    <section>
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+  <a href="/">Home</a>
+  <a href="/#features">Features</a>
+  <a href="/content/">Faith Library</a>
+  <a href="/#faq">FAQ</a>
+  <a class="mm-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-menu" rel="nofollow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+    Get the App
+  </a>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand" aria-label="Jesus Says — Home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C9 11 7 9 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C15 11 17 9 17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Jesus Says</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/content/">Faith Library</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <a class="nav-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-nav" rel="nofollow">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+      Get the App
+    </a>
+    <button class="nav-burger" id="nav-burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</div>
+
+<main>
+  <div class="dl-page">
+
+    <a class="dl-back" href="/">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+
+    <div class="dl-hero">
+      <h1>Your Daily Faith Companion</h1>
+      <p>Receive personalized Bible verses for your exact moment. Talk to Jesus by voice. Journal your confessions. Build a daily faith rhythm — one day at a time.</p>
+      <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-hero" rel="nofollow" style="display:inline-flex;">
+        <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+        <span class="stack"><small>Download on the</small><span>App Store</span></span>
+      </a>
+    </div>
+
+    <section class="dl-features">
       <h2>What Jesus Says Does</h2>
       <ol>
         <li><strong>Build a Daily Faith Rhythm</strong> — Start every morning with Scripture, prayer, and reflection built into a simple, sustainable habit.</li>
@@ -43,8 +156,8 @@
     </section>
 
     <section>
-      <h2>See It in Action</h2>
-      <div class="screenshots">
+      <h2 style="font-family:var(--serif);font-weight:700;font-size:22px;color:var(--ink);margin:0 0 22px;">See It in Action</h2>
+      <div class="dl-screenshots">
         <img src="/assets/screenshots/screenshot-01.png" alt="Build a Daily Faith Rhythm — Jesus Says app" width="369" height="800" loading="lazy" />
         <img src="/assets/screenshots/screenshot-02.png" alt="Read the Bible Verse by Verse — Jesus Says app" width="369" height="800" loading="lazy" />
         <img src="/assets/screenshots/screenshot-03.png" alt="Find Where to Start in Scripture — Jesus Says app" width="369" height="800" loading="lazy" />
@@ -52,10 +165,15 @@
         <img src="/assets/screenshots/screenshot-05.png" alt="A Sacred Space for Personal Reflection — Jesus Says app" width="369" height="800" loading="lazy" />
         <img src="/assets/screenshots/screenshot-06.png" alt="Receive Scripture for Your Exact Moment — Jesus Says app" width="369" height="800" loading="lazy" />
       </div>
-      <p><a class="cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-screenshots" rel="nofollow">Download Jesus Says — Free</a></p>
+      <div style="text-align:center;margin-top:8px;">
+        <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-screenshots" rel="nofollow" style="display:inline-flex;">
+          <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span class="stack"><small>Download on the</small><span>App Store</span></span>
+        </a>
+      </div>
     </section>
 
-    <section>
+    <section class="dl-avail" style="margin-top:48px;">
       <h2>Available For</h2>
       <ul>
         <li>iPhone — free to download on the App Store</li>
@@ -65,10 +183,97 @@
         <li>Personalized Bible verse discovery</li>
       </ul>
     </section>
-  </main>
 
-  <footer class="container">
-    <p>© Jesus Says · <a href="/">Back to Content Library</a></p>
-  </footer>
+  </div>
+</main>
+
+<footer class="site">
+  <div>
+    <div class="brand" style="margin-bottom: 14px;">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C9 11 7 9 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 11C15 11 17 9 17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Jesus Says</span>
+    </div>
+    <p class="meta">A daily companion for prayer, reflection, and scripture. A companion, not a replacement for church or pastoral care.</p>
+  </div>
+  <div>
+    <h5>App</h5>
+    <ul>
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#day">Daily Practice</a></li>
+      <li><a href="/#screens">App Tour</a></li>
+      <li><a href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=download-footer" rel="nofollow">Download</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Library</h5>
+    <ul>
+      <li><a href="/content/bible-verses-anxiety.html">Verses for anxiety</a></li>
+      <li><a href="/content/prayer-for-healing.html">Prayer for healing</a></li>
+      <li><a href="/content/daily-devotional-today.html">Today's devotional</a></li>
+      <li><a href="/content/index.html">All articles</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Company</h5>
+    <ul>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="mailto:hello@jesussays.app">Contact</a></li>
+      <li><a href="/download.html">About the App</a></li>
+    </ul>
+  </div>
+  <div class="legal">
+    <span>© 2026 Jesus Says</span>
+    <span class="links">
+      <a href="mailto:hello@jesussays.app">hello@jesussays.app</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var burger = document.getElementById('nav-burger');
+  var menu   = document.getElementById('mobile-menu');
+  var isOpen = false;
+  function openMenu() {
+    isOpen = true;
+    menu.removeAttribute('hidden');
+    menu.offsetHeight;
+    menu.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    burger.setAttribute('aria-label', 'Close navigation menu');
+    document.body.classList.add('menu-open');
+    burger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    var f = menu.querySelector('a'); if (f) f.focus();
+  }
+  function closeMenu() {
+    isOpen = false;
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Open navigation menu');
+    document.body.classList.remove('menu-open');
+    burger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+    setTimeout(function() { if (!isOpen) menu.setAttribute('hidden', ''); }, 300);
+    burger.focus();
+  }
+  burger.addEventListener('click', function() { isOpen ? closeMenu() : openMenu(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && isOpen) closeMenu(); });
+  menu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() { if (isOpen) closeMenu(); });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!isOpen || e.key !== 'Tab') return;
+    var focusable = menu.querySelectorAll('a, button');
+    var first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+    else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+  });
+})();
+</script>
 </body>
 </html>

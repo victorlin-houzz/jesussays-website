@@ -125,7 +125,7 @@ Follow this EXACT structure (replace ALL [...] placeholders with real content):
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
   <a href="/">Home</a>
   <a href="/#features">Features</a>
-  <a href="/#library">Faith Library</a>
+  <a href="/content/">Faith Library</a>
   <a href="/#faq">FAQ</a>
   <a class="mm-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=article-menu" rel="nofollow">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
@@ -149,7 +149,7 @@ Follow this EXACT structure (replace ALL [...] placeholders with real content):
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="/#features">Features</a>
-      <a href="/#library">Faith Library</a>
+      <a href="/content/">Faith Library</a>
       <a href="/#faq">FAQ</a>
     </div>
     <a class="nav-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=article-nav" rel="nofollow">
@@ -172,7 +172,7 @@ Follow this EXACT structure (replace ALL [...] placeholders with real content):
 
     <span class="sec-tag">[Category: Bible Verses | Prayer | Devotional | Confession | Christian Advice]</span>
     <h1>[Title]</h1>
-    <p>[Direct answer: 40-60 words, no preamble, answers the question immediately]</p>
+    <p>[Intro paragraph: 35-75 words. First sentence directly answers the article's core question; if that is not possible, write a TLDR instead. Warm, clear, Christian, non-preachy.]</p>
 
     <h2>[Primary question H2]</h2>
     <ol>
@@ -302,6 +302,8 @@ Keyword: "$keyword"
 Slug: $slug
 Date: $today
 Tone: warm, theologically sound, non-preachy. 800-1000 words body content (between h1 and the FAQ section).
+The first paragraph immediately below <h1> must follow this prompt exactly in spirit: "Write me an intro for this piece of content that answers the question in the first sentence. If not possible write me a tldr."
+Make that intro a single 35-75 word paragraph whose first sentence directly answers the core question when possible; otherwise write a TLDR.
 Replace ALL [...] placeholders with actual content. Output ONLY the HTML.""")
 
 
