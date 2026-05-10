@@ -31,6 +31,7 @@ jesussays-website/
 │   ├── generate_article_api.py # GHA generator — uses Anthropic SDK + API key
 │   ├── check_aeo.py            # AEO validator — validates all content pages
 │   ├── upgrade_pages.py        # Batch upgrade existing pages to AEO format
+│   ├── migrate_articles.py     # One-shot: migrated site.css pages to landing.css
 │   └── resize_screenshots.py  # Resize App Store screenshots for web
 ├── .github/workflows/
 │   ├── pages.yml               # Deploy on push to main
@@ -124,6 +125,8 @@ Every `content/*.html` article must use `landing.css` and include the full site 
 - UTM campaign: `utm_campaign=content-[slug]` on the article CTA
 
 The generator scripts (`generate_article.py` / `generate_article_api.py`) embed the complete nav, footer, and mobile menu JS automatically. If editing existing articles manually, copy the chrome from `content/index.html`.
+
+The `art-back` breadcrumb always links to `/content/` (the Faith Library), not to `/` (home). This is intentional — users browsing articles should navigate up to the library, not back to the marketing landing page. The nav "Faith Library" link also points to `/content/`, not `/#library`.
 
 ---
 

@@ -204,10 +204,10 @@ Always use UTM tracking on App Store links:
 
 | Source | Campaign |
 |---|---|
-| Article body | `utm_campaign=organic` |
-| Homepage hero | `utm_campaign=homepage-hero` |
-| Homepage screenshots | `utm_campaign=homepage-screenshots` |
-| Download page | `utm_campaign=download-hero` |
+| Article body CTA | `utm_campaign=content-[slug]` (e.g. `content-prayer-for-healing`) |
+| Homepage hero | `utm_campaign=home-hero` |
+| Download page hero | `utm_campaign=download-hero` |
+| Download page screenshots | `utm_campaign=download-screenshots` |
 | X thread reply | `utm_campaign=x-thread` |
 | TikTok bio | `utm_campaign=tiktok-bio` |
 
@@ -247,6 +247,8 @@ Every article in `content/*.html` must use the site-wide design system, not the 
 
 If an existing article still uses the old `site.css` layout, run the upgrade script or manually replace the head/body chrome using `content/index.html` as the reference.
 
+**`download.html`** also uses the same landing.css chrome (nav, footer, mobile menu). It uses `.dl-page`/`.dl-back`/`.dl-hero` styles and `<a class="dl-back" href="/">← Home</a>` (back to home, not /content/).
+
 ---
 
 ## Quality Standards
@@ -257,7 +259,7 @@ Every published article must:
 - Have 800-1000 words of body content
 - Include 4-6 Bible verses with specific references and applications
 - Include exactly 5 FAQ Q&A pairs
-- Use `<a class="art-back" href="/content/">` for the back-link
+- Use `<a class="art-back" href="/content/">← Faith Library</a>` for the back-link — always `/content/`, never `/`
 - Have the App Store CTA (`class="btn-apple"`) with `rel="nofollow"` and UTM parameters
 
 ---
