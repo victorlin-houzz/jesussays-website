@@ -155,7 +155,7 @@ FOOTER_AND_JS = """\
       <li><a href="/content/bible-verses-anxiety.html">Verses for anxiety</a></li>
       <li><a href="/content/prayer-for-healing.html">Prayer for healing</a></li>
       <li><a href="/content/daily-devotional-today.html">Today's devotional</a></li>
-      <li><a href="/content/index.html">All articles</a></li>
+      <li><a href="/content/">All articles</a></li>
     </ul>
   </div>
   <div>

@@ -35,6 +35,11 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
   <meta property="og:description" content="[description]" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://jesussays.app/content/SLUG.html" />
+  <meta property="og:image" content="https://jesussays.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[Title] — Jesus Says" />
+  <meta name="twitter:description" content="[description]" />
+  <meta name="twitter:image" content="https://jesussays.app/assets/og-image.png" />
   <link rel="stylesheet" href="/assets/landing.css" />
   <style>
     .art-page { max-width: 680px; margin: 80px auto 110px; padding: 0 28px; }
@@ -102,7 +107,8 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
   {
     "@context": "https://schema.org",
     "@graph": [
-      {"@type": "Article", "headline": "[title]", "description": "[description]", "datePublished": "TODAY", "author": {"@type": "Organization", "name": "Jesus Says"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jesussays.app/content/SLUG.html"}},
+      {"@type": "Organization", "@id": "https://jesussays.app/#organization", "name": "Jesus Says", "url": "https://jesussays.app/", "logo": "https://jesussays.app/assets/og-image.png"},
+      {"@type": "Article", "headline": "[title]", "description": "[description]", "datePublished": "TODAY", "dateModified": "TODAY", "author": {"@id": "https://jesussays.app/#organization"}, "publisher": {"@id": "https://jesussays.app/#organization"}, "image": "https://jesussays.app/assets/og-image.png", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jesussays.app/content/SLUG.html"}},
       {"@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": "[Q1]", "acceptedAnswer": {"@type": "Answer", "text": "[A1 40-60 words]"}},
         {"@type": "Question", "name": "[Q2]", "acceptedAnswer": {"@type": "Answer", "text": "[A2 40-60 words]"}},
@@ -236,7 +242,7 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
       <li><a href="/content/bible-verses-anxiety.html">Verses for anxiety</a></li>
       <li><a href="/content/prayer-for-healing.html">Prayer for healing</a></li>
       <li><a href="/content/daily-devotional-today.html">Today's devotional</a></li>
-      <li><a href="/content/index.html">All articles</a></li>
+      <li><a href="/content/">All articles</a></li>
     </ul>
   </div>
   <div>

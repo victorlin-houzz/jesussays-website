@@ -42,6 +42,10 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/jesus-says-vs-glorify.html — Jesus Says vs Glorify: Glorify alternative for AI-personalized Scripture reflection
 - /content/jesus-says-vs-youversion.html — Jesus Says vs YouVersion: YouVersion alternative for AI-personalized Scripture reflection
 
+## Site Entity
+- /about.html — About Jesus Says, contact, editorial purpose, and app identity
+- /download.html — Jesus Says iPhone app details and App Store link
+
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
