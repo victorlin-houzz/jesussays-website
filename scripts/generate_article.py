@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Generate one AEO article from the keyword queue using the claude CLI."""
+from __future__ import annotations
+
 import json
 import subprocess
 import sys

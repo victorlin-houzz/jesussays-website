@@ -46,6 +46,16 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /about.html — About Jesus Says, contact, editorial purpose, and app identity
 - /download.html — Jesus Says iPhone app details and App Store link
 
+- /content/a-prayer-for-anxiety.html — A Prayer for Anxiety
+- /content/bible-verses-for-healing.html — Bible Verses for Healing
+- /content/daily-devotional-on-anxiety.html — Daily Devotional on Anxiety
+- /content/bible-verses-for-love.html — Bible Verses for Love
+- /content/bible-verses-for-depression.html — Bible Verses for Depression
+- /content/what-does-the-bible-say-about-anxiety.html — What Does the Bible Say About Anxiety?
+- /content/daily-devotional-on-healing.html — Daily Devotional on Healing
+- /content/a-prayer-for-love.html — A Prayer for Love
+- /content/a-prayer-for-depression.html — A Prayer for Depression
+- /content/bible-verses-for-fear.html — Bible Verses for Fear
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose

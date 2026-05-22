@@ -218,6 +218,38 @@ Status values: `pending` → `published`. The generator skips `published` items.
 
 ---
 
+## Competitor-Informed Opportunity Pipeline
+
+Use this pipeline to turn competitor demand signals into original Jesus Says articles. The tracker is `content/opportunities.jsonl`; the workflow notes live in `docs/content-competitor-pipeline.md`.
+
+```bash
+# Validate the 500-row opportunity tracker
+python3 scripts/manage_opportunities.py validate
+
+# Show source/status/type counts
+python3 scripts/manage_opportunities.py stats
+
+# Preview the next highest-priority opportunities
+python3 scripts/manage_opportunities.py next --limit 20
+
+# Generate the next audited batch directly from the opportunity tracker
+python3 scripts/generate_opportunity_articles.py --limit 10
+
+# If model output is unavailable or malformed, use the deterministic fallback
+python3 scripts/generate_opportunity_articles.py --limit 10 --local-only
+
+# Audit generated drafts before publishing
+python3 scripts/audit_generated_articles.py --status drafted
+python3 scripts/check_aeo.py
+
+# Mark passing drafts as published in content/opportunities.jsonl
+python3 scripts/audit_generated_articles.py --status drafted --mark-published
+```
+
+Competitor URLs are demand signals, not source material to rewrite. Every generated article should be original, Scripture-grounded, AEO-formatted, and tailored to Jesus Says app conversion.
+
+---
+
 ## Social Media Strategy
 
 Each new article maps to cross-platform content:
