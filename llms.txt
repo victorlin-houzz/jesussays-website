@@ -56,6 +56,56 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/a-prayer-for-love.html — A Prayer for Love
 - /content/a-prayer-for-depression.html — A Prayer for Depression
 - /content/bible-verses-for-fear.html — Bible Verses for Fear
+- /content/bible-verses-for-peace.html — Bible Verses for Peace
+- /content/how-to-pray-about-anxiety.html — How to Pray About Anxiety
+- /content/what-does-the-bible-say-about-healing.html — What Does the Bible Say About Healing?
+- /content/daily-devotional-on-love.html — Daily Devotional on Love
+- /content/daily-devotional-on-depression.html — Daily Devotional on Depression
+- /content/a-prayer-for-fear.html — A Prayer for Fear
+- /content/a-prayer-for-peace.html — A Prayer for Peace
+- /content/bible-verses-for-stress.html — Bible Verses for Stress
+- /content/bible-verses-for-hope.html — Bible Verses for Hope
+- /content/bible-verses-for-prayer-life.html — Bible Verses for Prayer Life
+- /content/what-would-jesus-say-about-anxiety.html — What Would Jesus Say About Anxiety?
+- /content/how-to-pray-about-healing.html — How to Pray About Healing
+- /content/what-does-the-bible-say-about-love.html — What Does the Bible Say About Love?
+- /content/daily-devotional-on-fear.html — Daily Devotional on Fear
+- /content/daily-devotional-on-peace.html — Daily Devotional on Peace
+- /content/a-prayer-for-stress.html — A Prayer for Stress
+- /content/a-prayer-for-hope.html — A Prayer for Hope
+- /content/bible-verses-for-relationships.html — Bible Verses for Relationships
+- /content/a-prayer-for-prayer-life.html — A Prayer for Prayer Life
+- /content/bible-verses-for-purpose.html — Bible Verses for Purpose
+- /content/night-prayer-for-anxiety.html — Night Prayer for Anxiety
+- /content/what-would-jesus-say-about-healing.html — What Would Jesus Say About Healing?
+- /content/how-to-pray-about-love.html — How to Pray About Love
+- /content/how-to-pray-about-depression.html — How to Pray About Depression
+- /content/what-does-the-bible-say-about-fear.html — What Does the Bible Say About Fear?
+- /content/what-does-the-bible-say-about-peace.html — What Does the Bible Say About Peace?
+- /content/daily-devotional-on-stress.html — Daily Devotional on Stress
+- /content/daily-devotional-on-hope.html — Daily Devotional on Hope
+- /content/bible-verses-for-anger.html — Bible Verses for Anger
+- /content/bible-verses-for-loss.html — Bible Verses for Loss
+- /content/a-prayer-for-relationships.html — A Prayer for Relationships
+- /content/daily-devotional-on-prayer-life.html — Daily Devotional on Prayer Life
+- /content/a-prayer-for-purpose.html — A Prayer for Purpose
+- /content/morning-prayer-for-anxiety.html — Morning Prayer for Anxiety
+- /content/night-prayer-for-healing.html — Night Prayer for Healing
+- /content/what-would-jesus-say-about-love.html — What Would Jesus Say About Love?
+- /content/how-to-pray-about-fear.html — How to Pray About Fear
+- /content/how-to-pray-about-peace.html — How to Pray About Peace
+- /content/what-does-the-bible-say-about-stress.html — What Does the Bible Say About Stress?
+- /content/what-does-the-bible-say-about-hope.html — What Does the Bible Say About Hope?
+- /content/a-prayer-for-anger.html — A Prayer for Anger
+- /content/a-prayer-for-loss.html — A Prayer for Loss
+- /content/daily-devotional-on-relationships.html — Daily Devotional on Relationships
+- /content/bible-verses-for-new-faith.html — Bible Verses for New Faith
+- /content/what-does-the-bible-say-about-prayer-life.html — What Does the Bible Say About Prayer Life?
+- /content/bible-verses-for-rest.html — Bible Verses for Rest
+- /content/confession-prayer-for-anxiety.html — Confession Prayer for Anxiety
+- /content/morning-prayer-for-healing.html — Morning Prayer for Healing
+- /content/night-prayer-for-love.html — Night Prayer for Love
+- /content/night-prayer-for-depression.html — Night Prayer for Depression
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
