@@ -106,6 +106,56 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/morning-prayer-for-healing.html — Morning Prayer for Healing
 - /content/night-prayer-for-love.html — Night Prayer for Love
 - /content/night-prayer-for-depression.html — Night Prayer for Depression
+- /content/what-would-jesus-say-about-fear.html — What Would Jesus Say About Fear?
+- /content/what-would-jesus-say-about-peace.html — What Would Jesus Say About Peace?
+- /content/how-to-pray-about-stress.html — How to Pray About Stress
+- /content/how-to-pray-about-hope.html — How to Pray About Hope
+- /content/daily-devotional-on-anger.html — Daily Devotional on Anger
+- /content/daily-devotional-on-loss.html — Daily Devotional on Loss
+- /content/bible-verses-for-patience.html — Bible Verses for Patience
+- /content/bible-verses-for-temptation.html — Bible Verses for Temptation
+- /content/what-does-the-bible-say-about-relationships.html — What Does the Bible Say About Relationships?
+- /content/a-prayer-for-new-faith.html — A Prayer for New Faith
+- /content/how-to-pray-about-prayer-life.html — How to Pray About Prayer Life
+- /content/what-does-the-bible-say-about-purpose.html — What Does the Bible Say About Purpose?
+- /content/a-prayer-for-rest.html — A Prayer for Rest
+- /content/christian-advice-for-anxiety.html — Christian Advice for Anxiety
+- /content/confession-prayer-for-healing.html — Confession Prayer for Healing
+- /content/morning-prayer-for-love.html — Morning Prayer for Love
+- /content/morning-prayer-for-depression.html — Morning Prayer for Depression
+- /content/night-prayer-for-fear.html — Night Prayer for Fear
+- /content/night-prayer-for-peace.html — Night Prayer for Peace
+- /content/what-would-jesus-say-about-stress.html — What Would Jesus Say About Stress?
+- /content/what-would-jesus-say-about-hope.html — What Would Jesus Say About Hope?
+- /content/what-does-the-bible-say-about-anger.html — What Does the Bible Say About Anger?
+- /content/what-does-the-bible-say-about-loss.html — What Does the Bible Say About Loss?
+- /content/a-prayer-for-patience.html — A Prayer for Patience
+- /content/a-prayer-for-temptation.html — A Prayer for Temptation
+- /content/bible-verses-for-doubt.html — Bible Verses for Doubt
+- /content/how-to-pray-about-relationships.html — How to Pray About Relationships
+- /content/daily-devotional-on-new-faith.html — Daily Devotional on New Faith
+- /content/what-would-jesus-say-about-prayer-life.html — What Would Jesus Say About Prayer Life?
+- /content/how-to-pray-about-purpose.html — How to Pray About Purpose
+- /content/bible-verses-for-knowing-god.html — Bible Verses for Knowing God
+- /content/daily-devotional-on-rest.html — Daily Devotional on Rest
+- /content/bible-verses-and-prayer-for-anxiety.html — Bible Verses and Prayer for Anxiety
+- /content/christian-advice-for-healing.html — Christian Advice for Healing
+- /content/confession-prayer-for-love.html — Confession Prayer for Love
+- /content/confession-prayer-for-depression.html — Confession Prayer for Depression
+- /content/morning-prayer-for-fear.html — Morning Prayer for Fear
+- /content/morning-prayer-for-peace.html — Morning Prayer for Peace
+- /content/night-prayer-for-stress.html — Night Prayer for Stress
+- /content/night-prayer-for-hope.html — Night Prayer for Hope
+- /content/how-to-pray-about-anger.html — How to Pray About Anger
+- /content/how-to-pray-about-loss.html — How to Pray About Loss
+- /content/daily-devotional-on-patience.html — Daily Devotional on Patience
+- /content/daily-devotional-on-temptation.html — Daily Devotional on Temptation
+- /content/a-prayer-for-doubt.html — A Prayer for Doubt
+- /content/what-would-jesus-say-about-relationships.html — What Would Jesus Say About Relationships?
+- /content/what-does-the-bible-say-about-new-faith.html — What Does the Bible Say About New Faith?
+- /content/night-prayer-for-prayer-life.html — Night Prayer for Prayer Life
+- /content/bible-verses-for-fasting.html — Bible Verses for Fasting
+- /content/bible-verses-for-sharing-faith-at-work.html — Bible Verses for Sharing Faith At Work
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
