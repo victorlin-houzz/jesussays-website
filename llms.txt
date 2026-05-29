@@ -156,6 +156,57 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/night-prayer-for-prayer-life.html — Night Prayer for Prayer Life
 - /content/bible-verses-for-fasting.html — Bible Verses for Fasting
 - /content/bible-verses-for-sharing-faith-at-work.html — Bible Verses for Sharing Faith At Work
+- /content/what-would-jesus-say-about-purpose.html — What Would Jesus Say About Purpose?
+- /content/a-prayer-for-knowing-god.html — A Prayer for Knowing God
+- /content/bible-verses-for-holy-spirit.html — Bible Verses for Holy Spirit
+- /content/what-does-the-bible-say-about-rest.html — What Does the Bible Say About Rest?
+- /content/7-day-devotional-for-anxiety.html — 7-Day Devotional for Anxiety
+- /content/bible-verses-and-prayer-for-healing.html — Bible Verses and Prayer for Healing
+- /content/christian-advice-for-love.html — Christian Advice for Love
+- /content/christian-advice-for-depression.html — Christian Advice for Depression
+- /content/confession-prayer-for-fear.html — Confession Prayer for Fear
+- /content/confession-prayer-for-peace.html — Confession Prayer for Peace
+- /content/morning-prayer-for-stress.html — Morning Prayer for Stress
+- /content/morning-prayer-for-hope.html — Morning Prayer for Hope
+- /content/what-would-jesus-say-about-anger.html — What Would Jesus Say About Anger?
+- /content/what-would-jesus-say-about-loss.html — What Would Jesus Say About Loss?
+- /content/what-does-the-bible-say-about-patience.html — What Does the Bible Say About Patience?
+- /content/what-does-the-bible-say-about-temptation.html — What Does the Bible Say About Temptation?
+- /content/daily-devotional-on-doubt.html — Daily Devotional on Doubt
+- /content/night-prayer-for-relationships.html — Night Prayer for Relationships
+- /content/how-to-pray-about-new-faith.html — How to Pray About New Faith
+- /content/morning-prayer-for-prayer-life.html — Morning Prayer for Prayer Life
+- /content/a-prayer-for-fasting.html — A Prayer for Fasting
+- /content/bible-verses-for-lent.html — Bible Verses for Lent
+- /content/a-prayer-for-sharing-faith-at-work.html — A Prayer for Sharing Faith At Work
+- /content/night-prayer-for-purpose.html — Night Prayer for Purpose
+- /content/daily-devotional-on-knowing-god.html — Daily Devotional on Knowing God
+- /content/a-prayer-for-holy-spirit.html — A Prayer for Holy Spirit
+- /content/bible-verses-for-acts.html — Bible Verses for Acts
+- /content/how-to-pray-about-rest.html — How to Pray About Rest
+- /content/questions-christians-ask-about-anxiety.html — Questions Christians Ask About Anxiety
+- /content/7-day-devotional-for-healing.html — 7-Day Devotional for Healing
+- /content/bible-verses-and-prayer-for-love.html — Bible Verses and Prayer for Love
+- /content/bible-verses-and-prayer-for-depression.html — Bible Verses and Prayer for Depression
+- /content/christian-advice-for-fear.html — Christian Advice for Fear
+- /content/christian-advice-for-peace.html — Christian Advice for Peace
+- /content/confession-prayer-for-stress.html — Confession Prayer for Stress
+- /content/confession-prayer-for-hope.html — Confession Prayer for Hope
+- /content/night-prayer-for-anger.html — Night Prayer for Anger
+- /content/night-prayer-for-loss.html — Night Prayer for Loss
+- /content/how-to-pray-about-patience.html — How to Pray About Patience
+- /content/how-to-pray-about-temptation.html — How to Pray About Temptation
+- /content/what-does-the-bible-say-about-doubt.html — What Does the Bible Say About Doubt?
+- /content/morning-prayer-for-relationships.html — Morning Prayer for Relationships
+- /content/what-would-jesus-say-about-new-faith.html — What Would Jesus Say About New Faith?
+- /content/confession-prayer-for-prayer-life.html — Confession Prayer for Prayer Life
+- /content/daily-devotional-on-fasting.html — Daily Devotional on Fasting
+- /content/a-prayer-for-lent.html — A Prayer for Lent
+- /content/bible-verses-for-holy-week.html — Bible Verses for Holy Week
+- /content/daily-devotional-on-sharing-faith-at-work.html — Daily Devotional on Sharing Faith At Work
+- /content/morning-prayer-for-purpose.html — Morning Prayer for Purpose
+- /content/what-does-the-bible-say-about-knowing-god.html — What Does the Bible Say About Knowing God?
+- /content/daily-devotional-on-holy-spirit.html — Daily Devotional on Holy Spirit
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
