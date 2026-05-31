@@ -257,6 +257,56 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/bible-verses-for-holy-thursday.html — Bible Verses for Holy Thursday
 - /content/bible-verses-for-easter-vigil.html — Bible Verses for Easter Vigil
 - /content/how-to-pray-about-sharing-faith-at-work.html — How to Pray About Sharing Faith At Work
+- /content/christian-advice-for-purpose.html — Christian Advice for Purpose
+- /content/what-would-jesus-say-about-knowing-god.html — What Would Jesus Say About Knowing God?
+- /content/how-to-pray-about-holy-spirit.html — How to Pray About Holy Spirit
+- /content/bible-verses-for-baptism.html — Bible Verses for Baptism
+- /content/what-does-the-bible-say-about-acts.html — What Does the Bible Say About Acts?
+- /content/morning-prayer-for-rest.html — Morning Prayer for Rest
+- /content/psalms-for-anxiety.html — Psalms for Anxiety
+- /content/short-prayer-for-healing.html — Short Prayer for Healing
+- /content/scripture-reflection-for-love.html — Scripture Reflection for Love
+- /content/scripture-reflection-for-depression.html — Scripture Reflection for Depression
+- /content/questions-christians-ask-about-fear.html — Questions Christians Ask About Fear
+- /content/questions-christians-ask-about-peace.html — Questions Christians Ask About Peace
+- /content/7-day-devotional-for-stress.html — 7-Day Devotional for Stress
+- /content/7-day-devotional-for-hope.html — 7-Day Devotional for Hope
+- /content/christian-advice-for-anger.html — Christian Advice for Anger
+- /content/christian-advice-for-loss.html — Christian Advice for Loss
+- /content/morning-prayer-for-patience.html — Morning Prayer for Patience
+- /content/morning-prayer-for-temptation.html — Morning Prayer for Temptation
+- /content/night-prayer-for-doubt.html — Night Prayer for Doubt
+- /content/bible-verses-and-prayer-for-relationships.html — Bible Verses and Prayer for Relationships
+- /content/confession-prayer-for-new-faith.html — Confession Prayer for New Faith
+- /content/7-day-devotional-for-prayer-life.html — 7-Day Devotional for Prayer Life
+- /content/what-would-jesus-say-about-fasting.html — What Would Jesus Say About Fasting?
+- /content/how-to-pray-about-lent.html — How to Pray About Lent
+- /content/what-does-the-bible-say-about-holy-week.html — What Does the Bible Say About Holy Week?
+- /content/daily-devotional-on-good-friday.html — Daily Devotional on Good Friday
+- /content/a-prayer-for-holy-thursday.html — A Prayer for Holy Thursday
+- /content/a-prayer-for-easter-vigil.html — A Prayer for Easter Vigil
+- /content/bible-verses-for-rosary.html — Bible Verses for Rosary
+- /content/what-would-jesus-say-about-sharing-faith-at-work.html — What Would Jesus Say About Sharing Faith At Work?
+- /content/bible-verses-and-prayer-for-purpose.html — Bible Verses and Prayer for Purpose
+- /content/night-prayer-for-knowing-god.html — Night Prayer for Knowing God
+- /content/what-would-jesus-say-about-holy-spirit.html — What Would Jesus Say About Holy Spirit?
+- /content/a-prayer-for-baptism.html — A Prayer for Baptism
+- /content/how-to-pray-about-acts.html — How to Pray About Acts
+- /content/confession-prayer-for-rest.html — Confession Prayer for Rest
+- /content/when-you-feel-anxiety-bible-help-for-today.html — When You Feel Anxiety: Bible Help for Today
+- /content/psalms-for-healing.html — Psalms for Healing
+- /content/short-prayer-for-love.html — Short Prayer for Love
+- /content/short-prayer-for-depression.html — Short Prayer for Depression
+- /content/scripture-reflection-for-fear.html — Scripture Reflection for Fear
+- /content/scripture-reflection-for-peace.html — Scripture Reflection for Peace
+- /content/questions-christians-ask-about-stress.html — Questions Christians Ask About Stress
+- /content/questions-christians-ask-about-hope.html — Questions Christians Ask About Hope
+- /content/bible-verses-and-prayer-for-anger.html — Bible Verses and Prayer for Anger
+- /content/bible-verses-and-prayer-for-loss.html — Bible Verses and Prayer for Loss
+- /content/confession-prayer-for-patience.html — Confession Prayer for Patience
+- /content/confession-prayer-for-temptation.html — Confession Prayer for Temptation
+- /content/morning-prayer-for-doubt.html — Morning Prayer for Doubt
+- /content/7-day-devotional-for-relationships.html — 7-Day Devotional for Relationships
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
