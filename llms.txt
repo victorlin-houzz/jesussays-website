@@ -307,6 +307,56 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/confession-prayer-for-temptation.html — Confession Prayer for Temptation
 - /content/morning-prayer-for-doubt.html — Morning Prayer for Doubt
 - /content/7-day-devotional-for-relationships.html — 7-Day Devotional for Relationships
+- /content/christian-advice-for-new-faith.html — Christian Advice for New Faith
+- /content/questions-christians-ask-about-prayer-life.html — Questions Christians Ask About Prayer Life
+- /content/night-prayer-for-fasting.html — Night Prayer for Fasting
+- /content/what-would-jesus-say-about-lent.html — What Would Jesus Say About Lent?
+- /content/how-to-pray-about-holy-week.html — How to Pray About Holy Week
+- /content/what-does-the-bible-say-about-good-friday.html — What Does the Bible Say About Good Friday?
+- /content/daily-devotional-on-holy-thursday.html — Daily Devotional on Holy Thursday
+- /content/daily-devotional-on-easter-vigil.html — Daily Devotional on Easter Vigil
+- /content/a-prayer-for-rosary.html — A Prayer for Rosary
+- /content/night-prayer-for-sharing-faith-at-work.html — Night Prayer for Sharing Faith At Work
+- /content/7-day-devotional-for-purpose.html — 7-Day Devotional for Purpose
+- /content/morning-prayer-for-knowing-god.html — Morning Prayer for Knowing God
+- /content/night-prayer-for-holy-spirit.html — Night Prayer for Holy Spirit
+- /content/daily-devotional-on-baptism.html — Daily Devotional on Baptism
+- /content/what-would-jesus-say-about-acts.html — What Would Jesus Say About Acts?
+- /content/christian-advice-for-rest.html — Christian Advice for Rest
+- /content/when-you-feel-healing-bible-help-for-today.html — When You Feel Healing: Bible Help for Today
+- /content/psalms-for-love.html — Psalms for Love
+- /content/psalms-for-depression.html — Psalms for Depression
+- /content/short-prayer-for-fear.html — Short Prayer for Fear
+- /content/short-prayer-for-peace.html — Short Prayer for Peace
+- /content/scripture-reflection-for-stress.html — Scripture Reflection for Stress
+- /content/scripture-reflection-for-hope.html — Scripture Reflection for Hope
+- /content/7-day-devotional-for-anger.html — 7-Day Devotional for Anger
+- /content/7-day-devotional-for-loss.html — 7-Day Devotional for Loss
+- /content/christian-advice-for-patience.html — Christian Advice for Patience
+- /content/christian-advice-for-temptation.html — Christian Advice for Temptation
+- /content/confession-prayer-for-doubt.html — Confession Prayer for Doubt
+- /content/questions-christians-ask-about-relationships.html — Questions Christians Ask About Relationships
+- /content/bible-verses-and-prayer-for-new-faith.html — Bible Verses and Prayer for New Faith
+- /content/scripture-reflection-for-prayer-life.html — Scripture Reflection for Prayer Life
+- /content/morning-prayer-for-fasting.html — Morning Prayer for Fasting
+- /content/night-prayer-for-lent.html — Night Prayer for Lent
+- /content/what-would-jesus-say-about-holy-week.html — What Would Jesus Say About Holy Week?
+- /content/how-to-pray-about-good-friday.html — How to Pray About Good Friday
+- /content/what-does-the-bible-say-about-holy-thursday.html — What Does the Bible Say About Holy Thursday?
+- /content/what-does-the-bible-say-about-easter-vigil.html — What Does the Bible Say About Easter Vigil?
+- /content/daily-devotional-on-rosary.html — Daily Devotional on Rosary
+- /content/morning-prayer-for-sharing-faith-at-work.html — Morning Prayer for Sharing Faith At Work
+- /content/questions-christians-ask-about-purpose.html — Questions Christians Ask About Purpose
+- /content/confession-prayer-for-knowing-god.html — Confession Prayer for Knowing God
+- /content/morning-prayer-for-holy-spirit.html — Morning Prayer for Holy Spirit
+- /content/what-does-the-bible-say-about-baptism.html — What Does the Bible Say About Baptism?
+- /content/night-prayer-for-acts.html — Night Prayer for Acts
+- /content/bible-verses-and-prayer-for-rest.html — Bible Verses and Prayer for Rest
+- /content/when-you-feel-love-bible-help-for-today.html — When You Feel Love: Bible Help for Today
+- /content/when-you-feel-depression-bible-help-for-today.html — When You Feel Depression: Bible Help for Today
+- /content/psalms-for-fear.html — Psalms for Fear
+- /content/psalms-for-peace.html — Psalms for Peace
+- /content/short-prayer-for-stress.html — Short Prayer for Stress
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
