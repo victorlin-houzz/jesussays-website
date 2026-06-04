@@ -357,6 +357,55 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/psalms-for-fear.html — Psalms for Fear
 - /content/psalms-for-peace.html — Psalms for Peace
 - /content/short-prayer-for-stress.html — Short Prayer for Stress
+- /content/short-prayer-for-hope.html — Short Prayer for Hope
+- /content/questions-christians-ask-about-anger.html — Questions Christians Ask About Anger
+- /content/questions-christians-ask-about-loss.html — Questions Christians Ask About Loss
+- /content/bible-verses-and-prayer-for-patience.html — Bible Verses and Prayer for Patience
+- /content/bible-verses-and-prayer-for-temptation.html — Bible Verses and Prayer for Temptation
+- /content/christian-advice-for-doubt.html — Christian Advice for Doubt
+- /content/scripture-reflection-for-relationships.html — Scripture Reflection for Relationships
+- /content/7-day-devotional-for-new-faith.html — 7-Day Devotional for New Faith
+- /content/short-prayer-for-prayer-life.html — Short Prayer for Prayer Life
+- /content/confession-prayer-for-fasting.html — Confession Prayer for Fasting
+- /content/morning-prayer-for-lent.html — Morning Prayer for Lent
+- /content/night-prayer-for-holy-week.html — Night Prayer for Holy Week
+- /content/what-would-jesus-say-about-good-friday.html — What Would Jesus Say About Good Friday?
+- /content/how-to-pray-about-holy-thursday.html — How to Pray About Holy Thursday
+- /content/how-to-pray-about-easter-vigil.html — How to Pray About Easter Vigil
+- /content/what-does-the-bible-say-about-rosary.html — What Does the Bible Say About Rosary?
+- /content/confession-prayer-for-sharing-faith-at-work.html — Confession Prayer for Sharing Faith At Work
+- /content/scripture-reflection-for-purpose.html — Scripture Reflection for Purpose
+- /content/christian-advice-for-knowing-god.html — Christian Advice for Knowing God
+- /content/confession-prayer-for-holy-spirit.html — Confession Prayer for Holy Spirit
+- /content/how-to-pray-about-baptism.html — How to Pray About Baptism
+- /content/morning-prayer-for-acts.html — Morning Prayer for Acts
+- /content/7-day-devotional-for-rest.html — 7-Day Devotional for Rest
+- /content/when-you-feel-fear-bible-help-for-today.html — When You Feel Fear: Bible Help for Today
+- /content/when-you-feel-peace-bible-help-for-today.html — When You Feel Peace: Bible Help for Today
+- /content/psalms-for-stress.html — Psalms for Stress
+- /content/psalms-for-hope.html — Psalms for Hope
+- /content/scripture-reflection-for-anger.html — Scripture Reflection for Anger
+- /content/scripture-reflection-for-loss.html — Scripture Reflection for Loss
+- /content/7-day-devotional-for-patience.html — 7-Day Devotional for Patience
+- /content/7-day-devotional-for-temptation.html — 7-Day Devotional for Temptation
+- /content/bible-verses-and-prayer-for-doubt.html — Bible Verses and Prayer for Doubt
+- /content/short-prayer-for-relationships.html — Short Prayer for Relationships
+- /content/questions-christians-ask-about-new-faith.html — Questions Christians Ask About New Faith
+- /content/psalms-for-prayer-life.html — Psalms for Prayer Life
+- /content/christian-advice-for-fasting.html — Christian Advice for Fasting
+- /content/confession-prayer-for-lent.html — Confession Prayer for Lent
+- /content/morning-prayer-for-holy-week.html — Morning Prayer for Holy Week
+- /content/night-prayer-for-good-friday.html — Night Prayer for Good Friday
+- /content/what-would-jesus-say-about-holy-thursday.html — What Would Jesus Say About Holy Thursday?
+- /content/what-would-jesus-say-about-easter-vigil.html — What Would Jesus Say About Easter Vigil?
+- /content/how-to-pray-about-rosary.html — How to Pray About Rosary
+- /content/christian-advice-for-sharing-faith-at-work.html — Christian Advice for Sharing Faith At Work
+- /content/short-prayer-for-purpose.html — Short Prayer for Purpose
+- /content/bible-verses-and-prayer-for-knowing-god.html — Bible Verses and Prayer for Knowing God
+- /content/christian-advice-for-holy-spirit.html — Christian Advice for Holy Spirit
+- /content/what-would-jesus-say-about-baptism.html — What Would Jesus Say About Baptism?
+- /content/when-you-feel-stress-bible-help-for-today.html — When You Feel Stress: Bible Help for Today
+- /content/when-you-feel-hope-bible-help-for-today.html — When You Feel Hope: Bible Help for Today
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
