@@ -456,6 +456,56 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/bible-verses-and-prayer-for-holy-week.html — Bible Verses and Prayer for Holy Week
 - /content/christian-advice-for-good-friday.html — Christian Advice for Good Friday
 - /content/confession-prayer-for-holy-thursday.html — Confession Prayer for Holy Thursday
+- /content/confession-prayer-for-easter-vigil.html — Confession Prayer for Easter Vigil
+- /content/questions-christians-ask-about-sharing-faith-at-work.html — Questions Christians Ask About Sharing Faith At Work
+- /content/scripture-reflection-for-knowing-god.html — Scripture Reflection for Knowing God
+- /content/questions-christians-ask-about-holy-spirit.html — Questions Christians Ask About Holy Spirit
+- /content/confession-prayer-for-baptism.html — Confession Prayer for Baptism
+- /content/7-day-devotional-for-acts.html — 7-Day Devotional for Acts
+- /content/psalms-for-patience.html — Psalms for Patience
+- /content/psalms-for-temptation.html — Psalms for Temptation
+- /content/short-prayer-for-doubt.html — Short Prayer for Doubt
+- /content/when-you-feel-new-faith-bible-help-for-today.html — When You Feel New Faith: Bible Help for Today
+- /content/scripture-reflection-for-fasting.html — Scripture Reflection for Fasting
+- /content/questions-christians-ask-about-lent.html — Questions Christians Ask About Lent
+- /content/7-day-devotional-for-holy-week.html — 7-Day Devotional for Holy Week
+- /content/bible-verses-and-prayer-for-good-friday.html — Bible Verses and Prayer for Good Friday
+- /content/christian-advice-for-holy-thursday.html — Christian Advice for Holy Thursday
+- /content/christian-advice-for-easter-vigil.html — Christian Advice for Easter Vigil
+- /content/scripture-reflection-for-sharing-faith-at-work.html — Scripture Reflection for Sharing Faith At Work
+- /content/short-prayer-for-knowing-god.html — Short Prayer for Knowing God
+- /content/scripture-reflection-for-holy-spirit.html — Scripture Reflection for Holy Spirit
+- /content/christian-advice-for-baptism.html — Christian Advice for Baptism
+- /content/questions-christians-ask-about-acts.html — Questions Christians Ask About Acts
+- /content/when-you-feel-patience-bible-help-for-today.html — When You Feel Patience: Bible Help for Today
+- /content/when-you-feel-temptation-bible-help-for-today.html — When You Feel Temptation: Bible Help for Today
+- /content/psalms-for-doubt.html — Psalms for Doubt
+- /content/short-prayer-for-fasting.html — Short Prayer for Fasting
+- /content/scripture-reflection-for-lent.html — Scripture Reflection for Lent
+- /content/questions-christians-ask-about-holy-week.html — Questions Christians Ask About Holy Week
+- /content/7-day-devotional-for-good-friday.html — 7-Day Devotional for Good Friday
+- /content/bible-verses-and-prayer-for-holy-thursday.html — Bible Verses and Prayer for Holy Thursday
+- /content/bible-verses-and-prayer-for-easter-vigil.html — Bible Verses and Prayer for Easter Vigil
+- /content/christian-advice-for-rosary.html — Christian Advice for Rosary
+- /content/short-prayer-for-sharing-faith-at-work.html — Short Prayer for Sharing Faith At Work
+- /content/psalms-for-knowing-god.html — Psalms for Knowing God
+- /content/short-prayer-for-holy-spirit.html — Short Prayer for Holy Spirit
+- /content/bible-verses-and-prayer-for-baptism.html — Bible Verses and Prayer for Baptism
+- /content/scripture-reflection-for-acts.html — Scripture Reflection for Acts
+- /content/when-you-feel-doubt-bible-help-for-today.html — When You Feel Doubt: Bible Help for Today
+- /content/psalms-for-fasting.html — Psalms for Fasting
+- /content/short-prayer-for-lent.html — Short Prayer for Lent
+- /content/scripture-reflection-for-holy-week.html — Scripture Reflection for Holy Week
+- /content/questions-christians-ask-about-good-friday.html — Questions Christians Ask About Good Friday
+- /content/7-day-devotional-for-holy-thursday.html — 7-Day Devotional for Holy Thursday
+- /content/7-day-devotional-for-easter-vigil.html — 7-Day Devotional for Easter Vigil
+- /content/bible-verses-and-prayer-for-rosary.html — Bible Verses and Prayer for Rosary
+- /content/psalms-for-sharing-faith-at-work.html — Psalms for Sharing Faith At Work
+- /content/when-you-feel-knowing-god-bible-help-for-today.html — When You Feel Knowing God: Bible Help for Today
+- /content/psalms-for-holy-spirit.html — Psalms for Holy Spirit
+- /content/7-day-devotional-for-baptism.html — 7-Day Devotional for Baptism
+- /content/short-prayer-for-acts.html — Short Prayer for Acts
+- /content/when-you-feel-fasting-bible-help-for-today.html — When You Feel Fasting: Bible Help for Today
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
