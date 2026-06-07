@@ -506,6 +506,40 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 - /content/7-day-devotional-for-baptism.html — 7-Day Devotional for Baptism
 - /content/short-prayer-for-acts.html — Short Prayer for Acts
 - /content/when-you-feel-fasting-bible-help-for-today.html — When You Feel Fasting: Bible Help for Today
+- /content/psalms-for-lent.html — Psalms for Lent
+- /content/short-prayer-for-holy-week.html — Short Prayer for Holy Week
+- /content/scripture-reflection-for-good-friday.html — Scripture Reflection for Good Friday
+- /content/questions-christians-ask-about-holy-thursday.html — Questions Christians Ask About Holy Thursday
+- /content/questions-christians-ask-about-easter-vigil.html — Questions Christians Ask About Easter Vigil
+- /content/7-day-devotional-for-rosary.html — 7-Day Devotional for Rosary
+- /content/when-you-feel-sharing-faith-at-work-bible-help-for-today.html — When You Feel Sharing Faith At Work: Bible Help for Today
+- /content/when-you-feel-holy-spirit-bible-help-for-today.html — When You Feel Holy Spirit: Bible Help for Today
+- /content/questions-christians-ask-about-baptism.html — Questions Christians Ask About Baptism
+- /content/psalms-for-acts.html — Psalms for Acts
+- /content/when-you-feel-lent-bible-help-for-today.html — When You Feel Lent: Bible Help for Today
+- /content/psalms-for-holy-week.html — Psalms for Holy Week
+- /content/short-prayer-for-good-friday.html — Short Prayer for Good Friday
+- /content/scripture-reflection-for-holy-thursday.html — Scripture Reflection for Holy Thursday
+- /content/scripture-reflection-for-easter-vigil.html — Scripture Reflection for Easter Vigil
+- /content/questions-christians-ask-about-rosary.html — Questions Christians Ask About Rosary
+- /content/scripture-reflection-for-baptism.html — Scripture Reflection for Baptism
+- /content/when-you-feel-acts-bible-help-for-today.html — When You Feel Acts: Bible Help for Today
+- /content/when-you-feel-holy-week-bible-help-for-today.html — When You Feel Holy Week: Bible Help for Today
+- /content/psalms-for-good-friday.html — Psalms for Good Friday
+- /content/short-prayer-for-holy-thursday.html — Short Prayer for Holy Thursday
+- /content/short-prayer-for-easter-vigil.html — Short Prayer for Easter Vigil
+- /content/scripture-reflection-for-rosary.html — Scripture Reflection for Rosary
+- /content/short-prayer-for-baptism.html — Short Prayer for Baptism
+- /content/when-you-feel-good-friday-bible-help-for-today.html — When You Feel Good Friday: Bible Help for Today
+- /content/psalms-for-holy-thursday.html — Psalms for Holy Thursday
+- /content/psalms-for-easter-vigil.html — Psalms for Easter Vigil
+- /content/short-prayer-for-rosary.html — Short Prayer for Rosary
+- /content/psalms-for-baptism.html — Psalms for Baptism
+- /content/when-you-feel-holy-thursday-bible-help-for-today.html — When You Feel Holy Thursday: Bible Help for Today
+- /content/when-you-feel-easter-vigil-bible-help-for-today.html — When You Feel Easter Vigil: Bible Help for Today
+- /content/psalms-for-rosary.html — Psalms for Rosary
+- /content/when-you-feel-baptism-bible-help-for-today.html — When You Feel Baptism: Bible Help for Today
+- /content/when-you-feel-rosary-bible-help-for-today.html — When You Feel Rosary: Bible Help for Today
 ## Primary Intent Coverage
 - Bible verses for anxiety, healing, strength, faith, peace, fear
 - Daily devotional for today, financial stress, forgiveness, purpose
