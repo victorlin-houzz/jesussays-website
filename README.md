@@ -9,6 +9,19 @@ Static content site on GitHub Pages that drives organic Christian search traffic
 
 ---
 
+## Canonical promotion and legal URLs
+
+- Promotion: https://jesussays.app/
+- Privacy Policy: https://jesussays.app/privacy_policy.html
+- Terms of Use: https://jesussays.app/terms_of_use.html
+
+Use these URLs in App Store Connect and all future app marketing. Do not point new legal links to victorlin.us.
+After approving legal changes in the app repository, run `python3 scripts/sync_legal.py ../quotebible` (requires Pandoc), review the Markdown/HTML diff, and publish through a PR. This keeps the in-app documents and public pages aligned without inventing new policy wording during a site update.
+
+The 2.0 screenshot inventory and original checksums are in `docs/screenshots-2.0.json`. Web images are in `assets/screens/2.0/`; full-resolution Apple upload files are preserved in `~/Desktop/JesusSays-2.0-AppStore/` (seven iPhone 6.9-inch images and six iPad 13-inch images). Do not upscale web images for Apple uploads.
+
+Still Waters at `/play/still-waters/` reuses the app's bundled WebGL renderer with accessible browser controls, reduced-motion support, and an unavailable-renderer message. Keep its MIT attribution. It has no remote scripts, tracking, or app backend requests.
+
 ## Architecture
 
 ```

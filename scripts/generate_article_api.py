@@ -256,6 +256,8 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
   <div class="legal">
     <span>© 2026 Jesus Says</span>
     <span class="links">
+      <a href="/privacy_policy.html">Privacy Policy</a>
+      <a href="/terms_of_use.html">Terms of Use</a>
       <a href="mailto:hello@jesussays.app">hello@jesussays.app</a>
     </span>
   </div>

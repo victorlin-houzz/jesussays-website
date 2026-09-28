@@ -1,0 +1,14 @@
+/* The current store captures already include their own device frame and headline. */
+.gallery .g-phone { padding: 0; border: 0; border-radius: 20px; background: transparent; height: auto; box-shadow: none; }
+.gallery .g-phone .scr { height: auto; border-radius: 20px; }
+.gallery .g-phone .scr img { height: auto; display: block; }
+.gallery .g-phone .label { position: static; padding: 16px 4px; }
+.still-preview { display: flex; align-items: center; gap: 7%; padding: 36px; border: 1px solid var(--line); border-radius: 28px; background: var(--paper); overflow: hidden; }
+.still-preview img { width: 44%; max-height: 380px; object-fit: cover; object-position: center 65%; border-radius: 18px; }
+.still-preview > span { display: grid; gap: 20px; }
+.still-preview strong { font: 700 clamp(28px, 4vw, 48px)/1.2 var(--serif); }
+.still-preview .btn { background: var(--ink); color: white; padding: 16px 24px; border-radius: 999px; }
+@media (max-width: 560px) { .still-preview { padding: 20px; gap: 20px; flex-direction: column; align-items: stretch; } .still-preview img { width: 100%; height: 240px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+.gallery .g-phone .label { transform: none; text-align: center; white-space: normal; }
+.gallery .g-phone { aspect-ratio: auto; }

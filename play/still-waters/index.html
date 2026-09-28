@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Still Waters — A quiet moment with Jesus Says</title>
+<meta name="description" content="Touch the water and watch the ink settle. Play Still Waters, a quiet Scripture-inspired moment from Jesus Says, in your browser.">
+<link rel="canonical" href="https://jesussays.app/play/still-waters/">
+<link rel="stylesheet" href="/assets/landing.css"><link rel="stylesheet" href="style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header><a href="/">← Jesus Says</a><a href="https://apps.apple.com/app/id6756906208">Get the app ↗</a></header>
+<main>
+<div class="intro"><span class="eyebrow">A moment to rest</span><h1>Still Waters</h1><p>Touch to drop ink. Drag gently to stir. Nothing to finish.</p></div>
+<div class="water-wrap"><canvas id="water" tabindex="0" role="img" aria-label="Interactive ink on water. Press Enter or Space to add ink, or use the Add ink button."></canvas><blockquote>“Be still, and know that I am God.”<cite>Psalm 46:10 · KJV</cite></blockquote><p id="fallback" hidden>The moving canvas is unavailable in this browser. Stay for a quiet moment with Scripture, or try Still Waters in the app.</p></div>
+<div class="controls" aria-label="Ink controls"><fieldset><legend>Ink colour</legend><button data-ink="0" aria-pressed="false">Charcoal</button><button data-ink="1" aria-pressed="true">Indigo</button><button data-ink="2" aria-pressed="false">Clay</button><button data-ink="3" aria-pressed="false">Forest</button></fieldset><div class="actions"><button id="drop">Add ink</button><button id="drift" aria-pressed="false">Drift</button><button id="pause" aria-pressed="false">Pause motion</button><button id="wash">Wash</button></div></div>
+<p id="status" role="status" aria-live="polite">Choose a colour, then touch the water.</p>
+<p class="next">More quiet moments await: calm the sea in Peace, Be Still and look up in Consider the Heavens. <a href="https://apps.apple.com/app/id6756906208">Discover Be Still in the app →</a></p>
+<noscript><p>Enable JavaScript for the interactive canvas. You can still rest with the verse above.</p></noscript>
+</main><footer><a href="/privacy_policy.html">Privacy Policy</a><a href="/terms_of_use.html">Terms of Use</a><a href="LICENSE.webgl-fluid.txt">Renderer attribution</a></footer>
+<script src="fluid.js"></script><script src="controls.js"></script>
+</body></html>
