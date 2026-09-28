@@ -1,0 +1,125 @@
+{
+  "app_version": "2.0.0",
+  "captured": "2026-09-27",
+  "app_commit": "2ff8487377dc20b5a399ad5c06c68ac83a7dff09",
+  "originals": "Desktop/JesusSays-2.0-AppStore",
+  "screenshots": [
+    {
+      "device": "iphone_6.9",
+      "file": "01_home.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "61c6a186dcfcb35265def6ecfa8fe2dd12109d46c3a0a5b472240de50dc1b4ab"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "02_reveal.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "7ac6d25cb2a56a575c3a36735fa51b3110a9a53172fb867bcd40cbf57c05fd67"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "03_stillwaters.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "2b7c4df92a98ad76d094805739a1c1ba3e8a0d8bc021c60f0b0538085190ec8f"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "04_bible.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "81e1432a748b6d17fc7920941f9520870991513b457a4dc327db8cf22a448a10"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "05_peace.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "cafab2c6da2818b70d7a158206c2eda2c21ab090330de3092614a5649bb43833"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "06_heavens.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "2f253834d3bcd564780bfdb6f7181749e7534290a46d9019fe4fe4cb5776afeb"
+    },
+    {
+      "device": "iphone_6.9",
+      "file": "07_devotion.png",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "f2de3c550acc6adf01a3273951f0db1c1731280601d1b382059c43f7f01b35d5"
+    },
+    {
+      "device": "ipad_13",
+      "file": "01_home.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "620d6ea758a7f814a041189cd851b6b4f80d70ca6af31898865fe9feb560f69c"
+    },
+    {
+      "device": "ipad_13",
+      "file": "02_reveal.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "c4494a8a39b05316910a07aba8cef5a231ab14deed92d643e1efad4d08820167"
+    },
+    {
+      "device": "ipad_13",
+      "file": "03_stillwaters.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "755fea14b87004c1844760b9d89ec31a1caf3f654c857d82cf668aabef1dcdd9"
+    },
+    {
+      "device": "ipad_13",
+      "file": "04_bible.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "1e421997b549b3099eb3d167adb9dd902f38b38aac0652ac8eb9adc99c2d1037"
+    },
+    {
+      "device": "ipad_13",
+      "file": "05_peace.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "de014bf025071aa254661c4a7b8e1f995f8c1c1b62c4eab6f8d6e461dc8adb6a"
+    },
+    {
+      "device": "ipad_13",
+      "file": "06_heavens.png",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "1e1201060a8333d72aa68f32cc96cd050cf2fb0e2dd0cb0a09a8793ddabd31ac"
+    }
+  ]
+}

@@ -550,3 +550,10 @@ Jesus Says is a Christian guidance content website. Primary focus: Bible verse d
 ## Conversion Goal
 Route engaged readers to the Jesus Says iOS app for personalized scripture, voice prayer, and devotional journaling.
 App Store: https://apps.apple.com/us/app/jesus-says-now/id6756906208
+
+## Official app and legal links
+
+- Promotion: https://jesussays.app/
+- Privacy Policy: https://jesussays.app/privacy_policy.html
+- Terms of Use: https://jesussays.app/terms_of_use.html
+- Play Still Waters: https://jesussays.app/play/still-waters/
