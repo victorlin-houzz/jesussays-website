@@ -700,3 +700,12 @@
 .mobile-menu .mm-cta:hover { background: var(--ink-2); color: #fff; }
 body.menu-open { overflow: hidden; }
 @media (min-width: 981px) { .mobile-menu { display: none; } }
+
+/* Leave room for Still Waters in the shared desktop navigation. */
+.nav-links a, .nav-cta { white-space: nowrap; }
+.nav-links a[aria-current="page"] { background: rgba(26,31,74,0.07); color: var(--ink); }
+@media (min-width: 981px) and (max-width: 1180px) {
+  .nav { gap: 12px; }
+  .nav-links { gap: 0; }
+  .nav-links a { padding-inline: 9px; font-size: 13px; }
+}
