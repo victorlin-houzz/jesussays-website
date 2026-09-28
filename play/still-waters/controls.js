@@ -4,19 +4,21 @@
   const canvas = document.getElementById('water');
   const status = document.getElementById('status');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = false, drift = false, ink = 1;
+  let paused = false, drift = true, ink = 1;
   const command = message => renderer.command(message);
   function unavailable() {
     document.getElementById('fallback').hidden = false;
-    document.querySelectorAll('button').forEach(button => button.disabled = true);
+    document.querySelectorAll('.controls button').forEach(button => button.disabled = true);
     canvas.removeAttribute('tabindex');
     status.textContent = 'A quiet moment with Psalm 46:10.';
   }
   if (!renderer || renderer.metrics().events.some(e => e.event === 'failed')) { unavailable(); return; }
   function configure() {
+    document.getElementById('drift').setAttribute('aria-pressed', String(drift && !motion.matches));
     command({type: 'configure', active: !paused && !document.hidden, playing: drift && !motion.matches, reducedMotion: motion.matches, ink, quietBand: [0, .26, true]});
   }
   configure();
+  if (motion.matches) status.textContent = 'Reduced motion is enabled. Add ink for a still pattern.';
   document.querySelectorAll('[data-ink]').forEach(button => button.addEventListener('click', () => {
     ink = Number(button.dataset.ink);
     document.querySelectorAll('[data-ink]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
@@ -38,7 +40,10 @@
     status.textContent = paused ? 'Motion paused.' : 'Motion resumed.';
   });
   document.getElementById('wash').addEventListener('click', () => { command({type: 'clear'}); status.textContent = 'Fresh water. Begin again whenever you like.'; });
-  motion.addEventListener('change', configure);
+  motion.addEventListener('change', () => {
+    configure();
+    status.textContent = motion.matches ? 'Reduced motion is enabled. Add ink for a still pattern.' : 'Touch the water, or let the ink drift.';
+  });
   document.addEventListener('visibilitychange', configure);
   canvas.addEventListener('webglcontextlost', unavailable);
   // Pause pointer input along with animation.

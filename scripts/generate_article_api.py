@@ -131,6 +131,7 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
   <a href="/">Home</a>
   <a href="/#features">Features</a>
+  <a href="/play/still-waters/">Still Waters</a>
   <a href="/content/">Faith Library</a>
   <a href="/#faq">FAQ</a>
   <a class="mm-cta" href="https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=article-menu" rel="nofollow">
@@ -155,6 +156,7 @@ Follow this EXACT structure (SLUG, TODAY, KEYWORD are replaced by the user messa
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="/#features">Features</a>
+      <a href="/play/still-waters/">Still Waters</a>
       <a href="/content/">Faith Library</a>
       <a href="/#faq">FAQ</a>
     </div>
