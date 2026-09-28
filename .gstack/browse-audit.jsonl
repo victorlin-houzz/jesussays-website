@@ -11,11 +11,3 @@
 {"ts":"2026-05-08T22:36:28.035Z","cmd":"js","args":"window.scrollTo(0, 0)","origin":"http://localhost:8091/","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
 {"ts":"2026-05-08T22:36:28.702Z","cmd":"screenshot","args":"/tmp/landing-menu-top.png","origin":"http://localhost:8091/","durationMs":311,"status":"ok","hasCookies":false,"mode":"launched"}
 {"ts":"2026-05-08T22:37:15.493Z","cmd":"screenshot","args":"/tmp/landing-menu-viewport.png --viewport","origin":"http://localhost:8091/","durationMs":41,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:33.800Z","cmd":"viewport","args":"1440x900","origin":"about:blank","durationMs":9,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:33.873Z","cmd":"reload","args":"","origin":"about:blank","durationMs":11,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:33.936Z","cmd":"js","args":"Promise.all([...document.images].map(i=>{i.loading=\"eager\";return i.decode().catch(()=>null)})).then(()=>JSON.stringify({width:innerWidth,scroll:document.documentElement.scrollWidth,broken:[...documen…","origin":"about:blank","durationMs":7,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:33.995Z","cmd":"scroll","args":"#be-still","origin":"about:blank","durationMs":4,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:34.086Z","cmd":"screenshot","args":"--viewport /tmp/jesussays-preview-section.png","origin":"about:blank","durationMs":32,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:34.143Z","cmd":"console","args":"--clear","origin":"about:blank","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:34.276Z","cmd":"goto","args":"http://127.0.0.1:8769/play/still-waters/","origin":"http://127.0.0.1:8769/play/still-waters/","durationMs":80,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-09-28T01:15:34.347Z","cmd":"console","args":"--errors","origin":"http://127.0.0.1:8769/play/still-waters/","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
