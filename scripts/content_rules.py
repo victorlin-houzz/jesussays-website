@@ -11,6 +11,7 @@ import html
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import kjv  # noqa: E402
@@ -112,6 +113,11 @@ def unmatched_inline_quotes(body: str, min_words: int = 6) -> list[str]:
     return out
 
 
+def sentences(text: str) -> list[str]:
+    """Rough sentence split: end punctuation (plus closing quotes) followed by a capitalised word."""
+    return [s for s in re.split(r"(?<=[.!?])[”’\")]*\s+(?=[“‘\"(]?[A-Z0-9_])", text) if s.strip()]
+
+
 def strip_ref(ref: str) -> str:
     ref = strip(ref).replace("KJV", "").replace("(", "").replace(")", "").strip(" ,·")
     return re.sub(r"(\d)[a-c]\b", r"\1", ref)
@@ -128,15 +134,24 @@ def check_body(slug: str, body: str, allowed_slugs: set[str]) -> list[str]:
         problems.append("body must start with the direct-answer <p>")
     else:
         n = len(strip(first.group(1)).split())
-        if not 25 <= n <= 80:
-            problems.append(f"direct answer is {n} words (want 25–80)")
-    faq = re.search(r'<section class="faq">(.*?)</section>\s*$', body, re.S)
-    if not faq:
-        problems.append("body must end with <section class=\"faq\">")
-    else:
-        count = len(re.findall(r"<h3", faq.group(1)))
-        if not 3 <= count <= 7:
-            problems.append(f"FAQ has {count} questions (want 4–6)")
+        if not 40 <= n <= 60:
+            problems.append(f"direct answer is {n} words (want 40–60)")
+    if '<section class="faq">' in body:  # optional; when present it closes the piece
+        faq = re.search(r'<section class="faq">(.*?)</section>\s*$', body, re.S)
+        if not faq:
+            problems.append("FAQ section must be the last element of the body")
+        else:
+            count = len(re.findall(r"<h3", faq.group(1)))
+            if not 3 <= count <= 7:
+                problems.append(f"FAQ has {count} questions (want 3–7)")
+    for para in re.findall(r"<p>(.*?)</p>", body, re.S):
+        n = len(sentences(strip(para)))
+        if n > 6:
+            problems.append(f"paragraph has {n} sentences (max 6): “{strip(para)[:60]}…”")
+    domains = {urlparse(u).netloc.lower().removeprefix("www.") for u in re.findall(r'href="(https?://[^"]+)"', body)}
+    domains.discard("jesussays.app")
+    if len(domains) < 2:
+        problems.append(f"links {len(domains)} external source domain(s); cite at least 2 independent primary sources")
     words = len(strip(body).split())
     if words < 500:
         problems.append(f"only {words} words")

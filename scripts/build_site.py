@@ -33,6 +33,7 @@ from site_analytics import with_analytics
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "_data" / "library.json"
 REDIRECTS = ROOT / "_data" / "redirects.json"
+AUTHOR = ROOT / "_data" / "author.json"
 CONTENT = ROOT / "content"
 SITE = chrome.SITE
 
@@ -60,6 +61,16 @@ CTA_HEADINGS = {
     "relationships": "Bring the people you love to God each day.",
     "compare": "Try Jesus Says for yourself.",
 }
+RELATED_HEADINGS = {
+    "anxiety-fear-peace": "More for anxious days",
+    "hard-seasons": "More for hard seasons",
+    "healing-hope": "More on healing and hope",
+    "prayer-devotion": "More on prayer and devotion",
+    "faith-purpose": "More on faith and the words of Jesus",
+    "confession-forgiveness": "More on confession and forgiveness",
+    "relationships": "More on relationships",
+    "compare": "More app comparisons",
+}
 CTA_BODY = ("Jesus Says: Daily Reflection gives you one verse, one reflection, one prayer, and one step for today. "
             "Speak or type what you're carrying and receive Scripture and a prayer you can return to.")
 CTA_SMALL = "Free on iPhone and iPad · 7 days of full access, then Plus"
@@ -68,6 +79,40 @@ CTA_SMALL = "Free on iPhone and iPad · 7 days of full access, then Plus"
 # ── helpers ──────────────────────────────────────────────────────────────────
 def load_catalog() -> dict:
     return json.loads(CATALOG.read_text(encoding="utf-8"))
+
+
+def load_author() -> dict:
+    return json.loads(AUTHOR.read_text(encoding="utf-8"))
+
+
+def reviewer_of(author: dict) -> dict | None:
+    """The named person who reviews the guides, once `_data/author.json` names one."""
+    r = author.get("reviewer") or {}
+    return r if r.get("name", "").strip() else None
+
+
+def person_node(r: dict) -> dict:
+    node = {
+        "@type": "Person",
+        "@id": f"{SITE}{chrome.AUTHOR_PATH}#reviewer",
+        "name": r["name"].strip(),
+        "url": f"{SITE}{chrome.AUTHOR_PATH}",
+        "worksFor": {"@id": chrome.ORG_ID},
+    }
+    if r.get("job_title"):
+        node["jobTitle"] = r["job_title"]
+    if r.get("same_as"):
+        node["sameAs"] = r["same_as"]
+    return node
+
+
+def byline(author: dict) -> str:
+    team = f'<span>By <a href="{chrome.AUTHOR_PATH}" rel="author">{chrome.esc(author["name"])}</a></span>'
+    how = f'<a href="{chrome.AUTHOR_PATH}#how-we-write">AI-assisted</a>'
+    r = reviewer_of(author)
+    if r:
+        return f'{team}<span>{how}, reviewed by <a href="{chrome.AUTHOR_PATH}#reviewer">{chrome.esc(r["name"].strip())}</a></span>'
+    return f'{team}<span><a href="{chrome.AUTHOR_PATH}#how-we-write">AI-assisted, reviewed by a person</a></span>'
 
 
 def human_date(iso: str) -> str:
@@ -127,16 +172,18 @@ def replace_block(page: str, name: str, block: str) -> str:
 
 
 # ── article pages ────────────────────────────────────────────────────────────
-def render_article(a: dict, body: str, catalog: dict) -> str:
+def render_article(a: dict, body: str, catalog: dict, author: dict) -> str:
     by_slug = {x["slug"]: x for x in catalog["articles"]}
     cats = {c["id"]: c for c in catalog["categories"]}
     cat = cats[a["category"]]
     url = article_url(a["slug"])
     faq = parse_faq(body)
+    reviewer = reviewer_of(author)
 
     graph = [
         chrome.organization_node(),
         chrome.website_node(),
+        *([person_node(reviewer)] if reviewer else []),
         {
             "@type": "Article",
             "@id": f"{url}#article",
@@ -144,7 +191,7 @@ def render_article(a: dict, body: str, catalog: dict) -> str:
             "description": a["description"],
             "datePublished": a["published"],
             "dateModified": a["modified"],
-            "author": {"@id": chrome.ORG_ID},
+            "author": {"@id": person_node(reviewer)["@id"]} if reviewer else {"@id": chrome.ORG_ID},
             "publisher": {"@id": chrome.ORG_ID},
             "image": chrome.OG_IMAGE,
             "mainEntityOfPage": url,
@@ -186,34 +233,36 @@ def render_article(a: dict, body: str, catalog: dict) -> str:
 {chrome.nav_html(current="library")}
 
 <main id="main">
-  <article class="art-page">
-    <a class="art-back" href="/content/">{BACK_SVG} Faith Library</a>
-    <span class="sec-tag">{chrome.esc(a['kind'])}</span>
-    <h1>{chrome.esc(a['h1'])}</h1>
-    <div class="art-meta"><span>By the <a href="/about.html#editorial">Jesus Says team</a></span><span>Updated <time datetime="{a['modified']}">{human_date(a['modified'])}</time></span>{scripture}</div>
-    <div class="art-body">
+  <div class="art-page">
+    <article>
+      <a class="art-back" href="/content/">{BACK_SVG} Faith Library</a>
+      <span class="sec-tag">{chrome.esc(a['kind'])}</span>
+      <h1>{chrome.esc(a['h1'])}</h1>
+      <div class="art-meta">{byline(author)}<span>Updated <time datetime="{a['modified']}">{human_date(a['modified'])}</time></span>{scripture}</div>
+      <div class="art-body">
 {BODY_START}
 {body}
 {BODY_END}
-    </div>
+      </div>
+    </article>
 
-    <section class="app-cta" aria-labelledby="cta-title">
+    <aside class="app-cta" aria-labelledby="cta-title">
       <span class="sec-tag">The Jesus Says app</span>
       <h2 id="cta-title">{CTA_HEADINGS[a['category']]}</h2>
       <p>{CTA_BODY}</p>
       {chrome.app_store_button(campaign)}
       <small>{CTA_SMALL}</small>
-    </section>
+    </aside>
 
     <nav class="art-related" aria-labelledby="related-title">
-      <h2 id="related-title">Keep reading</h2>
+      <h2 id="related-title">{RELATED_HEADINGS[a['category']]}</h2>
       <ul>
 {related}
       </ul>
     </nav>
 
     {still_card()}
-  </article>
+  </div>
 </main>
 
 {chrome.footer_html()}
@@ -225,7 +274,8 @@ def render_article(a: dict, body: str, catalog: dict) -> str:
 
 def still_card() -> str:
     return ('<a class="still-card" href="/play/still-waters/">\n'
-            '      <img src="/assets/screens/2.0/stillwaters.webp" alt="" width="120" height="120" loading="lazy" />\n'
+            '      <img src="/assets/screens/2.0/stillwaters.webp" alt="Still Waters in the Jesus Says app: green, red and blue '
+            'ink swirling on pale water" width="120" height="120" loading="lazy" />\n'
             '      <span><strong>Need a quiet minute?</strong><span>Touch still water, watch the ink settle, and rest with '
             'Psalm 46:10 in Still Waters, a free moment from the app you can try in your browser.</span>'
             '<span class="go">Play Still Waters →</span></span>\n    </a>')
@@ -259,7 +309,7 @@ def render_library(catalog: dict) -> str:
         },
         chrome.breadcrumb_node([("Home", f"{SITE}/"), ("Faith Library", url)]),
     ]
-    head = chrome.head_html(title="Faith Library: Bible Verses, Prayers & Devotionals — Jesus Says",
+    head = chrome.head_html(title="Faith Library: Verses, Prayers & Devotionals — Jesus Says",
                             description=description, canonical=url, json_ld=graph)
     jump = "\n".join(f'        <li><a href="#{c["id"]}">{chrome.esc(c["name"])}</a></li>' for c in catalog["categories"])
     sections = []
@@ -318,13 +368,91 @@ def render_library(catalog: dict) -> str:
 """
 
 
+# ── author page ──────────────────────────────────────────────────────────────
+def render_author(catalog: dict, author: dict) -> str:
+    url = f"{SITE}{chrome.AUTHOR_PATH}"
+    arts = catalog["articles"]
+    reviewer = reviewer_of(author)
+    description = (f"Who writes the {len(arts)} Faith Library guides on jesussays.app, how each guide is drafted, "
+                   "checked against the King James text and reviewed, and how to send a correction.")
+    graph = [
+        chrome.organization_node(),
+        chrome.website_node(),
+        *([person_node(reviewer)] if reviewer else []),
+        {
+            "@type": "ProfilePage",
+            "@id": url,
+            "url": url,
+            "name": "The Jesus Says team",
+            "description": description,
+            "isPartOf": {"@id": chrome.WEBSITE_ID},
+            "mainEntity": {"@id": person_node(reviewer)["@id"] if reviewer else chrome.ORG_ID},
+        },
+        chrome.breadcrumb_node([("Home", f"{SITE}/"), ("Faith Library", f"{SITE}/content/"), ("The Jesus Says team", url)]),
+    ]
+    head = chrome.head_html(title="The Jesus Says Team: Faith Library Authors — Jesus Says",
+                            description=description, canonical=url, og_type="profile", json_ld=graph)
+    reviewer_html = ""
+    if reviewer:
+        role = f", {chrome.esc(reviewer['job_title'])}" if reviewer.get("job_title") else ""
+        bio = f"\n  <p>{chrome.esc(reviewer['bio'])}</p>" if reviewer.get("bio") else ""
+        links = "".join(f'\n    <li><a href="{chrome.esc(u)}" rel="me">{chrome.esc(u)}</a></li>' for u in reviewer.get("same_as", []))
+        links = f"\n  <ul>{links}\n  </ul>" if links else ""
+        reviewer_html = f"""
+  <h2 id="reviewer">Who reviews the guides</h2>
+  <p><strong>{chrome.esc(reviewer['name'].strip())}</strong>{role} reads and approves each guide before it is published or updated.</p>{bio}{links}
+"""
+    lists = []
+    for c in catalog["categories"]:
+        items = "\n".join(f'    <li><a href="/content/{a["slug"]}.html">{chrome.esc(a["h1"])}</a></li>'
+                          for a in arts if a["category"] == c["id"])
+        lists.append(f'  <h3>{chrome.esc(c["name"])}</h3>\n  <ul>\n{items}\n  </ul>')
+    guide_lists = "\n".join(lists)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+{head}
+</head>
+<body>
+{chrome.nav_html(current="library")}
+
+<main id="main" class="page author-page">
+  <span class="sec-tag">Faith Library authors</span>
+  <h1>The Jesus Says team</h1>
+  <p>The Jesus Says team makes <strong>Jesus Says: Daily Reflection</strong>, an iPhone and iPad app for a daily practice with Scripture, and writes the {len(arts)} guides in the <a href="/content/">Faith Library</a>. Every guide on this site is credited to the team.</p>
+{reviewer_html}
+  <h2 id="how-we-write">How the guides are written</h2>
+  <ol>
+    <li><p><strong>One guide for each real question.</strong> Each guide answers a question people bring to Scripture, such as how to pray when they can&rsquo;t sleep or whether anger is a sin. When a guide already answers a question, we improve that guide instead of adding a near-copy.</p></li>
+    <li><p><strong>Drafted with AI writing tools.</strong> Guides are drafted and revised with the help of AI writing tools, working from our written editorial guidelines.</p></li>
+    <li><p><strong>Scripture checked word for word.</strong> Before a guide can be published, a script checks every quotation against the King James text bundled in the app. Verses are read in context, and a guide says so when a popular verse is often misapplied.</p></li>
+    <li><p><strong>Read and approved by a person.</strong> Nothing in the Faith Library is published automatically. A person on the team reads each new guide or update and approves it before it goes live.</p></li>
+    <li><p><strong>Care notes on hard topics.</strong> Guides on depression, grief, anxiety, addiction, illness, and relationships point readers to pastors, counselors, doctors, and crisis lines such as 988.</p></li>
+  </ol>
+  <p>The full rules are in our <a href="/about.html#editorial">editorial standards</a>.</p>
+
+  <h2 id="guides">Guides by the Jesus Says team</h2>
+{guide_lists}
+
+  <h2 id="contact">Corrections and contact</h2>
+  <p>If a guide misquotes a verse, uses one out of context, or says something that seems unkind or unsafe, email <a href="mailto:{chrome.CONTACT_EMAIL}">{chrome.CONTACT_EMAIL}</a>. The team also posts on <a href="{chrome.INSTAGRAM_URL}" rel="me">Instagram</a>, <a href="{chrome.X_URL}" rel="me">X</a>, and <a href="{chrome.TIKTOK_URL}" rel="me">TikTok</a>.</p>
+</main>
+
+{chrome.footer_html()}
+{chrome.SCRIPTS}
+</body>
+</html>
+"""
+
+
 # ── sitemap, llms.txt, redirects ─────────────────────────────────────────────
 STATIC_URLS = [
     ("/", "2026-09-28"),
-    ("/content/", "2026-09-28"),
-    ("/play/still-waters/", "2026-09-28"),
-    ("/download.html", "2026-09-28"),
-    ("/about.html", "2026-09-28"),
+    ("/content/", "2026-09-29"),
+    ("/play/still-waters/", "2026-09-29"),
+    ("/download.html", "2026-09-29"),
+    ("/about.html", "2026-09-29"),
+    ("/author/jesus-says-team/", "2026-09-29"),
     ("/privacy_policy.html", "2026-09-27"),
     ("/terms_of_use.html", "2026-09-27"),
 ]
@@ -363,6 +491,7 @@ def render_llms(catalog: dict) -> str:
         f"- [About the app]({SITE}/download.html): features, screenshots, and pricing",
         f"- [Still Waters]({SITE}/play/still-waters/): a free, quiet ink-on-water moment from the app that runs in the browser",
         f"- [About Jesus Says]({SITE}/about.html): who publishes the site and its editorial standards",
+        f"- [The Jesus Says team]({SITE}{chrome.AUTHOR_PATH}): who writes the Faith Library and how guides are drafted, checked and reviewed",
         "",
         "## Faith Library",
     ]
@@ -429,8 +558,6 @@ def validate(catalog: dict, redirects: dict[str, str], pages: dict[str, str]) ->
         for link in re.findall(r'href="/content/([^"#]+)\.html', body):
             if link not in known:
                 problems.append(f"{slug}: links to /content/{link}.html which is not a live article")
-        if not parse_faq(body):
-            problems.append(f"{slug}: no FAQ section found in body")
     registered = known | set(redirects) | {"index"}
     for path in CONTENT.glob("*.html"):
         if path.stem not in registered:
@@ -449,6 +576,7 @@ def build(ingest: Path | None = None, check: bool = False) -> int:
     """Rebuild everything (or only validate). Returns a process exit code."""
     args = argparse.Namespace(ingest=ingest, check=check)
     catalog = load_catalog()
+    author = load_author()
     redirects = json.loads(REDIRECTS.read_text(encoding="utf-8")) if REDIRECTS.exists() else {}
 
     bodies: dict[str, str] = {}
@@ -483,8 +611,11 @@ def build(ingest: Path | None = None, check: bool = False) -> int:
         CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     for a in catalog["articles"]:
-        (CONTENT / f"{a['slug']}.html").write_text(with_analytics(render_article(a, bodies[a["slug"]], catalog)), encoding="utf-8")
+        (CONTENT / f"{a['slug']}.html").write_text(with_analytics(render_article(a, bodies[a["slug"]], catalog, author)), encoding="utf-8")
     (CONTENT / "index.html").write_text(with_analytics(render_library(catalog)), encoding="utf-8")
+    author_page = ROOT / chrome.AUTHOR_PATH.strip("/") / "index.html"
+    author_page.parent.mkdir(parents=True, exist_ok=True)
+    author_page.write_text(with_analytics(render_author(catalog, author)), encoding="utf-8")
     (ROOT / "sitemap.xml").write_text(render_sitemap(catalog), encoding="utf-8")
     (ROOT / "llms.txt").write_text(render_llms(catalog), encoding="utf-8")
     titles = {a["slug"]: a["h1"] for a in catalog["articles"]}

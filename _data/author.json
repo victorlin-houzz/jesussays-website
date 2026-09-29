@@ -1,0 +1,11 @@
+{
+  "_readme": "Byline and author page for every Faith Library guide (rendered by scripts/build_site.py). The guides are credited to the team. To credit the real person who reviews each guide, fill in `reviewer` with details that person has agreed to publish; the build then names them in every byline and on /author/jesus-says-team/, and marks them up as the Article author (a schema.org Person with url and sameAs). Empty fields are not rendered.",
+  "slug": "jesus-says-team",
+  "name": "the Jesus Says team",
+  "reviewer": {
+    "name": "Victor",
+    "job_title": "",
+    "bio": "",
+    "same_as": []
+  }
+}

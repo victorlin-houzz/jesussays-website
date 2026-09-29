@@ -18,6 +18,7 @@ def site_pages():
     yield from sorted(ROOT.glob('*.html'))
     yield from sorted((ROOT / 'content').rglob('*.html'))
     yield from sorted((ROOT / 'play').rglob('*.html'))
+    yield from sorted((ROOT / 'author').rglob('*.html'))
 
 
 def main() -> int:

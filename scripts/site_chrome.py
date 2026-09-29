@@ -15,8 +15,14 @@ APP_ID = "6756906208"
 APP_NAME = "Jesus Says: Daily Reflection"
 APP_STORE_URL = f"https://apps.apple.com/us/app/jesus-says-daily-reflection/id{APP_ID}"
 OG_IMAGE = f"{SITE}/assets/og-image.png"
-CONTACT_EMAIL = "hello@jesussays.app"
+CONTACT_EMAIL = "jesussays889@gmail.com"
 ORG_ID = f"{SITE}/#organization"
+# Profiles the company runs (listed in HERMES_AGENT.md). Organization.sameAs and the footer use these.
+X_URL = "https://x.com/JesusSaysNow"
+TIKTOK_URL = "https://www.tiktok.com/@jesus.says.now889"
+INSTAGRAM_URL = "https://www.instagram.com/jesus.says.now/"
+SAME_AS = [APP_STORE_URL, X_URL, INSTAGRAM_URL, TIKTOK_URL]
+AUTHOR_PATH = "/author/jesus-says-team/"
 WEBSITE_ID = f"{SITE}/#website"
 
 APPLE_SVG = (
@@ -144,7 +150,11 @@ def footer_html(home: bool = False, campaign_prefix: str = "") -> str:
       <li><a href="/about.html">About &amp; editorial standards</a></li>
       <li><a href="/download.html">About the app</a></li>
       <li><a href="{base}#faq">FAQ</a></li>
+      <li><a href="{AUTHOR_PATH}">Who writes the guides</a></li>
       <li><a href="mailto:{CONTACT_EMAIL}">Contact</a></li>
+      <li><a href="{X_URL}" rel="me">Jesus Says on X</a></li>
+      <li><a href="{INSTAGRAM_URL}" rel="me">Jesus Says on Instagram</a></li>
+      <li><a href="{TIKTOK_URL}" rel="me">Jesus Says on TikTok</a></li>
     </ul>
   </div>
   <div class="legal">
@@ -204,7 +214,7 @@ def organization_node() -> dict:
         "url": f"{SITE}/",
         "logo": OG_IMAGE,
         "email": CONTACT_EMAIL,
-        "sameAs": [APP_STORE_URL],
+        "sameAs": SAME_AS,
     }
 
 

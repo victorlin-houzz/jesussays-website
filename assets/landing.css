@@ -893,6 +893,13 @@ footer.site .footer-h {
 .dl-hero p { font-family: var(--sans); font-size: 18px; line-height: 1.65; max-width: 540px; margin: 0 auto 28px; }
 .dl-note { display: block; margin-top: 16px; font-size: 13px; color: var(--warm-grey); }
 .dl-list li { margin-bottom: 10px; }
+.page li > p { margin: 0; }
+.page h3 { font-family: var(--sans); font-weight: 700; font-size: 17px; color: var(--ink); margin: 1.6rem 0 0.4rem; }
+.page ol { padding-left: 1.3rem; }
+.author-page ol > li { margin-bottom: 0.7rem; }
+.art-body figure.art-shot { margin: 1.8rem auto; max-width: 260px; text-align: center; }
+.art-body figure.art-shot img { width: 100%; height: auto; border-radius: 22px; box-shadow: 0 8px 32px -8px rgba(26,31,74,0.25); }
+.art-body figure.art-shot figcaption { font-family: var(--sans); font-size: 13.5px; line-height: 1.5; color: var(--warm-grey); margin-top: 12px; }
 .dl-screenshots { display: flex; gap: 14px; overflow-x: auto; padding: 8px 2px 20px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
 .dl-screenshots img { height: 420px; width: auto; border-radius: 22px; box-shadow: 0 8px 32px -8px rgba(26,31,74,0.25); scroll-snap-align: start; flex-shrink: 0; }
 @media (max-width: 560px) { .dl-screenshots img { height: 320px; } }

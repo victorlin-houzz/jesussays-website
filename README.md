@@ -27,10 +27,12 @@ download.html, about.html  About the app; About & editorial standards
 play/still-waters/         Still Waters in the browser (WebGL renderer from the app, MIT attribution kept)
 content/<slug>.html        Faith Library articles (generated chrome + hand/AI-edited body)
 content/index.html         Faith Library index (generated)
+author/jesus-says-team/    Author page: who writes the guides, how they are made, every guide (generated)
 content/queue.json         Keyword backlog for new articles ("pending", "covered", "published", "skipped")
 content/opportunities.jsonl  Competitor research backlog (ideas only, not a publishing queue)
 _data/library.json         Catalog of live articles: the single source of truth
 _data/redirects.json       Retired article URL -> live article (redirect stubs are generated)
+_data/author.json          Byline and author page; name the human reviewer here (becomes a schema.org Person)
 assets/landing.css         The one stylesheet for every page
 assets/nav.js              Shared mobile menu and anchor scrolling
 sitemap.xml, llms.txt      Generated from the catalog

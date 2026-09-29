@@ -15,7 +15,7 @@ for name, title in [('privacy_policy', 'Privacy Policy'), ('terms_of_use', 'Term
     rendered = subprocess.check_output([
         'pandoc', str(source), '--from=gfm', '--to=html5', '--standalone',
         f'--template={args.app_repo / "tools/legal-template.html"}',
-        '--metadata', f'title={title} - Jesus Says',
+        '--metadata', f'title={title} — Jesus Says: Daily Reflection',
     ], text=True)
     rendered = rendered.replace('</head>', f'<link rel="canonical" href="https://jesussays.app/{name}.html" />\n<meta name="description" content="{title} for Jesus Says. Read how the app works and how to contact us." />\n</head>')
     rendered = rendered.replace('<main>', '<main>\n<nav aria-label="Legal navigation"><a href="/">Jesus Says home</a> · <a href="/privacy_policy.html">Privacy Policy</a> · <a href="/terms_of_use.html">Terms of Use</a></nav>')

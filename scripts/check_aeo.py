@@ -119,7 +119,8 @@ def check_site_files(catalog: dict, redirects: dict) -> list[str]:
     for old in redirects:
         if f"https://jesussays.app/content/{old}.html" in urls:
             issues.append(f"sitemap lists redirect stub {old}")
-    for page in ["index.html", "download.html", "about.html", "404.html", "play/still-waters/index.html", "content/index.html"]:
+    for page in ["index.html", "download.html", "about.html", "404.html", "play/still-waters/index.html", "content/index.html",
+                 "author/jesus-says-team/index.html"]:
         text = Path(page).read_text(encoding="utf-8")
         if "jesus-says-now" in text:
             issues.append(f"{page}: old App Store slug jesus-says-now")
@@ -130,7 +131,9 @@ def check_site_files(catalog: dict, redirects: dict) -> list[str]:
 
 def check(path: Path) -> list[str]:
     p = PageChecker()
-    p.feed(path.read_text(encoding="utf-8"))
+    text = path.read_text(encoding="utf-8")
+    p.feed(text)
+    has_faq = '<section class="faq">' in text
     issues = []
     if "h1" not in p.tags:
         issues.append("missing <h1>")
@@ -151,11 +154,11 @@ def check(path: Path) -> list[str]:
             issues.append("missing Article dateModified")
         if not p.has_publisher:
             issues.append("missing Article publisher")
-    if "FAQPage" not in p.schema_types:
+    if has_faq and "FAQPage" not in p.schema_types:
         issues.append("missing FAQPage JSON-LD")
     if not p.has_app_store_link:
         issues.append("missing App Store link (jesus-says-daily-reflection)")
-    if not p.has_faq_h2:
+    if has_faq and not p.has_faq_h2:
         issues.append("missing FAQ section h2")
     if p._first_p_words > 80:
         issues.append(f"direct answer too long ({p._first_p_words} words, max 80)")

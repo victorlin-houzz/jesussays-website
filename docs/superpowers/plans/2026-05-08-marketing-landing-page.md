@@ -740,14 +740,14 @@ git commit -m "feat: landing page faith library (SEO links) + FAQ accordion"
     <h5>Company</h5>
     <ul>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="mailto:hello@jesussays.app">Contact</a></li>
+      <li><a href="mailto:jesussays889@gmail.com">Contact</a></li>
       <li><a href="/download.html">About the App</a></li>
     </ul>
   </div>
   <div class="legal">
     <span>© 2026 Jesus Says</span>
     <span class="links">
-      <a href="mailto:hello@jesussays.app">hello@jesussays.app</a>
+      <a href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a>
     </span>
   </div>
 </footer>
