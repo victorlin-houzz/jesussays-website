@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Copy approved app legal Markdown and render the website's permanent URLs."""
 from pathlib import Path
+from site_analytics import with_analytics
 import argparse
 import shutil
 import subprocess
@@ -19,5 +20,5 @@ for name, title in [('privacy_policy', 'Privacy Policy'), ('terms_of_use', 'Term
     rendered = rendered.replace('</head>', f'<link rel="canonical" href="https://jesussays.app/{name}.html" />\n<meta name="description" content="{title} for Jesus Says. Read how the app works and how to contact us." />\n</head>')
     rendered = rendered.replace('<main>', '<main>\n<nav aria-label="Legal navigation"><a href="/">Jesus Says home</a> · <a href="/privacy_policy.html">Privacy Policy</a> · <a href="/terms_of_use.html">Terms of Use</a></nav>')
     shutil.copyfile(source, root / f'{name}.md')
-    (root / f'{name}.html').write_text(rendered)
+    (root / f'{name}.html').write_text(with_analytics(rendered))
     print(f'Updated https://jesussays.app/{name}.html')

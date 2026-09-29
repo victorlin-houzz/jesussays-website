@@ -28,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import site_chrome as chrome  # noqa: E402
+from site_analytics import with_analytics
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "_data" / "library.json"
@@ -482,13 +483,13 @@ def build(ingest: Path | None = None, check: bool = False) -> int:
         CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     for a in catalog["articles"]:
-        (CONTENT / f"{a['slug']}.html").write_text(render_article(a, bodies[a["slug"]], catalog), encoding="utf-8")
-    (CONTENT / "index.html").write_text(render_library(catalog), encoding="utf-8")
+        (CONTENT / f"{a['slug']}.html").write_text(with_analytics(render_article(a, bodies[a["slug"]], catalog)), encoding="utf-8")
+    (CONTENT / "index.html").write_text(with_analytics(render_library(catalog)), encoding="utf-8")
     (ROOT / "sitemap.xml").write_text(render_sitemap(catalog), encoding="utf-8")
     (ROOT / "llms.txt").write_text(render_llms(catalog), encoding="utf-8")
     titles = {a["slug"]: a["h1"] for a in catalog["articles"]}
     for old, new in redirects.items():
-        (CONTENT / f"{old}.html").write_text(render_stub(new, titles[new]), encoding="utf-8")
+        (CONTENT / f"{old}.html").write_text(with_analytics(render_stub(new, titles[new])), encoding="utf-8")
 
     for rel, (home, current) in HAND_PAGES.items():
         path = ROOT / rel
@@ -500,7 +501,7 @@ def build(ingest: Path | None = None, check: bool = False) -> int:
         page = replace_block(page, "footer", chrome.footer_html(home=home, campaign_prefix=prefix))
         if "<!-- site:faq-ld -->" in page:
             page = replace_block(page, "faq-ld", home_faq_ld(page))
-        path.write_text(page, encoding="utf-8")
+        path.write_text(with_analytics(page), encoding="utf-8")
 
     remaining = validate(catalog, redirects, bodies)
     for p in remaining:
