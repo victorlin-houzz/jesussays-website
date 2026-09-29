@@ -1,0 +1,638 @@
+{
+  "categories": [
+    {
+      "id": "anxiety-fear-peace",
+      "name": "Anxiety, fear & peace",
+      "intro": "Scripture and prayer for worried minds, sleepless nights, and pressure at work or with money."
+    },
+    {
+      "id": "hard-seasons",
+      "name": "Grief, depression & hard seasons",
+      "intro": "For dark days, loss, loneliness, and seasons that ask more strength than you have."
+    },
+    {
+      "id": "healing-hope",
+      "name": "Healing & hope",
+      "intro": "Praying for healing honestly, and holding on to hope while you wait."
+    },
+    {
+      "id": "prayer-devotion",
+      "name": "Prayer & daily devotion",
+      "intro": "How to pray, a devotional for today, and a first week of Scripture for new believers."
+    },
+    {
+      "id": "faith-purpose",
+      "name": "Faith, doubt & the words of Jesus",
+      "intro": "Trusting God, wrestling with doubt, and what Jesus himself said about love, truth, and purpose."
+    },
+    {
+      "id": "confession-forgiveness",
+      "name": "Confession, temptation & forgiveness",
+      "intro": "Coming back to God after failure, resisting temptation, and forgiving others."
+    },
+    {
+      "id": "relationships",
+      "name": "Relationships & character",
+      "intro": "Dating, marriage, family, anger, and patience with the people God has put around you."
+    },
+    {
+      "id": "compare",
+      "name": "Compare Christian apps",
+      "intro": "Honest comparisons of Jesus Says with other Christian prayer and Bible apps."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "bible-verses-anxiety",
+      "category": "anxiety-fear-peace",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Anxiety and Worry (KJV)",
+      "h1": "Bible Verses for Anxiety and Worry",
+      "description": "The Bible's clearest verses for anxiety, Philippians 4:6-7 and 1 Peter 5:7, plus whether anxiety is a sin and how to pray Scripture when worry won't stop.",
+      "label": "Bible verses for anxiety",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "what-would-jesus-say-about-fear",
+        "night-prayer-for-sleep-and-anxiety",
+        "bible-verses-about-peace-and-fear"
+      ]
+    },
+    {
+      "slug": "what-would-jesus-say-about-fear",
+      "category": "anxiety-fear-peace",
+      "kind": "Jesus' Words",
+      "title": "What Would Jesus Say About Fear?",
+      "h1": "What Would Jesus Say About Fear?",
+      "description": "What Jesus actually said to frightened people in the Gospels, “Be not afraid,” in its context, whether he is disappointed by our fear, and how to hear it today.",
+      "label": "What Jesus said about fear",
+      "published": "2026-05-25",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-about-peace-and-fear",
+        "bible-verses-anxiety",
+        "jesus-quotes-on-love-mercy-and-truth"
+      ]
+    },
+    {
+      "slug": "bible-verses-about-peace-and-fear",
+      "category": "anxiety-fear-peace",
+      "kind": "Bible Verses",
+      "title": "Bible Verses About Peace When You're Afraid",
+      "h1": "Bible Verses About Peace When You're Afraid",
+      "description": "KJV Bible verses about peace for when fear takes hold: Psalm 56:3, Isaiah 26:3, John 14:27, and how to find God's peace when fear hits.",
+      "label": "Peace when you're afraid",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "what-would-jesus-say-about-fear",
+        "bible-verses-anxiety",
+        "night-prayer-for-sleep-and-anxiety"
+      ]
+    },
+    {
+      "slug": "night-prayer-for-sleep-and-anxiety",
+      "category": "anxiety-fear-peace",
+      "kind": "Prayer",
+      "title": "Night Prayer for Sleep and Anxiety",
+      "h1": "Night Prayer for Sleep and Anxiety",
+      "description": "A short night prayer for when anxiety keeps you awake, drawn from Psalm 4:8 and Psalm 31:5, plus Bible verses for sleep and what to pray when you can't rest.",
+      "label": "Night prayer for sleep",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-anxiety",
+        "morning-prayer-for-protection",
+        "bible-verses-about-peace-and-fear"
+      ]
+    },
+    {
+      "slug": "christian-advice-for-anxiety-at-work",
+      "category": "anxiety-fear-peace",
+      "kind": "Christian Advice",
+      "title": "Christian Advice for Anxiety at Work and Burnout",
+      "h1": "Christian Advice for Anxiety at Work and Burnout",
+      "description": "Christian advice for work stress and burnout: where your worth comes from (Colossians 3:23-24), short prayers for the workday, and why setting limits is biblical.",
+      "label": "Anxiety at work",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-job-loss-and-unemployment",
+        "bible-verses-anxiety",
+        "what-would-jesus-say-about-purpose"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-anxiety-about-money",
+      "category": "anxiety-fear-peace",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Anxiety About Money",
+      "h1": "Bible Verses for Anxiety About Money",
+      "description": "Bible verses for money worries, from Matthew 6:31-33 to Hebrews 13:5, with honest help for praying about bills and why trusting God still includes planning.",
+      "label": "Worry about money",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-job-loss-and-unemployment",
+        "bible-verses-anxiety",
+        "bible-verses-about-faith-and-trust"
+      ]
+    },
+    {
+      "slug": "prayer-for-depression-and-hopelessness",
+      "category": "hard-seasons",
+      "kind": "Prayer",
+      "title": "A Prayer for Depression and Hopelessness",
+      "h1": "A Prayer for Depression and Hopelessness",
+      "description": "A gentle prayer for depression and hopelessness, how to pray when you're too tired to pray, and why seeking help is part of faith, not a failure of it.",
+      "label": "Prayer for hopelessness",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-depression",
+        "short-prayer-for-hope",
+        "bible-verses-for-loneliness-and-isolation"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-depression",
+      "category": "hard-seasons",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Depression and Dark Days",
+      "h1": "Bible Verses for Depression",
+      "description": "KJV Bible verses for depression, from Psalm 34:18 to Romans 8:38-39, why Psalm 88 is in the Bible, and why depression is not a sign of weak faith.",
+      "label": "Verses for depression",
+      "published": "2026-05-21",
+      "modified": "2026-09-28",
+      "related": [
+        "prayer-for-depression-and-hopelessness",
+        "bible-verses-for-strength-hard-times",
+        "short-prayer-for-hope"
+      ]
+    },
+    {
+      "slug": "questions-christians-ask-about-loss",
+      "category": "hard-seasons",
+      "kind": "Christian Advice",
+      "title": "Grief and Loss: Questions Christians Ask",
+      "h1": "Grief and Loss: Questions Christians Ask",
+      "description": "Honest, Scripture-based answers for grief: is it wrong for a Christian to grieve, why God let this happen, how to pray through loss, and how to help others.",
+      "label": "Grief and loss",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-strength-hard-times",
+        "bible-verses-for-loneliness-and-isolation",
+        "short-prayer-for-hope"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-loneliness-and-isolation",
+      "category": "hard-seasons",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Loneliness and Isolation",
+      "h1": "Bible Verses for Loneliness and Isolation",
+      "description": "Bible verses for loneliness, including Psalm 139:7-10 and Isaiah 49:15-16, on God's nearness and his gift of people, plus how to pray when you feel alone.",
+      "label": "When you feel alone",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "prayer-for-depression-and-hopelessness",
+        "questions-christians-ask-about-loss",
+        "what-would-jesus-say-about-fear"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-strength-hard-times",
+      "category": "hard-seasons",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Strength in Hard Times",
+      "h1": "Bible Verses for Strength in Hard Times",
+      "description": "Bible verses for strength when you're worn out: Isaiah 40:29-31, 2 Corinthians 12:9, Psalm 73:26, and what Philippians 4:13 really means in a hard season.",
+      "label": "Strength in hard times",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "short-prayer-for-hope",
+        "bible-verses-for-depression",
+        "bible-verses-and-prayer-for-patience"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-job-loss-and-unemployment",
+      "category": "hard-seasons",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Job Loss and Unemployment",
+      "h1": "Bible Verses for Job Loss and Unemployment",
+      "description": "Bible verses for job loss that promise God's care, not a quick fix: Matthew 6:32, Philippians 4:6-7, and help praying through a job search when you feel forgotten.",
+      "label": "After a job loss",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-anxiety-about-money",
+        "christian-advice-for-anxiety-at-work",
+        "what-would-jesus-say-about-purpose"
+      ]
+    },
+    {
+      "slug": "prayer-for-healing",
+      "category": "healing-hope",
+      "kind": "Prayer",
+      "title": "A Prayer for Healing with Bible Verses",
+      "h1": "A Prayer for Healing",
+      "description": "A prayer for healing for yourself or someone you love, grounded in James 5:14-15, with a daily prayer rhythm and honest help for when healing doesn't come.",
+      "label": "A prayer for healing",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-healing",
+        "short-prayer-for-hope",
+        "bible-verses-for-strength-hard-times"
+      ]
+    },
+    {
+      "slug": "bible-verses-for-healing",
+      "category": "healing-hope",
+      "kind": "Bible Verses",
+      "title": "Bible Verses for Healing (KJV) and How to Pray Them",
+      "h1": "Bible Verses for Healing",
+      "description": "Comforting Bible verses for healing, like Jeremiah 17:14 and Psalm 147:3, with honest answers on whether God heals every sickness and seeing a doctor.",
+      "label": "Verses for healing",
+      "published": "2026-05-21",
+      "modified": "2026-09-28",
+      "related": [
+        "prayer-for-healing",
+        "short-prayer-for-hope",
+        "bible-verses-for-depression"
+      ]
+    },
+    {
+      "slug": "short-prayer-for-hope",
+      "category": "healing-hope",
+      "kind": "Prayer",
+      "title": "A Short Prayer for Hope",
+      "h1": "A Short Prayer for Hope",
+      "description": "A one-minute prayer for hope, short prayers for hard moments, what the Bible means by hope, and what to do when you pray for hope and still feel hopeless.",
+      "label": "A short prayer for hope",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-for-strength-hard-times",
+        "prayer-for-depression-and-hopelessness",
+        "prayer-for-healing"
+      ]
+    },
+    {
+      "slug": "how-to-pray-according-to-the-bible",
+      "category": "prayer-devotion",
+      "kind": "Prayer",
+      "title": "How to Pray According to the Bible: The Lord’s Prayer",
+      "h1": "How to Pray According to the Bible",
+      "description": "How to pray according to the Bible, with the Lord’s Prayer in Matthew 6 as a model, KJV verses, simple habits, a short prayer, and answers to common questions.",
+      "label": "How to pray according to the Bible",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "daily-devotional-today",
+        "morning-prayer-for-protection",
+        "confession-prayer-guide"
+      ]
+    },
+    {
+      "slug": "daily-devotional-today",
+      "category": "prayer-devotion",
+      "kind": "Devotional",
+      "title": "Daily Devotional for Today: A 5-Minute Devotional",
+      "h1": "Daily Devotional for Today",
+      "description": "A five-minute daily devotional for today: one KJV passage from Lamentations 3, a short reflection, a written prayer, one step, and a week of readings.",
+      "label": "Daily devotional for today",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "how-to-pray-according-to-the-bible",
+        "7-day-devotional-for-new-faith",
+        "jesus-quotes-on-love-mercy-and-truth"
+      ]
+    },
+    {
+      "slug": "morning-prayer-for-protection",
+      "category": "prayer-devotion",
+      "kind": "Prayer",
+      "title": "Morning Prayer for Protection: Psalm 91 and Psalm 121",
+      "h1": "Morning Prayer for Protection",
+      "description": "A morning prayer for protection with KJV verses from Psalm 121, Psalm 91, and Ephesians 6, what Psalm 91 does and doesn’t promise, and steps for each day.",
+      "label": "Morning prayer for protection",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "night-prayer-for-sleep-and-anxiety",
+        "how-to-pray-according-to-the-bible",
+        "what-would-jesus-say-about-fear"
+      ]
+    },
+    {
+      "slug": "7-day-devotional-for-new-faith",
+      "category": "prayer-devotion",
+      "kind": "Devotional",
+      "title": "7-Day Devotional for New Believers and New Christians",
+      "h1": "A 7-Day Devotional for New Believers",
+      "description": "A simple 7-day devotional for new believers and new Christians: one Bible passage, a short reflection, and a prayer or next step for each day of the week.",
+      "label": "7-Day Devotional for New Believers",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "how-to-pray-according-to-the-bible",
+        "christian-advice-for-doubt",
+        "daily-devotional-today"
+      ]
+    },
+    {
+      "slug": "bible-verses-about-faith-and-trust",
+      "category": "faith-purpose",
+      "kind": "Bible Verses",
+      "title": "Bible Verses About Faith and Trust in God",
+      "h1": "Bible Verses About Faith and Trust in God",
+      "description": "KJV Bible verses about faith and trust in God, what they mean, and practical ways to keep trusting God when you feel afraid or out of control.",
+      "label": "Bible Verses About Faith and Trust",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "christian-advice-for-doubt",
+        "bible-verses-for-anxiety-about-money",
+        "what-would-jesus-say-about-purpose"
+      ]
+    },
+    {
+      "slug": "christian-advice-for-doubt",
+      "category": "faith-purpose",
+      "kind": "Christian Advice",
+      "title": "Doubting God? Christian Advice for Seasons of Doubt",
+      "h1": "Doubting God? Christian Advice for Seasons of Doubt",
+      "description": "Is it a sin to doubt God? What the Bible says about doubt, how Jesus treated doubters like Thomas and Peter, and practical steps and a prayer for doubt.",
+      "label": "Christian Advice for Doubt",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-about-faith-and-trust",
+        "7-day-devotional-for-new-faith",
+        "how-to-pray-according-to-the-bible"
+      ]
+    },
+    {
+      "slug": "what-would-jesus-say-about-purpose",
+      "category": "faith-purpose",
+      "kind": "Jesus' Words",
+      "title": "What Would Jesus Say About Your Purpose?",
+      "h1": "What Would Jesus Say About Your Purpose?",
+      "description": "Jesus' words on purpose and calling, starting with “Follow me,” whether God has a specific plan for your life, and how to find your purpose as a Christian.",
+      "label": "Finding your purpose",
+      "published": "2026-05-28",
+      "modified": "2026-09-28",
+      "related": [
+        "jesus-quotes-on-love-mercy-and-truth",
+        "christian-advice-for-anxiety-at-work",
+        "bible-verses-about-faith-and-trust"
+      ]
+    },
+    {
+      "slug": "jesus-quotes-on-love-mercy-and-truth",
+      "category": "faith-purpose",
+      "kind": "Jesus' Words",
+      "title": "What Jesus Said About Love, Mercy, and Truth",
+      "h1": "Jesus Quotes on Love, Mercy, and Truth",
+      "description": "Jesus' own words on love, mercy, and truth from the Gospels in the KJV, with short context for each and how the three belong together in his teaching.",
+      "label": "Jesus on love, mercy & truth",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "what-would-jesus-say-about-fear",
+        "love-and-forgiveness",
+        "what-would-jesus-say-about-purpose"
+      ]
+    },
+    {
+      "slug": "confession-prayer-guide",
+      "category": "confession-forgiveness",
+      "kind": "Confession",
+      "title": "Confession Prayer Guide: How to Pray Psalm 51",
+      "h1": "Confession Prayer Guide: Praying Psalm 51",
+      "description": "How to pray a confession prayer with Psalm 51: KJV verses, simple steps, a written prayer, confession before fasting, and notes for Catholic and Protestant readers.",
+      "label": "Confession prayer guide (Psalm 51)",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "confession-prayer-after-failure",
+        "how-to-pray-according-to-the-bible",
+        "love-and-forgiveness"
+      ]
+    },
+    {
+      "slug": "confession-prayer-after-failure",
+      "category": "confession-forgiveness",
+      "kind": "Confession",
+      "title": "Confession Prayer After Failure: Guilt, Shame, Grace",
+      "h1": "A Confession Prayer After Failure",
+      "description": "A confession prayer after failure: the difference between guilt and shame, Psalm 32, 1 John 1:9, how Jesus restored Peter in John 21, and steps to begin again.",
+      "label": "Confession prayer after failure",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "confession-prayer-guide",
+        "bible-verses-and-prayer-for-temptation",
+        "short-prayer-for-hope"
+      ]
+    },
+    {
+      "slug": "confession-prayer-for-addiction-recovery",
+      "category": "confession-forgiveness",
+      "kind": "Confession",
+      "title": "Confession Prayer for Addiction Recovery",
+      "h1": "A Confession Prayer for Addiction Recovery",
+      "description": "A confession prayer for addiction recovery, with KJV verses, simple steps, help after a relapse, and where to find support, including the SAMHSA helpline.",
+      "label": "Confession prayer for addiction recovery",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "bible-verses-and-prayer-for-temptation",
+        "confession-prayer-after-failure",
+        "bible-verses-for-strength-hard-times"
+      ]
+    },
+    {
+      "slug": "bible-verses-and-prayer-for-temptation",
+      "category": "confession-forgiveness",
+      "kind": "Bible Verses",
+      "title": "Bible Verses and a Prayer for Temptation",
+      "h1": "Bible Verses and a Prayer for Temptation",
+      "description": "Bible verses for temptation, including 1 Corinthians 10:13 and how Jesus resisted in the wilderness, plus a prayer for when temptation hits right now.",
+      "label": "Resisting temptation",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "confession-prayer-for-addiction-recovery",
+        "confession-prayer-after-failure",
+        "bible-verses-and-prayer-for-patience"
+      ]
+    },
+    {
+      "slug": "daily-devotional-on-forgiveness",
+      "category": "confession-forgiveness",
+      "kind": "Devotional",
+      "title": "Daily Devotional on Forgiveness When It Still Hurts",
+      "h1": "A Daily Devotional on Forgiveness When the Hurt Is Still Raw",
+      "description": "A devotional for forgiving someone who hurt you when the pain is fresh: KJV readings, honest steps for today, a prayer, and when reconciliation isn't safe.",
+      "label": "Devotional: forgiving when it hurts",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "love-and-forgiveness",
+        "christian-advice-for-relationships",
+        "questions-christians-ask-about-anger"
+      ]
+    },
+    {
+      "slug": "love-and-forgiveness",
+      "category": "confession-forgiveness",
+      "kind": "Bible Verses",
+      "title": "What the Bible Says About Love and Forgiveness",
+      "h1": "What the Bible Says About Love and Forgiveness",
+      "description": "What the Bible teaches about love and forgiveness: 1 Corinthians 13, seventy times seven, Ephesians 4:32, and loving enemies in Luke 6, in the KJV.",
+      "label": "Love and forgiveness in the Bible",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "daily-devotional-on-forgiveness",
+        "jesus-quotes-on-love-mercy-and-truth",
+        "prayer-for-family-and-marriage"
+      ]
+    },
+    {
+      "slug": "christian-advice-for-relationships",
+      "category": "relationships",
+      "kind": "Christian Advice",
+      "title": "Christian Advice for Relationships: Dating and Conflict",
+      "h1": "Christian Advice for Relationships",
+      "description": "Biblical advice for relationships: KJV verses on listening and speech, Christian dating, handling conflict, healthy boundaries, and praying over a relationship.",
+      "label": "Christian advice for relationships",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "prayer-for-family-and-marriage",
+        "love-and-forgiveness",
+        "questions-christians-ask-about-anger"
+      ]
+    },
+    {
+      "slug": "prayer-for-family-and-marriage",
+      "category": "relationships",
+      "kind": "Prayer",
+      "title": "Prayer for Family and Marriage, With Bible Verses",
+      "h1": "A Prayer for Family and Marriage",
+      "description": "A written prayer for your family and marriage, KJV verses to pray, simple steps for praying for a spouse or children, and what to do if home isn't safe.",
+      "label": "Prayer for family and marriage",
+      "published": "2026-05-08",
+      "modified": "2026-09-28",
+      "related": [
+        "christian-advice-for-relationships",
+        "daily-devotional-on-forgiveness",
+        "bible-verses-and-prayer-for-patience"
+      ]
+    },
+    {
+      "slug": "questions-christians-ask-about-anger",
+      "category": "relationships",
+      "kind": "Christian Advice",
+      "title": "Is Anger a Sin? What the Bible Says About Anger",
+      "h1": "Is Anger a Sin? What the Bible Says About Anger",
+      "description": "Is anger a sin? Ephesians 4:26, James 1:19-20, and Jesus in the temple show when anger is right, when it becomes sin, and how to handle it without harm.",
+      "label": "Is anger a sin?",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "daily-devotional-on-forgiveness",
+        "bible-verses-and-prayer-for-patience",
+        "christian-advice-for-relationships"
+      ]
+    },
+    {
+      "slug": "bible-verses-and-prayer-for-patience",
+      "category": "relationships",
+      "kind": "Bible Verses",
+      "title": "Bible Verses and a Prayer for Patience",
+      "h1": "Bible Verses and a Prayer for Patience",
+      "description": "What the Bible says about patience while you wait on God and with difficult people, with KJV verses like Psalm 37:7 and a simple prayer for patience.",
+      "label": "Patience while you wait",
+      "published": "2026-06-03",
+      "modified": "2026-09-28",
+      "related": [
+        "questions-christians-ask-about-anger",
+        "bible-verses-for-strength-hard-times",
+        "bible-verses-about-faith-and-trust"
+      ]
+    },
+    {
+      "slug": "best-christian-prayer-apps",
+      "category": "compare",
+      "kind": "App Comparison",
+      "title": "Best Christian Prayer Apps in 2026: An Honest Comparison",
+      "h1": "Best Christian Prayer Apps in 2026: An Honest Comparison",
+      "description": "Hallow, Glorify, YouVersion, and Jesus Says compared honestly: who each Christian prayer app suits, what it costs, and where each is the better choice.",
+      "label": "Best Christian prayer apps",
+      "published": "2026-05-09",
+      "modified": "2026-09-28",
+      "related": [
+        "jesus-says-vs-hallow",
+        "jesus-says-vs-glorify",
+        "jesus-says-vs-youversion"
+      ]
+    },
+    {
+      "slug": "jesus-says-vs-hallow",
+      "category": "compare",
+      "kind": "App Comparison",
+      "title": "Jesus Says vs Hallow: Which Prayer App Fits You?",
+      "h1": "Jesus Says vs Hallow: Which Prayer App Fits You?",
+      "description": "An honest comparison of Jesus Says and Hallow: audio-guided Catholic prayer versus a short daily Scripture reflection, with features, cost, and devices.",
+      "label": "Jesus Says vs Hallow",
+      "published": "2026-05-09",
+      "modified": "2026-09-28",
+      "related": [
+        "best-christian-prayer-apps",
+        "jesus-says-vs-glorify",
+        "jesus-says-vs-youversion"
+      ]
+    },
+    {
+      "slug": "jesus-says-vs-glorify",
+      "category": "compare",
+      "kind": "App Comparison",
+      "title": "Jesus Says vs Glorify: Which Devotional App Fits You?",
+      "h1": "Jesus Says vs Glorify: Which Devotional App Fits You?",
+      "description": "Jesus Says and Glorify compared honestly: a guided devotional routine with worship music versus a short daily Scripture reflection and prayer app.",
+      "label": "Jesus Says vs Glorify",
+      "published": "2026-05-09",
+      "modified": "2026-09-28",
+      "related": [
+        "best-christian-prayer-apps",
+        "jesus-says-vs-hallow",
+        "jesus-says-vs-youversion"
+      ]
+    },
+    {
+      "slug": "jesus-says-vs-youversion",
+      "category": "compare",
+      "kind": "App Comparison",
+      "title": "Jesus Says vs YouVersion Bible App: Honest Comparison",
+      "h1": "Jesus Says vs YouVersion Bible App: An Honest Comparison",
+      "description": "YouVersion's free Bible App and Jesus Says compared: Bible versions, reading plans, prayer, community, cost, and when each app is the better choice.",
+      "label": "Jesus Says vs YouVersion",
+      "published": "2026-05-09",
+      "modified": "2026-09-28",
+      "related": [
+        "best-christian-prayer-apps",
+        "jesus-says-vs-hallow",
+        "jesus-says-vs-glorify"
+      ]
+    }
+  ]
+}

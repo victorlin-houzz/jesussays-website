@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Validate content pages meet AEO requirements. Exit 1 if any fail."""
+"""Validate Faith Library pages: AEO structure, editorial quality, and site registration.
+
+Checks every article listed in _data/library.json for search/answer-engine metadata,
+then applies the editorial rules in scripts/content_rules.py (verbatim KJV quotes,
+banned positioning, care notes, near-duplicate text) and confirms that every file in
+content/ is either a catalog article, a registered redirect stub, or the index.
+Exit 1 if anything fails.
+"""
 import json
 import sys
 import xml.etree.ElementTree as ET
@@ -58,7 +65,7 @@ class PageChecker(HTMLParser):
             self.has_og_image = True
         elif tag == "meta" and attrs_d.get("name") == "twitter:card" and attrs_d.get("content"):
             self.has_twitter_card = True
-        elif tag == "a" and "apps.apple.com/us/app/jesus-says-now" in attrs_d.get("href", ""):
+        elif tag == "a" and "apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208" in attrs_d.get("href", ""):
             self.has_app_store_link = True
         elif tag == "script" and attrs_d.get("type") == "application/ld+json":
             self._in_script_ld = True
@@ -98,24 +105,26 @@ class PageChecker(HTMLParser):
             self._first_p_words += len(data.split())
 
 
-def check_site_files() -> list[str]:
+def check_site_files(catalog: dict, redirects: dict) -> list[str]:
     issues = []
     if not Path("assets/og-image.png").exists():
-        issues.append("missing assets/og-image.png referenced by homepage")
-
-    sitemap = ET.parse("sitemap.xml")
+        issues.append("missing assets/og-image.png referenced by every page")
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    urls = [loc.text for loc in sitemap.findall("s:url/s:loc", ns)]
-    if "https://jesussays.app/content/index.html" in urls:
-        issues.append("sitemap lists non-canonical /content/index.html")
+    urls = {loc.text for loc in ET.parse("sitemap.xml").findall("s:url/s:loc", ns)}
     if "https://jesussays.app/content/" not in urls:
         issues.append("sitemap missing canonical /content/ URL")
-    if "https://jesussays.app/content/keyword-clusters.html" in urls:
-        issues.append("sitemap lists internal keyword-clusters page")
-
-    keyword_page = Path("content/keyword-clusters.html")
-    if keyword_page.exists() and "noindex" not in keyword_page.read_text(encoding="utf-8").lower():
-        issues.append("keyword-clusters page is indexable")
+    for a in catalog["articles"]:
+        if f"https://jesussays.app/content/{a['slug']}.html" not in urls:
+            issues.append(f"sitemap missing {a['slug']}")
+    for old in redirects:
+        if f"https://jesussays.app/content/{old}.html" in urls:
+            issues.append(f"sitemap lists redirect stub {old}")
+    for page in ["index.html", "download.html", "about.html", "404.html", "play/still-waters/index.html", "content/index.html"]:
+        text = Path(page).read_text(encoding="utf-8")
+        if "jesus-says-now" in text:
+            issues.append(f"{page}: old App Store slug jesus-says-now")
+        if "apple-itunes-app" not in text:
+            issues.append(f"{page}: missing Smart App Banner meta")
     return issues
 
 
@@ -145,7 +154,7 @@ def check(path: Path) -> list[str]:
     if "FAQPage" not in p.schema_types:
         issues.append("missing FAQPage JSON-LD")
     if not p.has_app_store_link:
-        issues.append("missing App Store link (jesus-says-now)")
+        issues.append("missing App Store link (jesus-says-daily-reflection)")
     if not p.has_faq_h2:
         issues.append("missing FAQ section h2")
     if p._first_p_words > 80:
@@ -155,27 +164,43 @@ def check(path: Path) -> list[str]:
     return issues
 
 
-if __name__ == "__main__":
-    skip = {"index.html", "keyword-clusters.html"}
-    pages = sorted(p for p in Path("content").glob("*.html") if p.name not in skip)
+def main() -> int:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import build_site
+    import content_rules
+
+    catalog = build_site.load_catalog()
+    redirects = json.loads(build_site.REDIRECTS.read_text(encoding="utf-8"))
+    allowed = {a["slug"] for a in catalog["articles"]}
     failed = 0
-    site_issues = check_site_files()
-    if site_issues:
-        print("FAIL  site files")
-        for issue in site_issues:
-            print(f"      • {issue}")
-        failed += 1
-    else:
-        print("PASS  site files")
-    for page in pages:
-        issues = check(page)
-        status = "PASS" if not issues else "FAIL"
-        print(f"{status}  {page.name}")
+
+    def report(label: str, issues: list[str]) -> None:
+        nonlocal failed
+        print(f"{'PASS' if not issues else 'FAIL'}  {label}")
         for issue in issues:
             print(f"      • {issue}")
-        if issues:
-            failed += 1
-    total = len(pages)
-    page_failures = sum(1 for page in pages if check(page))
-    print(f"\n{total - page_failures}/{total} pages pass AEO checks.")
-    sys.exit(1 if failed else 0)
+        failed += bool(issues)
+
+    bodies = {}
+    for a in catalog["articles"]:
+        path = Path("content") / f"{a['slug']}.html"
+        if not path.exists():
+            report(path.name, ["file missing"])
+            continue
+        page = path.read_text(encoding="utf-8")
+        body = build_site.extract_body(page)
+        bodies[a["slug"]] = body
+        report(path.name, check(path) + content_rules.check_body(a["slug"], body, allowed))
+
+    pages = {a["slug"]: bodies.get(a["slug"], "") for a in catalog["articles"]}
+    report("site registration and links", build_site.validate(catalog, redirects, pages))
+    report("site files", check_site_files(catalog, redirects))
+    report("near-duplicate content", content_rules.near_duplicates(bodies))
+
+    total = len(catalog["articles"])
+    print(f"\n{total} articles, {len(redirects)} redirect stubs checked.")
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

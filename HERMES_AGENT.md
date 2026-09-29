@@ -1,275 +1,66 @@
-# Hermes Agent — Jesus Says Daily Publishing Loop
+# Hermes Agent — Jesus Says content playbook
 
-This document is the complete playbook for the Hermes automated agent. Run it as a daily cron job. It operates the Jesus Says content machine end-to-end: article generation, queue maintenance, keyword research, and cross-platform content output.
+This playbook is for the automated Hermes agent that helps maintain jesussays.app and its social channels.
 
-**Mission:** Maximize organic traffic from Google/AI search → Jesus Says Now iOS app installs → paywall conversion.
+**Mission:** help people find the iPhone and iPad app **Jesus Says: Daily Reflection** by keeping a small,
+trustworthy Faith Library, promoting Still Waters, and turning existing articles into social posts. Quality over
+volume, always.
 
-**Channels:**
+**Hard rules**
+- Never publish directly to `main`. Every site change goes through a pull request that a person merges.
+- Never add more than **one** new article per week, and only for a question no live article already answers.
+- Never create pages by swapping keywords into a template. In 2026 this produced ~470 spam-like pages that had to
+  be deleted (see `docs/reports/2026-09-28-site-audit.md`).
+- Follow `docs/editorial-guidelines.md`: KJV quotes word for word, care notes on sensitive topics, no
+  "AI-powered"/chat/clinical/wellness framing of the app, no claims that reflections stay on the device.
+- `python3 scripts/build_site.py && python3 scripts/check_aeo.py` must pass before a PR is opened.
+
+**Channels**
 - Site: https://jesussays.app
-- App: https://apps.apple.com/us/app/jesus-says-now/id6756906208
+- App: https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208
 - X: https://x.com/JesusSaysNow
 - TikTok: https://www.tiktok.com/@jesus.says.now889
 
 ---
 
-## Agent Context
+## Weekly (Monday)
 
-- Working directory: `/Users/victor/github/jesussays-website` (or wherever the repo is cloned)
-- Tools available: Bash, Read, Write, Edit, WebSearch, WebFetch
-- The site is static HTML deployed via GitHub Pages on push to `main`
-- Article generator: `scripts/generate_article.py` (uses `claude` CLI, no API key) or `scripts/generate_article_api.py` (uses `ANTHROPIC_API_KEY`)
-- AEO validator: `scripts/check_aeo.py`
-- Keyword queue: `content/queue.json`
+1. **Health check.** Run `python3 scripts/check_aeo.py`. If anything fails, open a PR that fixes it (or report it)
+   before doing anything else.
+2. **At most one new article.** Choose the highest-value `pending` keyword in `content/queue.json` that no live
+   article covers (check `_data/library.json`). Run `python3 scripts/generate_article.py`, read the result in full,
+   fix anything that reads as generic, and open a PR titled `content: draft <title>`. If no keyword clearly earns a
+   page, skip the week.
+3. **Social posts from existing articles** (write to `content/social/YYYY-MM-DD.md`, not published by the site):
+   - X thread: a hook, 3 verses from the article (exact KJV text with references) with one-line applications, and
+     a reply linking the article. App link, if used:
+     `https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208?utm_source=x&utm_medium=thread&utm_campaign=<slug>`
+   - TikTok slideshow: hook slide, 3–4 verse slides, final slide "Two quiet minutes with God — Jesus Says".
+   - Once a month, a Still Waters post linking https://jesussays.app/play/still-waters/.
+   Describe the app only with features from `../quotebible/Documentation/APP_STORE_LISTING.md`.
 
----
+## Monthly (1st)
 
-## Daily Loop (run every day)
+1. **Refresh one article.** Pick the article with the oldest `modified` date in `_data/library.json`. Re-read it
+   against the guidelines, improve it where it's weak, update `modified`, rebuild, and open a PR.
+2. **Queue review.** Mark keywords that an existing article already answers as `"status": "covered"` with
+   `"covered_by": "<slug>"`. Add at most five new, specific keywords (a real situation, not a broad term) with
+   `"status": "pending"` and a `"source"` note.
+3. **Comparison pages.** Re-check competitor facts on `best-christian-prayer-apps` and the three
+   `jesus-says-vs-*` pages against official sources; update the "Details checked" line.
 
-### Phase 1: Generate Today's Article
+## Never
 
-```bash
-cd /path/to/jesussays-website
-python3 scripts/generate_article.py
-```
+- Bulk-generate, bulk-refresh, or bump `modified` dates without real changes.
+- Add pages outside `_data/library.json`, or link to retired URLs (the build fails if you do).
+- Edit legal pages (use `scripts/sync_legal.py` after the app repo's legal text is approved).
+- Submit anything to App Store Connect.
 
-If the queue is exhausted, move to Phase 3 (keyword research) immediately.
-
-After generating:
-```bash
-python3 scripts/check_aeo.py
-```
-
-If the new article FAILS validation:
-1. Read the generated file to diagnose which check failed
-2. Rewrite the failing section (most common: direct answer too short, missing FAQ h2)
-3. Re-run `check_aeo.py` until PASS
-4. Commit:
-   ```bash
-   git add content/ sitemap.xml llms.txt content/queue.json
-   git commit -m "content: publish $(date +%Y-%m-%d) — [keyword]"
-   git push
-   ```
-
-### Phase 2: Generate Cross-Platform Content
-
-After each new article, output the following (write to a file `content/social/YYYY-MM-DD.md`):
-
-**X/Twitter Thread:**
-```
-Tweet 1 (hook — pick ONE format):
-  - Contrarian: "Everyone says [X]. Here's what Jesus actually said."
-  - Foreshadowing: "This [verse/prayer] changed my week — here's exactly what it was."
-  - Question: "Has [situation from article keyword] happened to you? Jesus addressed it directly."
-
-Tweet 2-4: Pull 3 Bible verses from the article. Format each:
-  "[Reference]: '[Verse text]'"
-  One-sentence application.
-
-Tweet 5: CTA reply (post as reply to thread, not main tweet):
-  "If this helped, the Jesus Says Now app gives you personalized Scripture for your exact moment.
-  Download free: https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=x&utm_medium=thread&utm_campaign=[slug]"
-```
-
-**TikTok Concept:**
-```
-Format: Fact slideshow (5 slides)
-Hook (slide 1): "[Emotional hook related to keyword]"
-Slides 2-5: One verse per slide — "Book Chapter:Verse — verse text"
-Audio: Use currently trending Christian/inspirational audio
-CTA overlay on slide 5: "Get more at JesusSays app ↓"
-Caption: "[Hook repeated]. #JesusSaysNow #BibleVerse #[topic] #Christian #Faith"
-```
-
-### Phase 3: Queue Maintenance (run when queue has < 10 pending items)
-
-Search Google Trends and web for current high-volume Christian search queries. Add 10 new keywords to the front of `content/queue.json`:
-
-**Research prompt to run:**
-Search for:
-1. "google trends bible verse 2025 2026"
-2. "most searched Christian questions [current year]"
-3. "trending faith topics [current month]"
-
-**Keyword criteria to add:**
-- Must be a specific situation, not a broad term ("bible verse when your parent is sick" not "bible verses")
-- Prefer "what would Jesus say about X" format (near-zero competition, high AI citation rate)
-- Prefer "is it a sin to X" format (AEO gold — these get pulled into AI Overviews)
-- Prefer "how do Christians deal with X" format (3,000-4,000 monthly searches, low competition)
-
-**Add to queue.json** (prepend before existing pending items):
-```json
-{"keyword": "[new keyword]", "slug": "[kebab-case-slug]", "status": "pending", "volume_est": [estimated monthly searches], "source": "research-[YYYY-MM]"}
-```
-
-### Phase 4: Homepage Refresh (run weekly, every Monday)
-
-Update the homepage to highlight the week's most recent articles:
-
-1. Read `content/queue.json` — find the 3 most recently published articles
-2. Add them to the relevant category section in `index.html`
-3. Commit: `git commit -m "content: homepage refresh with latest articles"`
-
----
-
-## Weekly Deep Loop (run every Sunday)
-
-### Keyword Performance Review
-
-Search for newly trending Christian keywords:
-```
-Search: "trending bible searches [month] [year]"
-Search: "most googled faith questions [year]"
-Search: "Christian mental health topics [year]"
-Search: "new bible verse trends google trends"
-```
-
-Evaluate against what's already published — if a topic is already covered, skip it. Add only net-new keyword opportunities.
-
-### AEO Audit
-
-Run the validator to confirm all pages still pass:
-```bash
-python3 scripts/check_aeo.py
-```
-
-If any pages FAIL (e.g., after a template update), re-run upgrade on those pages:
-```bash
-ANTHROPIC_API_KEY=... python3 scripts/upgrade_pages.py content/<failing-page>.html
-```
-
-### Social Media Recap Post
-
-Every Sunday, write a recap X thread:
-```
-Tweet 1: "This week Jesus Says published [N] new Scripture guides. The most shared:"
-Tweet 2-4: Link to each article with its hook quote
-Tweet 5 (reply): App CTA
-```
-
----
-
-## Monthly Strategy Loop (run on the 1st of each month)
-
-### 1. Reorder Queue by Volume
-
-Sort all `"pending"` items in `queue.json` by `volume_est` descending (highest traffic opportunity first). Items without `volume_est` go to the end.
-
-### 2. Content Gap Analysis
-
-Search for:
-- Which Christian content categories have the most searches but fewest results on the site?
-- What "what would Jesus say about X" topics haven't been covered?
-- What AEO "is it a sin to X" topics haven't been covered?
-
-Add 20 new keywords based on findings.
-
-### 3. Existing Article Refresh
-
-Pick the 3 oldest published articles. Re-run the upgrade script on them to refresh content, update `datePublished` in schema, and re-validate. Commit with: `git commit -m "content: refresh 3 older articles for freshness"`
-
-### 4. Sitemap Lastmod Update
-
-Update `<lastmod>` dates in `sitemap.xml` for all refreshed articles to today's date. This signals freshness to Google.
-
----
-
-## Content Formats by Goal
-
-| Goal | Best Content Format | CTA |
-|---|---|---|
-| App installs | "What would Jesus say about X" (interactive hook) | "Get your personalized answer in the app" |
-| App installs | "Prayer for X" (in-the-moment need) | "Find more prayers in the Jesus Says app" |
-| Paywall conversion | Confession prayer sequences | "Access full confession prayer journal in app" |
-| Paywall conversion | Daily devotional series | "Continue your daily habit in the app" |
-| X traffic | Contrarian verse threads | Link to full article |
-| TikTok traffic | Fact slideshow + trending audio | "Download Jesus Says" CTA overlay |
-
----
-
-## Paywall Conversion Content Rules
-
-When writing articles that specifically target paywall conversion, emphasize:
-
-1. **Interactive value** — "The Jesus Says app gives you a *personalized* response to your exact prayer, not a generic verse list."
-2. **Habit framing** — "Download Jesus Says to build a daily faith practice" (not "get content")
-3. **Completion moments** — CTA goes immediately after the most emotionally resonant section (after the FAQ, after confession prayer steps)
-4. **Social proof hook** — "Thousands of Christians use Jesus Says daily for..."
-5. **Free trial framing** — Emphasize "free to download" in every CTA
-
----
-
-## App Store UTM Parameters
-
-Always use UTM tracking on App Store links:
-
-| Source | Campaign |
-|---|---|
-| Article body CTA | `utm_campaign=content-[slug]` (e.g. `content-prayer-for-healing`) |
-| Homepage hero | `utm_campaign=home-hero` |
-| Download page hero | `utm_campaign=download-hero` |
-| Download page screenshots | `utm_campaign=download-screenshots` |
-| X thread reply | `utm_campaign=x-thread` |
-| TikTok bio | `utm_campaign=tiktok-bio` |
-
-Full format: `https://apps.apple.com/us/app/jesus-says-now/id6756906208?utm_source=[source]&utm_medium=cta&utm_campaign=[campaign]`
-
----
-
-## Error Recovery
+## Error recovery
 
 | Problem | Recovery |
 |---|---|
-| Generator fails (claude CLI not found) | Use `generate_article_api.py` with `ANTHROPIC_API_KEY` |
-| AEO check fails on new article | Read file, fix the specific failing check, re-run validator |
-| Queue empty | Run Phase 3 keyword research immediately |
-| Git push fails (conflict) | `git pull --rebase origin main && git push` |
-| `sitemap.xml` malformed | Validate with `python3 -c "from xml.etree import ElementTree as ET; ET.parse('sitemap.xml')"` |
-
----
-
-## Article HTML Standard
-
-Every article in `content/*.html` must use the site-wide design system, not the legacy `site.css`. The generator scripts handle this automatically. If writing or editing an article manually:
-
-**Required:**
-- `<link rel="stylesheet" href="/assets/landing.css" />` in `<head>` — never `site.css`
-- Page-specific `<style>` block with `.art-page`, `.art-back`, and section styles (copy from any recent article or from `generate_article.py`)
-- Sticky pill nav (`<div class="nav-wrap"><nav class="nav">...</nav></div>`)
-- Mobile menu overlay (`<div class="mobile-menu" id="mobile-menu" ...>`) with focus-trap JS at bottom of `<body>`
-- Article content wrapped in `<main><div class="art-page">...</div></main>`
-- `<a class="art-back" href="/content/">` breadcrumb at top of `.art-page`
-- App CTA using `<a class="btn-apple" ...>` inside `<section class="app-cta">`
-- Footer: `<footer class="site">` with four link columns + legal row
-
-**Canonical URL format:** `https://jesussays.app/content/[slug].html`
-
-**App Store UTM on article CTA:** `utm_campaign=content-[slug]`
-
-If an existing article still uses the old `site.css` layout, run the upgrade script or manually replace the head/body chrome using `content/index.html` as the reference.
-
-**`download.html`** also uses the same landing.css chrome (nav, footer, mobile menu). It uses `.dl-page`/`.dl-back`/`.dl-hero` styles and `<a class="dl-back" href="/">← Home</a>` (back to home, not /content/).
-
----
-
-## Quality Standards
-
-Every published article must:
-- Pass `python3 scripts/check_aeo.py` (all 8 AEO checks)
-- Use `landing.css` (not `site.css`) with the full nav + footer chrome
-- Have 800-1000 words of body content
-- Include 4-6 Bible verses with specific references and applications
-- Include exactly 5 FAQ Q&A pairs
-- Use `<a class="art-back" href="/content/">← Faith Library</a>` for the back-link — always `/content/`, never `/`
-- Have the App Store CTA (`class="btn-apple"`) with `rel="nofollow"` and UTM parameters
-
----
-
-## Daily Commit Convention
-
-```
-content: publish YYYY-MM-DD — [keyword]        # new article
-content: add N keywords to queue               # queue expansion
-content: refresh [page] for freshness          # article update
-content: homepage refresh with latest articles # homepage update
-seo: update sitemap lastmod                    # sitemap maintenance
-```
+| `generate_article.py` can't find the KJV Bible | Clone `quotebible` next to this repo or set `KJV_BIBLE_PATH` |
+| Draft fails review after repairs | Don't force it. Write or edit the body by hand, or skip the keyword |
+| `check_aeo.py` reports an unregistered page | Add it to `_data/library.json` or `_data/redirects.json`, or delete it |
+| Git push rejected | `git pull --rebase origin main`, rebuild, re-run checks, push the branch again |

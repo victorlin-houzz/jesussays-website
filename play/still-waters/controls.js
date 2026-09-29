@@ -5,8 +5,19 @@
   const status = document.getElementById('status');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let paused = false, drift = true, ink = 1;
-  const command = message => renderer.command(message);
+  const command = message => renderer ? renderer.command(message) : undefined;
+  // After a little quiet time, offer the app's other Be Still moments without interrupting.
+  const moreLink = document.getElementById('more-link');
+  let touches = 0, offered = false;
+  function offerMore() {
+    if (offered || !moreLink) return;
+    offered = true;
+    moreLink.hidden = false;
+  }
+  const offerTimer = setTimeout(offerMore, 40000);
+  function touched() { touches += 1; if (touches >= 6) { clearTimeout(offerTimer); offerMore(); } }
   function unavailable() {
+    clearTimeout(offerTimer); offerMore();
     document.getElementById('fallback').hidden = false;
     document.querySelectorAll('.controls button').forEach(button => button.disabled = true);
     canvas.removeAttribute('tabindex');
@@ -28,6 +39,7 @@
     if (paused) { status.textContent = 'Resume motion to add ink.'; return; }
     command({type: 'drop', x: .25 + Math.random() * .5, y: .3 + Math.random() * .4, ink});
     status.textContent = 'Ink on the water. Take a quiet breath.';
+    touched();
   }
   document.getElementById('drop').addEventListener('click', drop);
   canvas.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); drop(); } });
@@ -46,6 +58,7 @@
   });
   document.addEventListener('visibilitychange', configure);
   canvas.addEventListener('webglcontextlost', unavailable);
+  canvas.addEventListener('pointerup', () => { if (!paused) touched(); });
   // Pause pointer input along with animation.
   ['pointerdown','pointermove','pointerup'].forEach(type => canvas.addEventListener(type, e => { if (paused) e.stopImmediatePropagation(); }, true));
 })();
