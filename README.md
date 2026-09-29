@@ -98,3 +98,13 @@ The 2.0 screenshot inventory and original checksums are in `docs/screenshots-2.0
 Pushing to `main` deploys. GitHub Pages currently builds the branch with Jekyll ("legacy" build), and
 `.github/workflows/pages.yml` also deploys a Jekyll build of the same branch; both honour `_config.yml`.
 Pick one: switching Pages to "GitHub Actions" in repository settings makes `pages.yml` the only deployer.
+
+## Website analytics
+
+Every public page loads `/assets/analytics.js` as a module in `<head>`. The shared entry statically imports HeyCatch SDK **0.8.0** from esm.sh (npm `latest`, resolved 2026-09-29), inlines the publishable project key, and reports installation metadata `web` / `codex`. `requestBatching: false` preserves events across full-page navigation. There is no auth or payment flow to instrument; the SDK automatically captures pageviews and clicks.
+
+The site builder and legal sync preserve the entry through `scripts/site_analytics.py`. Run `python3 scripts/site_analytics.py` after adding hand-written pages and `python3 scripts/site_analytics.py --check` before publishing. Design handoff mockups are excluded. Still Waters permits esm.sh scripts plus `https://in.heycatch.ai` scripts and connections in its CSP.
+
+**Short-link hosting limitation:** GitHub Pages cannot configure HeyCatch's required HTTP 302 rule for `/[a-z0-9]` → `/?utm_source=heycatch&utm_campaign=<character>`. Configure that rule in a redirect-capable hosting/CDN layer before using HeyCatch channel short links. The custom 404 page loads the SDK, but still responds with HTTP 404; it is not a substitute for the required redirect. Verify `/x` on the live domain after configuring the rule. Normal page analytics do not depend on short links.
+
+After deployment, open the live site in a real browser, click around for a few seconds, then press **I've installed** on the HeyCatch dashboard's Install page. Automated browsers are filtered, so browser QA verifies loading and errors, not dashboard event receipt. Installation reference: https://heycatch.ai/agents.md.
