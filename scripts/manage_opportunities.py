@@ -25,6 +25,8 @@ VALID_STATUSES = {
     "published",
     "refreshed",
     "skipped",
+    "merged",   # page consolidated into another article (see _data/redirects.json)
+    "retired",  # templated page removed in the September 2026 cleanup
 }
 REQUIRED_FIELDS = [
     "id",

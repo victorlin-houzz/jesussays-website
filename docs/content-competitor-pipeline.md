@@ -1,5 +1,12 @@
 # Competitor-Informed Content Pipeline
 
+> **Retired September 2026.** The batch generator (`generate_opportunity_articles.py`) and its audit script were
+> removed after the pipeline produced ~470 near-identical pages that had to be deleted or redirected
+> (`docs/reports/2026-09-28-site-audit.md`). `content/opportunities.jsonl` is kept as a research backlog only;
+> rows are marked `merged` or `retired` to match what happened to each page. New articles follow
+> `docs/editorial-guidelines.md` and `scripts/generate_article.py`, one reviewed PR at a time.
+
+
 Goal: grow Jesus Says organic traffic and app downloads by using competitor pages as demand signals, then publishing original Jesus Says articles optimized for Google Search and answer engines.
 
 ## Workflow

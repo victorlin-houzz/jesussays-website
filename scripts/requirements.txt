@@ -1,2 +1,2 @@
-anthropic>=0.28.0
-Pillow>=10.0.0
+# Only needed for: python3 scripts/generate_article.py --backend api
+anthropic

@@ -1,0 +1,15 @@
+# GitHub Pages builds this repository with Jekyll. Pages are plain HTML without
+# front matter, so Jekyll only copies them. This file keeps internal docs,
+# tooling, and data out of the public site (dot-folders and _data/ are
+# excluded automatically).
+exclude:
+  - AGENTS.md
+  - README.md
+  - HERMES_AGENT.md
+  - docs/
+  - scripts/
+  - design_handoff_jesussays_website/
+  - privacy_policy.md
+  - terms_of_use.md
+  - content/queue.json
+  - content/opportunities.jsonl
