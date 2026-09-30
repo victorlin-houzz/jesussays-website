@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Last Updated: May 15, 2026**
+**Last Updated: September 30, 2026**
 
 These Terms of Use ("Terms", "Terms of Use") govern your relationship with the Jesus Says mobile application ("Service", "App") operated by Jesus Says ("us", "we", or "our").
 
@@ -23,11 +23,13 @@ Jesus Says is a mobile application that provides Bible verse suggestions and spi
 The Service allows you to:
 - **Talk to Jesus** — record spoken reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
 - **Personal Reflection** — record private spoken reflections that are transcribed via Apple's Speech Recognition service and receive a three-card Bible-grounded spiritual response
-- **Devotion Journey** — follow a 7-day calendar-based devotion plan with daily voice check-ins (transcribed via Apple's Speech Recognition service), personalized AI responses, and streak tracking
-- **Mercy Timeline** (Plus) — AI analysis of your Personal Reflection and Devotion Journey transcripts over time, surfacing recurring themes, spiritual tone shifts, and released burdens
+- **Devotion Journey** — follow a 7-day calendar-based devotion plan with daily voice check-ins (transcribed via Apple's Speech Recognition service), personalized Scripture-grounded responses, and streak tracking
+- **Mercy Timeline** (Plus) — generated analysis of your Personal Reflection and Devotion Journey transcripts over time, surfacing recurring themes, spiritual tone shifts, and released burdens
 - **Listen Mode** — listen to Daily Practice content through local text-to-speech on your device; playback audio is not transmitted to our servers
 - **Verse Library** — save scripture references stored locally through iOS Keychain, with iCloud Keychain sync controlled by your Apple device settings
 - **Unified Journal** — view all your Personal Reflection and Devotion Journey entries in a calendar-based journal, stored locally on your device
+- **Chapel** — choose a bundled moving wallpaper for Home without a Plus subscription. Your selection stays in local device preferences and is cleared on sign-out or account/session deletion. The App uses a still image when reduced motion is enabled or the device is not on Wi-Fi or Ethernet
+- **Be Still** — explore Scripture-grounded experiences, including Still Waters, Peace, Be Still, and Consider the Heavens. These experiences run on your device without sending your interactions to the response-generation service
 - Subscribe to Plus plans for extended guided access to all premium features
 
 ---
@@ -174,6 +176,7 @@ The App uses the following third-party services:
 - **Firebase (Google)**: For backend services, anonymous authentication, optional Apple-linked authentication, abuse prevention, and account-related data storage
 - **Apple Sign In** (optional): For optional user authentication and cross-device data continuity. Not required to start a trial, purchase Plus, or use eligible paid entitlement
 - **Apple App Store**: For in-app purchases
+- **HeyCatch**: For screen and app-action analytics through the PostHog SDK. Guest activity uses an anonymous SDK identifier; activity after Apple sign-in is linked to the Firebase account identifier. Voice recordings, transcripts, reflection/prayer/conversation text, crisis events, and onboarding goal, faith-stage and focus-area answers are excluded. See Privacy Policy §5.7 for details and deletion requests
 - **RevenueCat**: For subscription event processing and entitlement management. RevenueCat receives server-to-server subscription lifecycle events from Apple and forwards them to our backend to keep your entitlement status up to date. See RevenueCat's privacy policy at [rev.cat/privacy](https://www.revenuecat.com/privacy/)
 
 By using the App, you acknowledge that:
@@ -189,15 +192,15 @@ When the Mercy Timeline feature is enabled, transcripts from your Personal Refle
 
 **What this means for your data:**
 - Transcripts are stored locally in encrypted storage on your device (iOS Keychain), not on our backend servers. Personal Reflection and Devotion Journey entries are stored in a unified journal store (`journal_entries` Keychain key). If you previously used an older version of the App, your existing entries are automatically migrated to the unified store at startup
-- On iOS, those encrypted local records may sync across your Apple devices only through your own iCloud Keychain settings. If iCloud Keychain is off, records remain only on the current device
+- Raw voice transcripts are stored with iCloud Keychain sync disabled and remain on the current device. Journal response cards may sync across your Apple devices through your own iCloud Keychain settings; if iCloud Keychain is off, those entries remain on the current device
 - For Mercy Timeline analysis, transcripts are transmitted to Google Gemini as a batch. Google processes this data according to their own privacy policy ([Google Privacy Policy](https://policies.google.com/privacy))
 - **Google may retain transmitted transcripts** according to their policy. We have no control over Google's retention or use of that data
 - We do not retain raw transcripts on our own backend servers after the analysis call completes
 - Analysis results (patterns, themes, tone shifts) are cached on your device only
 
 **Your control:**
-- You may disable Mercy Timeline at any time in the App's Menu, which prevents future batch transmissions
-- You may keep iCloud Keychain disabled; if you do, transcript/journal continuity across devices may be unavailable and local data may be lost if the device is replaced or reset without a backup
+- You may disable Mercy Timeline at any time in Menu → Manage My Data, which prevents future batch transmissions, deletes cached analysis, and hides the Timeline card
+- You may keep iCloud Keychain disabled; if you do, journal continuity across devices may be unavailable. Raw transcripts never sync through iCloud Keychain. Local data may be lost if the device is replaced or reset without a backup
 - You may delete individual transcripts or all transcripts independently of your reflection cards via Menu → Manage My Data → Clear Transcript Data
 - Deleting transcripts does not delete your reflection history or spiritual progress
 - Once transcripts have been transmitted to Google, we cannot delete Google's copy. If you have concerns about a specific reflection, delete its transcript before the next 24-hour analysis window

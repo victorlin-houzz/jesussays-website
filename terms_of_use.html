@@ -81,7 +81,7 @@
   <main>
 <nav aria-label="Legal navigation"><a href="/">Jesus Says home</a> · <a href="/privacy_policy.html">Privacy Policy</a> · <a href="/terms_of_use.html">Terms of Use</a></nav>
 <h1 id="terms-of-use">Terms of Use</h1>
-<p><strong>Last Updated: May 15, 2026</strong></p>
+<p><strong>Last Updated: September 30, 2026</strong></p>
 <p>These Terms of Use ("Terms", "Terms of Use") govern your relationship
 with the Jesus Says mobile application ("Service", "App") operated by
 Jesus Says ("us", "we", or "our").</p>
@@ -113,9 +113,9 @@ reflections that are transcribed via Apple's Speech Recognition service
 and receive a three-card Bible-grounded spiritual response</li>
 <li><strong>Devotion Journey</strong> — follow a 7-day calendar-based
 devotion plan with daily voice check-ins (transcribed via Apple's Speech
-Recognition service), personalized AI responses, and streak
-tracking</li>
-<li><strong>Mercy Timeline</strong> (Plus) — AI analysis of your
+Recognition service), personalized Scripture-grounded responses, and
+streak tracking</li>
+<li><strong>Mercy Timeline</strong> (Plus) — generated analysis of your
 Personal Reflection and Devotion Journey transcripts over time,
 surfacing recurring themes, spiritual tone shifts, and released
 burdens</li>
@@ -128,6 +128,15 @@ your Apple device settings</li>
 <li><strong>Unified Journal</strong> — view all your Personal Reflection
 and Devotion Journey entries in a calendar-based journal, stored locally
 on your device</li>
+<li><strong>Chapel</strong> — choose a bundled moving wallpaper for Home
+without a Plus subscription. Your selection stays in local device
+preferences and is cleared on sign-out or account/session deletion. The
+App uses a still image when reduced motion is enabled or the device is
+not on Wi-Fi or Ethernet</li>
+<li><strong>Be Still</strong> — explore Scripture-grounded experiences,
+including Still Waters, Peace, Be Still, and Consider the Heavens. These
+experiences run on your device without sending your interactions to the
+response-generation service</li>
 <li>Subscribe to Plus plans for extended guided access to all premium
 features</li>
 </ul>
@@ -356,6 +365,13 @@ and account-related data storage</li>
 authentication and cross-device data continuity. Not required to start a
 trial, purchase Plus, or use eligible paid entitlement</li>
 <li><strong>Apple App Store</strong>: For in-app purchases</li>
+<li><strong>HeyCatch</strong>: For screen and app-action analytics
+through the PostHog SDK. Guest activity uses an anonymous SDK
+identifier; activity after Apple sign-in is linked to the Firebase
+account identifier. Voice recordings, transcripts,
+reflection/prayer/conversation text, crisis events, and onboarding goal,
+faith-stage and focus-area answers are excluded. See Privacy Policy §5.7
+for details and deletion requests</li>
 <li><strong>RevenueCat</strong>: For subscription event processing and
 entitlement management. RevenueCat receives server-to-server
 subscription lifecycle events from Apple and forwards them to our
@@ -387,9 +403,10 @@ Devotion Journey entries are stored in a unified journal store
 (<code>journal_entries</code> Keychain key). If you previously used an
 older version of the App, your existing entries are automatically
 migrated to the unified store at startup</li>
-<li>On iOS, those encrypted local records may sync across your Apple
-devices only through your own iCloud Keychain settings. If iCloud
-Keychain is off, records remain only on the current device</li>
+<li>Raw voice transcripts are stored with iCloud Keychain sync disabled
+and remain on the current device. Journal response cards may sync across
+your Apple devices through your own iCloud Keychain settings; if iCloud
+Keychain is off, those entries remain on the current device</li>
 <li>For Mercy Timeline analysis, transcripts are transmitted to Google
 Gemini as a batch. Google processes this data according to their own
 privacy policy (<a href="https://policies.google.com/privacy">Google
@@ -404,11 +421,13 @@ device only</li>
 </ul>
 <p><strong>Your control:</strong></p>
 <ul>
-<li>You may disable Mercy Timeline at any time in the App's Menu, which
-prevents future batch transmissions</li>
-<li>You may keep iCloud Keychain disabled; if you do, transcript/journal
-continuity across devices may be unavailable and local data may be lost
-if the device is replaced or reset without a backup</li>
+<li>You may disable Mercy Timeline at any time in Menu → Manage My Data,
+which prevents future batch transmissions, deletes cached analysis, and
+hides the Timeline card</li>
+<li>You may keep iCloud Keychain disabled; if you do, journal continuity
+across devices may be unavailable. Raw transcripts never sync through
+iCloud Keychain. Local data may be lost if the device is replaced or
+reset without a backup</li>
 <li>You may delete individual transcripts or all transcripts
 independently of your reflection cards via Menu → Manage My Data → Clear
 Transcript Data</li>

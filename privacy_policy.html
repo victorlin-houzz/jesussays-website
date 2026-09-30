@@ -81,7 +81,7 @@
   <main>
 <nav aria-label="Legal navigation"><a href="/">Jesus Says home</a> · <a href="/privacy_policy.html">Privacy Policy</a> · <a href="/terms_of_use.html">Terms of Use</a></nav>
 <h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>Last Updated: May 15, 2026</strong></p>
+<p><strong>Last Updated: September 30, 2026</strong></p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Jesus Says ("we," "our," or "App") is committed to protecting your
 privacy. This Privacy Policy explains how we collect, use, disclose, and
@@ -121,6 +121,12 @@ only through your own iCloud Keychain settings (see §6 and §12.1)</li>
 <li><strong>Listen Mode Playback</strong>: Listen Mode uses local
 text-to-speech on your device. The spoken playback itself is not
 transmitted to our servers</li>
+<li><strong>Chapel Appearance</strong>: Chapel lets you choose a bundled
+moving wallpaper for Home. Only the selected wallpaper identifier is
+saved in local device preferences; it is cleared on sign-out or
+account/session deletion. Chapel does not upload your selection or
+download videos from our servers. A still image is shown when reduced
+motion is enabled or the device is not on Wi-Fi or Ethernet</li>
 <li><strong>Verse Library</strong>: Saved verses are stored in iOS
 Keychain with <code>synchronizable: true</code>, so they may sync across
 your Apple devices through your own iCloud Keychain settings</li>
@@ -163,8 +169,10 @@ user experience</li>
 Service through an anonymous Firebase account or optional Apple-linked
 account, apply rate limits, and protect the backend from fraud, abuse,
 and automated misuse</li>
-<li><strong>Analytics</strong>: Understand how the App is used
-(anonymized data)</li>
+<li><strong>Analytics</strong>: Understand screen usage and app actions
+through HeyCatch. Guest events use an anonymous SDK identifier; after
+Apple sign-in, events are linked to your Firebase account identifier
+(see §5.7).</li>
 <li><strong>Purchase Entitlement and Restoration</strong>: Verify App
 Store purchases, maintain subscription entitlement status via RevenueCat
 subscription event processing, prevent duplicate entitlement from one
@@ -197,17 +205,18 @@ stage (the option you chose during onboarding), current streak count,
 lifetime reflection count, depth tier (a derived integer summarizing
 your usage history), the time-of-day / day-of-week bucket from your
 local clock, optional recent reflection-theme tags (e.g. "hope",
-"grief") drawn from your stored entries, and — only when you explicitly
-chose "By first name" during onboarding — your first name, address-style
-preference, life-season tag, and focus-area tag. This metadata is
-processed only to make the response feel personally targeted (for
-example, a scripture chosen for the part of day you opened the app, or a
-prayer that uses your name). The metadata is not retained server-side
-after the response is generated, is not used for advertising or
-profiling, and never includes free-text content beyond your first name,
-your birth date, or any precise location. You can opt out of name-based
-address at any time by re-running onboarding or clearing your profile
-from Menu → Manage My Data</li>
+"grief") drawn from your stored entries, your onboarding goal,
+address-style preference, life-season tag, and focus-area tag. Your
+first name is included only when you explicitly chose "By first name"
+during onboarding. This metadata is processed only to make the response
+feel personally targeted (for example, a scripture chosen for the part
+of day you opened the app, or a prayer that uses your name). The
+metadata is not retained server-side after the response is generated, is
+not used for advertising or profiling, and does not include free-text
+content beyond your first name. It does not include your birth date or
+precise location. You can opt out of name-based address at any time by
+re-running onboarding or clearing your profile from Menu → Manage My
+Data</li>
 <li><strong>Google's Retention</strong>: Google may retain transmitted
 transcripts and use them to improve their services according to their
 own privacy policy. We have no control over Google's retention or use of
@@ -300,6 +309,27 @@ third-party crash analytics provider</li>
 enabled in a future release, this Privacy Policy and any applicable
 platform disclosures will be updated before rollout</li>
 </ul>
+<h3 id="57-heycatch-analytics">5.7 HeyCatch Analytics</h3>
+<ul>
+<li><strong>Purpose</strong>: Understand screen usage and app actions to
+improve the App</li>
+<li><strong>Data Shared</strong>: Named screens, app-action events,
+limited counts and settings, and SDK app/device/session metadata. Guests
+use an anonymous SDK identifier. After Apple sign-in, the Firebase UID
+links activity to the account; we do not send your name or email. The
+PostHog open-source SDK sends these records to HeyCatch at
+<code>in.heycatch.ai</code></li>
+<li><strong>Excluded</strong>: Voice recordings, transcripts,
+reflection/prayer/conversation text, crisis events, and the onboarding
+goal, faith-stage and focus-area answers. Session replay, surveys,
+automatic tap capture, push capture and automatic error capture are
+disabled</li>
+<li><strong>Identity and deletion</strong>: Sign-out and account
+deletion reset the on-device analytics identity. Resetting does not
+erase events already received by HeyCatch. Contact <a
+href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a> to
+request erasure of those records</li>
+</ul>
 <h2 id="6-data-storage-and-security">6. Data Storage and Security</h2>
 <ul>
 <li><strong>Local Storage (Your Device)</strong>: Conversation history,
@@ -350,9 +380,9 @@ No method of transmission over the internet is 100% secure</li>
 <ul>
 <li><strong>Voice Transcripts (Personal Reflection &amp; Devotion
 Journey)</strong>: Stored on your device in encrypted Keychain storage
-and retained to support Mercy Timeline. If iCloud Keychain is enabled,
-Apple may synchronize this encrypted data between your devices linked to
-the same Apple ID. You have three deletion options:
+with iCloud Keychain sync disabled and retained to support Mercy
+Timeline. Raw transcripts do not sync across your Apple devices. You
+have the following deletion options:
 <ul>
 <li><strong>Delete transcripts, keep reflection cards</strong>: Menu →
 Manage My Data → Clear Transcript Data (removes raw voice data; your
@@ -375,8 +405,10 @@ may request deletion via <strong>Menu → Manage My Data</strong> in the
 App. Anonymous users see "Delete Session &amp; Data"; Apple-linked users
 see "Delete Account". Deletion removes all associated backend records
 within 30 days (in-app requests are processed immediately)</li>
-<li><strong>Analytics Data</strong>: Anonymized and aggregated data may
-be retained indefinitely</li>
+<li><strong>Analytics Data</strong>: Guest events use an anonymous SDK
+identifier; signed-in events are linked to a Firebase UID. Previously
+transmitted records are not erased by resetting the app. Contact us to
+request erasure (see §5.7).</li>
 </ul>
 <h2 id="8-your-rights">8. Your Rights</h2>
 <p>You have the right to:</p>
@@ -399,8 +431,8 @@ by contacting <a
 href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a></li>
 <li><strong>Opt-out of Mercy Timeline</strong>: Disable the Mercy
 Timeline feature in the App's Menu at any time to prevent future batch
-transmission of transcripts to Google. Existing cached analysis remains
-visible; no new transmissions occur</li>
+transmission of transcripts to Google. The cached analysis is deleted
+and the Timeline card is hidden; no new transmissions occur</li>
 </ul>
 <h2 id="81-gdpr-eeauk-rights-and-legal-basis">8.1 GDPR (EEA/UK) Rights
 and Legal Basis</h2>
@@ -421,10 +453,11 @@ data</li>
 <li><strong>Right to Restrict Processing</strong>: Request temporary
 restriction of processing in certain circumstances</li>
 <li><strong>Right to Data Portability</strong>: Request your data in a
-portable format where legally applicable. Journal/transcript continuity
-across your own Apple devices is handled through local encrypted storage
-and optional iCloud Keychain sync, not by storing transcript history on
-our backend</li>
+portable format where legally applicable. Journal continuity across your
+own Apple devices is handled through local encrypted storage and
+optional iCloud Keychain sync. Raw voice transcripts remain on the
+device and are not synced through iCloud Keychain or retained as history
+on our backend</li>
 <li><strong>Right to Object</strong>: Object to certain processing where
 applicable under local law</li>
 <li><strong>Right to Withdraw Consent</strong>: Withdraw consent at any
@@ -519,8 +552,9 @@ clinical, or crisis decisions</li>
 </ul>
 <p><strong>Your control:</strong></p>
 <ul>
-<li>Disable Mercy Timeline: Menu → [Mercy Timeline toggle] — prevents
-future batch transmissions; cached analysis remains visible</li>
+<li>Disable Mercy Timeline: Menu → Manage My Data → Mercy Timeline —
+prevents future batch transmissions, deletes cached analysis, and hides
+the Timeline card</li>
 <li>Delete transcripts: Menu → Manage My Data → Clear Transcript Data —
 removes on-device copies; Google's copies subject to their policy</li>
 <li>Delete everything: Menu → Manage My Data → Delete Account</li>
