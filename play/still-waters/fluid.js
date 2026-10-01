@@ -33,9 +33,9 @@
   const resources = { shaders: [], programs: [], targets: [] };
   const SIM_SHORT = 192;
   const DYE_SHORT = 768;
-  // A ~5-second half-life leaves time for curls, then makes room for new ink.
-  // This is elapsed-time decay, including on devices drawing below 30 fps.
-  const INK_FADE = Math.LN2 / 5;
+  // Ink fades very slowly (half-life ~90s) so the sheet fills and marbles, as
+  // in the reference; Wash clears it at once.
+  const INK_FADE = .011;
   // A tap blooms over BLOOM_SECONDS instead of appearing all at once.
   const BLOOM_SECONDS = .65;
   const blooms = [];
@@ -63,7 +63,7 @@
       void main(){vec2 p=uv-dt*texture(velocity,uv).xy*texel;
         result=texture(source,p)*exp(-decay*abs(dt));}`,
     correct: `uniform sampler2D source, velocity, forwardField, reverseField;
-      uniform vec2 dyeTexel; uniform float dt, fadeDt, decay;
+      uniform vec2 dyeTexel; uniform float dt, decay;
       void main(){
         vec2 departure=uv-dt*texture(velocity,uv).xy*texel;
         vec2 grid=(floor(departure/dyeTexel-.5)+.5)*dyeTexel;
@@ -71,7 +71,7 @@
         vec4 c=texture(source,grid+vec2(0,dyeTexel.y)),d=texture(source,grid+dyeTexel);
         vec4 lo=min(min(a,b),min(c,d)),hi=max(max(a,b),max(c,d));
         vec4 corrected=texture(forwardField,uv)+.5*(texture(source,uv)-texture(reverseField,uv));
-        result=clamp(corrected,lo,hi)*exp(-decay*fadeDt);
+        result=clamp(corrected,lo,hi)*exp(-decay*dt);
       }`,
     curl: `uniform sampler2D velocity;
       void main(){float l=texture(velocity,uv-vec2(texel.x,0)).y;
@@ -135,9 +135,9 @@
       uniform vec3 paper,ink0,ink1,ink2,ink3;uniform vec3 quietBand;
       void main(){
         vec4 w=max(texture(pigment,uv),vec4(0));
-        // Smoothly compress density, preserving color ratios and soft edges.
-        // Even repeated overlapping strokes remain a translucent wash.
-        float total=dot(w,vec4(1));w*=.95/(.95+total);
+        // Soft ceiling on total pigment so layered ink deepens without
+        // collapsing into black masses.
+        float total=dot(w,vec4(1));w*=1./max(1.,total/2.6);
         float y=1.-uv.y;
         float quiet=smoothstep(quietBand.x-.025,quietBand.x+.035,y)*(1.-smoothstep(quietBand.y-.035,quietBand.y+.025,y))*quietBand.z;
         w*=1.-quiet*.45;
@@ -152,7 +152,7 @@
         float density=dot(w,vec4(1));
         // Pigment settles into the paper's grain; no neon bloom or 3D shine.
         absorption*=.9+grain*.16;
-        vec3 color=sheet*exp(-absorption);
+        vec3 color=sheet*exp(-absorption*1.6);
         float edge=length(dFdx(w))+length(dFdy(w));
         color*=1.-min(.06,edge*.5)*smoothstep(.03,.25,density);
         result=vec4(color,1.);
@@ -289,7 +289,7 @@
       if (k >= 1) blooms.splice(i, 1);
     }
   }
-  function simulate(dt, fadeDt) {
+  function simulate(dt) {
     const texel = [1 / velocity.read.width, 1 / velocity.read.height];
     if (!state.reducedMotion) {
       run('curl', curl, { velocity: velocity.read, texel });
@@ -303,8 +303,8 @@
       run('advect', forward, { source: pigment.read, velocity: velocity.read, texel, dt, decay: 0 });
       run('advect', reverse, { source: forward, velocity: velocity.read, texel, dt: -dt, decay: 0 });
       run('correct', pigment.write, { source: pigment.read, velocity: velocity.read, forwardField: forward, reverseField: reverse,
-        texel, dyeTexel: [1 / pigment.read.width, 1 / pigment.read.height], dt, fadeDt, decay: washLeft > 0 ? 5.5 : INK_FADE });
-    } else run('copy', pigment.write, { source: pigment.read, scale: Math.exp(-(washLeft > 0 ? 5.5 : INK_FADE) * fadeDt) });
+        texel, dyeTexel: [1 / pigment.read.width, 1 / pigment.read.height], dt, decay: washLeft > 0 ? 5.5 : INK_FADE });
+    } else run('copy', pigment.write, { source: pigment.read, scale: Math.exp(-(washLeft > 0 ? 5.5 : INK_FADE) * dt) });
     pigment.swap();
     if (washLeft > 0) { washLeft -= dt; if (washLeft <= 0) clear(); }
   }
@@ -417,7 +417,7 @@
     if (lastFrame && now - lastFrame < 1000 / 60 - 1) { animation = requestAnimationFrame(tick); return; }
     const elapsed = lastFrame ? (now - lastFrame) / 1000 : 1 / 60;
     const dt = Math.min(elapsed, 1 / 30); lastFrame = now; state.time += dt;
-    try { resize(); autoPaint(dt); growBlooms(dt); simulate(dt, elapsed); render(); state.frames++; }
+    try { resize(); autoPaint(dt); growBlooms(dt); simulate(dt); render(); state.frames++; }
     catch (error) { emit('failed', { reason: String(error.message || error) }); dispose(); return; }
     frameTimes.push(elapsed); if (frameTimes.length > 90) frameTimes.shift();
     state.fps = frameTimes.length / frameTimes.reduce((a,b) => a+b,0);
