@@ -23,7 +23,7 @@
     quietTop: 0, quietBottom: 0, quietEnabled: false,
     // Defaults mirror AppTheme. Flutter sends the canonical values on ready.
     paper: [250 / 255, 248 / 255, 243 / 255],
-    palette: [[109, 120, 128], [99, 142, 176], [205, 140, 129], [127, 165, 148]].map(c => c.map(v => v / 255)),
+    palette: [[26, 26, 26], [29, 54, 105], [185, 58, 43], [47, 93, 73]].map(c => c.map(v => v / 255)),
   };
   let gl, programs, velocity, pigment, pressure, divergence, curl, forward, reverse;
   let diagnosticTarget, paperTexture, vertexBuffer, animation = 0, lastFrame = 0, lastInput = -65;
