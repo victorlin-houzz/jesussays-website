@@ -24,11 +24,11 @@ cite { display: block; font: 11px/2 var(--sans); letter-spacing: 1px; }
 .actions { display: flex; gap: 8px; }
 .controls button { font: 600 13px var(--sans); border: 1px solid var(--line); background: transparent; color: var(--ink); padding: 11px 16px; border-radius: 999px; min-height: 44px; cursor: pointer; white-space: nowrap; }
 .actions button[aria-pressed="true"] { background: var(--ink); color: #fff; }
-.controls [data-ink] { color: var(--ink); border: 2px solid transparent; }
-.controls [data-ink="0"] { background: #6d7880; color: #fff; }
-.controls [data-ink="1"] { background: #638eb0; }
-.controls [data-ink="2"] { background: #cd8c81; }
-.controls [data-ink="3"] { background: #7fa594; }
+.controls [data-ink] { color: #fff; border: 2px solid transparent; }
+.controls [data-ink="0"] { background: #1a1a1a; }
+.controls [data-ink="1"] { background: #1d3669; }
+.controls [data-ink="2"] { background: #b93a2b; }
+.controls [data-ink="3"] { background: #2f5d49; }
 .controls [data-ink][aria-pressed="true"] { outline: 2px solid var(--gold); outline-offset: 3px; border-color: var(--paper); }
 .controls button:disabled { opacity: .5; cursor: default; }
 .still-page :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
