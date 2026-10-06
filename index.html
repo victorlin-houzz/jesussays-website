@@ -23,46 +23,66 @@
   <link rel="stylesheet" href="/assets/landing.css" />
   <link rel="stylesheet" href="/assets/promotion.css" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://jesussays.app/#organization",
-        "name": "Jesus Says",
-        "url": "https://jesussays.app/",
-        "logo": "https://jesussays.app/assets/og-image.png",
-        "email": "jesussays889@gmail.com",
-        "sameAs": ["https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208", "https://x.com/JesusSaysNow", "https://www.instagram.com/jesus.says.now/", "https://www.tiktok.com/@jesus.says.now889"]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jesussays.app/#organization",
+      "name": "Jesus Says",
+      "url": "https://jesussays.app/",
+      "logo": "https://jesussays.app/assets/og-image.png",
+      "email": "jesussays889@gmail.com",
+      "sameAs": [
+        "https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208",
+        "https://x.com/JesusSaysNow",
+        "https://www.instagram.com/jesus.says.now/",
+        "https://www.tiktok.com/@jesus.says.now889"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jesussays.app/#website",
+      "name": "Jesus Says",
+      "url": "https://jesussays.app/",
+      "publisher": {
+        "@id": "https://jesussays.app/#organization"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://jesussays.app/#website",
-        "name": "Jesus Says",
-        "url": "https://jesussays.app/",
-        "publisher": {"@id": "https://jesussays.app/#organization"},
-        "inLanguage": "en-US"
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://jesussays.app/#app",
+      "name": "Jesus Says: Daily Reflection",
+      "alternateName": "Jesus Says",
+      "operatingSystem": "iOS, iPadOS",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208",
+      "downloadUrl": "https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208",
+      "description": "A daily Scripture reflection and prayer app with small steps, a sparrow companion, Peace Garden and a seven-day painted retelling of Elijah’s story. Speak or type a private reflection and receive Scripture, a short reflection, and a prayer. Includes a 7-day path through Scripture, Be Still quiet moments, Listen Mode, a private Verse Library and journal, and the King James Bible.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free to download; first reflection before any purchase prompt. Plus Monthly and Plus Annual subscriptions available. Eligible introductory offers are shown in the app."
       },
-      {
-        "@type": "MobileApplication",
-        "@id": "https://jesussays.app/#app",
-        "name": "Jesus Says: Daily Reflection",
-        "alternateName": "Jesus Says",
-        "operatingSystem": "iOS, iPadOS",
-        "applicationCategory": "LifestyleApplication",
-        "url": "https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208",
-        "downloadUrl": "https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208",
-        "description": "A daily Scripture reflection and prayer app: one verse, one reflection, one prayer, and one step for today. Speak or type a private reflection and receive Scripture, a short reflection, and a prayer. Includes a 7-day path through Scripture, Be Still quiet moments, Listen Mode, a private Verse Library and journal, and the King James Bible.",
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download with 7 days of full access; Plus Monthly and Plus Annual subscriptions available."},
-        "publisher": {"@id": "https://jesussays.app/#organization"},
-        "screenshot": [
-          "https://jesussays.app/assets/screens/2.0/01_home.webp",
-          "https://jesussays.app/assets/screens/2.0/02_reveal.webp",
-          "https://jesussays.app/assets/screens/2.0/03_stillwaters.webp"
-        ]
-      }
-    ]
-  }
+      "publisher": {
+        "@id": "https://jesussays.app/#organization"
+      },
+      "softwareVersion": "2.2.1",
+      "screenshot": [
+        "https://jesussays.app/assets/screens/2.2.1/01_today.webp",
+        "https://jesussays.app/assets/screens/2.2.1/02_bible.webp",
+        "https://jesussays.app/assets/screens/2.2.1/03_talk.webp",
+        "https://jesussays.app/assets/screens/2.2.1/04_reflection.webp",
+        "https://jesussays.app/assets/screens/2.2.1/05_still_waters.webp",
+        "https://jesussays.app/assets/screens/2.2.1/06_elijah.webp",
+        "https://jesussays.app/assets/screens/2.2.1/07_journal.webp",
+        "https://jesussays.app/assets/screens/2.2.1/08_peace_garden.webp"
+      ]
+    }
+  ]
+}
   </script>
   <!-- site:faq-ld -->
   <script type="application/ld+json">
@@ -76,7 +96,7 @@
       "name": "Is Jesus Says free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The app is free to download. Start with 7 days of full access, with no payment required to complete your first reflection. Plus Monthly or Plus Annual keeps your daily practice going after the trial. Review the offer and renewal terms in the app before subscribing."
+        "text": "The app is free to download, and your first successful reflection comes before any purchase prompt. The bundled Bible and Be Still experiences remain free. Plus offers monthly and annual subscriptions for extended guided access. Any eligible introductory offer begins at App Store purchase confirmation; review its price, duration and renewal terms in the app."
       }
     },
     {
@@ -84,7 +104,7 @@
       "name": "What happens to my reflections?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your journal and saved verses are stored on your device (and can sync through your own iCloud Keychain). To create a response, the text of your reflection is sent to our servers and to Google’s Gemini service, which may retain it under Google’s own policy; we don’t keep conversation history on our servers afterward. We don’t sell your data, and you can delete it anytime from Menu → Manage My Data. The Privacy Policy has the details."
+        "text": "Your journal and personal transcripts stay in device-only encrypted storage. Saved verses may sync through your own iCloud Keychain settings. To create a response, the text of your reflection is sent to our servers and to Google’s Gemini service, which may retain it under Google’s own policy; we don’t keep conversation history on our servers afterward. We don’t sell your data, and you can delete it anytime from Profile → Manage My Data. The Privacy Policy has the details."
       }
     },
     {
@@ -192,9 +212,9 @@
 <!-- HERO -->
 <header class="hero">
   <div>
-    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>For iPhone and iPad</span>
+    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>For iPhone and iPad · 2.2.1</span>
     <h1>Two quiet minutes <em>with</em> <span class="glow">God.</span></h1>
-    <p class="lede">One verse, one honest reflection, one prayer, one step for today. Speak what you are carrying, listen and rest, and return to Scripture.</p>
+    <p class="lede">Make room for God, every day. Read Scripture, speak what’s on your heart, walk with Elijah, and grow a little peace through your daily practice.</p>
     <div class="hero-ctas">
       <a class="btn-apple" href="https://apps.apple.com/us/app/jesus-says-daily-reflection/id6756906208?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=home-hero" rel="nofollow">
         <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
@@ -213,15 +233,7 @@
   </div>
   <div class="phone-stage">
     <div class="phone-glow" aria-hidden="true"></div>
-    <div class="phone" aria-hidden="true">
-      <div class="notch"></div>
-      <div class="screen">
-        <picture>
-          <source srcset="/assets/screens/2.0/home_4.webp" type="image/webp" />
-          <img src="/assets/screens/2.0/home_4.webp" alt="Jesus Says home screen showing Verse of the Day and daily rhythm" width="304" height="626" />
-        </picture>
-      </div>
-    </div>
+    <img class="hero-panel" src="/assets/screens/2.2.1/01_today.webp" alt="Jesus Says 2.2.1 Today promotional panel: Scripture, a sparrow companion and daily small steps" width="660" height="1434" fetchpriority="high" />
     <div class="float-card fc-1 gold" aria-hidden="true">
       <div class="ic">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
@@ -303,7 +315,7 @@
       <div>
         <div class="num">— 03</div>
         <h3>A sacred space for personal reflection.</h3>
-        <p>Keep reflections and devotion entries in your private journal. Reflection text is processed to create Scripture-based guidance; see our <a href="/privacy_policy.html">Privacy Policy</a> for the details.</p>
+        <p>Return to reflections and devotion entries in your private Journal’s calendar. Saved journal entries stay on your device. Reflection text is processed to create Scripture-based guidance; see our <a href="/privacy_policy.html">Privacy Policy</a> for the details.</p>
       </div>
     </article>
 
@@ -315,7 +327,7 @@
       <div>
         <div class="num">— 04</div>
         <h3>Choose your devotion journey.</h3>
-        <p>Foundations · Daily Strength · Deep Study. Seven days at a time, paced for the season you're in.</p>
+        <p>Follow daily Scripture and prompts for prayer. Walk with Elijah through a seven-day painted retelling, with the related Bible passages one tap away.</p>
       </div>
     </article>
 
@@ -327,7 +339,7 @@
       <div>
         <div class="num">— 05</div>
         <h3>The whole Bible — verse by verse.</h3>
-        <p>Old and New Testament, KJV, with a clean reader and a helpful "where do I start?" tap.</p>
+        <p>Read the bundled King James Bible offline, search for passages, and save verses. Tap a Scripture reference to open its passage.</p>
       </div>
     </article>
 
@@ -339,13 +351,19 @@
       <div>
         <div class="num">— 06</div>
         <h3>Build a daily faith rhythm you can keep.</h3>
-        <p>One verse, one reflection, one prayer, one step. Two quiet minutes, not a guilt loop.</p>
+        <p>Today brings together Scripture, prayer and small steps. Name your sparrow companion and let your daily practice bring a little light into your day.</p>
       </div>
       <div class="chip-row">
         <span class="chip">Days with God, no guilt</span>
         <span class="chip">Optional reminder</span>
         <span class="chip">Listen Mode</span>
       </div>
+    </article>
+
+    <article class="feat f5">
+      <div class="num">Peace Garden</div>
+      <h3>Plant a seed. Grow a little peace.</h3>
+      <p>Earn seeds through daily steps, discover plants with Scripture at their roots, and choose seeds in the illustrated Seed Shed. Preview the grown plants and watch your garden grow with your practice.</p>
     </article>
 
     <!-- F7: Privacy -->
@@ -367,6 +385,13 @@
   </div>
 </section>
 
+<section class="block release-update" aria-labelledby="release-heading">
+  <span class="sec-tag">Release 2.2.1</span>
+  <h2 id="release-heading">Grow a little peace, one day at a time.</h2>
+  <p>A clearer Peace Garden header and simpler garden actions. An illustrated Seed Shed with grown-plant previews and a roomier iPad layout. Every planting bed in view on tablets, plus readability and accessibility updates.</p>
+  <p><a href="/download.html">Explore the release and get the app →</a></p>
+</section>
+
 <!-- ──────────────── A DAY WITH JESUS SAYS ──────────────── -->
 <section class="block" id="day" aria-labelledby="day-heading">
   <div class="sec-head">
@@ -382,12 +407,12 @@
     <article class="day-card">
       <div class="step"><span class="n">1</span>Morning · 3 min</div>
       <h3>Begin with a verse and a path.</h3>
-      <p>Pick today's reading from a journey paced for you — Foundations, Daily Strength, or Deep Study.</p>
+      <p>Read a painted day from Elijah’s story and open the related passages, or follow your own devotion path.</p>
       <div class="shot">
         <div class="frame"><div class="scr">
           <picture>
-            <source srcset="/assets/screens/2.0/devotion.webp" type="image/webp" />
-            <img src="/assets/screens/2.0/devotion.webp" alt="Choose your journey — Foundations, Daily Strength, or Deep Study" />
+            <source srcset="/assets/screens/2.2.1/06_elijah.webp" type="image/webp" />
+            <img src="/assets/screens/2.2.1/06_elijah.webp" alt="Walk with Elijah: a painted seven-day Bible story" />
           </picture>
         </div></div>
       </div>
@@ -399,21 +424,21 @@
       <div class="shot">
         <div class="frame"><div class="scr">
           <picture>
-            <source srcset="/assets/screens/2.0/reflect.webp" type="image/webp" />
-            <img src="/assets/screens/2.0/reflect.webp" alt="Personal reflection voice recording screen" />
+            <source srcset="/assets/screens/2.2.1/04_reflection.webp" type="image/webp" />
+            <img src="/assets/screens/2.2.1/04_reflection.webp" alt="Personal Reflection: Scripture, reflection and a prayer" />
           </picture>
         </div></div>
       </div>
     </article>
     <article class="day-card evening">
       <div class="step"><span class="n">3</span>Evening · 5 min</div>
-      <h3>Receive a verse, a why, and a prayer.</h3>
-      <p>Close the day with a Scripture chosen for what you said, plus a short reflection to carry into sleep.</p>
+      <h3>Return to your prayers.</h3>
+      <p>Open your Journal to revisit Scripture, reflections and prayers from your practice.</p>
       <div class="shot">
         <div class="frame"><div class="scr">
           <picture>
-            <source srcset="/assets/screens/2.0/reveal_screen.webp" type="image/webp" />
-            <img src="/assets/screens/2.0/reveal_screen.webp" alt="Reflection result with scripture and prayer" />
+            <source srcset="/assets/screens/2.2.1/07_journal.webp" type="image/webp" />
+            <img src="/assets/screens/2.2.1/07_journal.webp" alt="Journal: return to your reflections and devotion entries" />
           </picture>
         </div></div>
       </div>
@@ -429,19 +454,20 @@
       <h2 id="screens-heading">A closer look at your daily practice.</h2>
     </div>
     <div class="right">
-      Explore the current app: Today with God, Scripture reflections, quiet moments, the KJV Bible, and your devotion journey.
+      Explore the 2.2.1 iPhone panels: Today, Bible, Talk, Reflection, Still Waters, Elijah, Journal and Peace Garden. Scroll to see all eight.
     </div>
   </div>
 </section>
 <div class="gallery-wrap">
-  <div class="gallery">
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/01_home.webp" alt="Today with God in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Today with God</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/02_reveal.webp" alt="Your Scripture reflection in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Your Scripture reflection</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/03_stillwaters.webp" alt="Still Waters in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Still Waters</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/04_bible.webp" alt="King James Bible in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">King James Bible</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/05_peace.webp" alt="Peace, Be Still in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Peace, Be Still</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/06_heavens.webp" alt="Consider the Heavens in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Consider the Heavens</div></div>
-    <div class="g-phone"><div class="scr"><img src="/assets/screens/2.0/07_devotion.webp" alt="Devotion Journey in Jesus Says 2.0" width="660" height="1434" loading="lazy" /></div><div class="label">Devotion Journey</div></div>
+  <div class="gallery" tabindex="0" aria-label="Jesus Says 2.2.1 iPhone promotional screenshots, scroll horizontally">
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/01_today.webp" alt="Jesus Says 2.2.1 promotional panel: Today" width="660" height="1434" loading="lazy" /><figcaption>Today</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/02_bible.webp" alt="Jesus Says 2.2.1 promotional panel: Bible" width="660" height="1434" loading="lazy" /><figcaption>Bible</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/03_talk.webp" alt="Jesus Says 2.2.1 promotional panel: Talk with Jesus" width="660" height="1434" loading="lazy" /><figcaption>Talk with Jesus</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/04_reflection.webp" alt="Jesus Says 2.2.1 promotional panel: Personal Reflection" width="660" height="1434" loading="lazy" /><figcaption>Personal Reflection</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/05_still_waters.webp" alt="Jesus Says 2.2.1 promotional panel: Still Waters" width="660" height="1434" loading="lazy" /><figcaption>Still Waters</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/06_elijah.webp" alt="Jesus Says 2.2.1 promotional panel: Walk with Elijah" width="660" height="1434" loading="lazy" /><figcaption>Walk with Elijah</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/07_journal.webp" alt="Jesus Says 2.2.1 promotional panel: Journal" width="660" height="1434" loading="lazy" /><figcaption>Journal</figcaption></figure>
+    <figure class="release-panel"><img src="/assets/screens/2.2.1/08_peace_garden.webp" alt="Jesus Says 2.2.1 promotional panel: Peace Garden" width="660" height="1434" loading="lazy" /><figcaption>Peace Garden</figcaption></figure>
   </div>
 </div>
 
@@ -519,11 +545,11 @@
   <div class="faq-list">
     <details class="faq-item" id="faq-q1" open>
       <summary>Is Jesus Says free?</summary>
-      <div class="ans"><p>The app is free to download. Start with 7 days of full access, with no payment required to complete your first reflection. Plus Monthly or Plus Annual keeps your daily practice going after the trial. Review the offer and renewal terms in the app before subscribing.</p></div>
+      <div class="ans"><p>The app is free to download, and your first successful reflection comes before any purchase prompt. The bundled Bible and Be Still experiences remain free. Plus offers monthly and annual subscriptions for extended guided access. Any eligible introductory offer begins at App Store purchase confirmation; review its price, duration and renewal terms in the app.</p></div>
     </details>
     <details class="faq-item" id="faq-q2">
       <summary>What happens to my reflections?</summary>
-      <div class="ans"><p>Your journal and saved verses are stored on your device (and can sync through your own iCloud Keychain). To create a response, the text of your reflection is sent to our servers and to Google&rsquo;s Gemini service, which may retain it under Google&rsquo;s own policy; we don&rsquo;t keep conversation history on our servers afterward. We don&rsquo;t sell your data, and you can delete it anytime from Menu &rarr; Manage My Data. The <a href="/privacy_policy.html">Privacy Policy</a> has the details.</p></div>
+      <div class="ans"><p>Your journal and personal transcripts stay in device-only encrypted storage. Saved verses may sync through your own iCloud Keychain settings. To create a response, the text of your reflection is sent to our servers and to Google&rsquo;s Gemini service, which may retain it under Google&rsquo;s own policy; we don&rsquo;t keep conversation history on our servers afterward. We don&rsquo;t sell your data, and you can delete it anytime from Profile &rarr; Manage My Data. The <a href="/privacy_policy.html">Privacy Policy</a> has the details.</p></div>
     </details>
     <details class="faq-item" id="faq-q3">
       <summary>Is this a replacement for church or a pastor?</summary>
@@ -565,7 +591,7 @@
       <svg class="apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
       <span class="stack"><small>Download on the</small><span>App Store</span></span>
     </a>
-    <small>iPhone and iPad · Free to download · 7 days of full access, then Plus</small>
+    <small>iPhone and iPad · Free to download · Optional Plus subscription</small>
   </div>
 </section>
 

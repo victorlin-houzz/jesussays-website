@@ -73,7 +73,7 @@ RELATED_HEADINGS = {
 }
 CTA_BODY = ("Jesus Says: Daily Reflection gives you one verse, one reflection, one prayer, and one step for today. "
             "Speak or type what you're carrying and receive Scripture and a prayer you can return to.")
-CTA_SMALL = "Free on iPhone and iPad · 7 days of full access, then Plus"
+CTA_SMALL = "Free to download on iPhone and iPad · Optional Plus subscription"
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
@@ -476,7 +476,7 @@ def render_llms(catalog: dict) -> str:
         "Key facts:",
         f"- App Store: {chrome.APP_STORE_URL}",
         "- Platforms: iPhone and iPad (no Android version).",
-        "- Price: free to download with 7 days of full access; Plus Monthly and Plus Annual subscriptions continue it.",
+        "- Price: free to download; first reflection before any purchase prompt. Optional Plus Monthly and Plus Annual subscriptions; eligible introductory offers are shown in the app.",
         "- Daily practice: one verse, one reflection, one prayer, and one step for today (\"Today with God\").",
         "- Speak or type a private reflection and receive Scripture, a short reflection, and a prayer.",
         "- Also: a 7-day path through Scripture, Be Still quiet moments (Still Waters, Peace Be Still, Consider the Heavens), "

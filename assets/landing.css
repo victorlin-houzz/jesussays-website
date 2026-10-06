@@ -922,3 +922,21 @@ footer.site .footer-h {
   .brand-name { font-size: 14px; }
   .nav-cta { padding-inline: 10px; font-size: 11px; }
 }
+
+/* Finished 2.2.1 panels retain their captions and full aspect ratio. */
+.hero-panel { width: min(320px, 100%); height: auto; border-radius: 18px; box-shadow: 0 30px 70px -24px rgba(26,31,74,.3); }
+.release-panel { flex: 0 0 280px; margin: 0; scroll-snap-align: center; }
+.release-panel img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.release-panel figcaption { margin-top: 12px; text-align: center; font-family: var(--serif); color: var(--ink-soft); }
+.gallery:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+.day-card .shot .frame { aspect-ratio: 660 / 1434; padding: 0; border-radius: 14px; background: var(--cream); }
+.day-card .shot .frame .scr { border-radius: 14px; }
+.day-card .shot .frame img { height: auto; object-fit: contain; }
+.release-update p { max-width: 760px; color: var(--ink-soft); line-height: 1.7; }
+@media (max-width: 560px) { .release-panel { flex-basis: 240px; } }
+
+.day-card .shot { height: 530px; }
+@media (max-width: 900px) {
+  .phone-stage { order: 0; }
+  .hero-panel { width: min(280px, 100%); }
+}
