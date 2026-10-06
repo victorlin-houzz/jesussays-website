@@ -134,5 +134,58 @@
       ],
       "web_sha256": "506fa3a635306f70f187b86519b9f3a598fa376c32ac38a97cf8a9bac436e1d9"
     }
+  ],
+  "daily_practice_raw_screenshots": [
+    {
+      "label": "Walk with Elijah",
+      "source": "/Users/victor/github/quotebible/Documentation/releases/2.2.1/screenshots/iphone_6.9/06_elijah.png",
+      "original": "assets/screens/2.2.1/raw/06_elijah.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "398123fe938504e093514f13cce39a149e91741a093a4100232e883b6dda5916",
+      "web": "assets/screens/2.2.1/raw/06_elijah.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "21c214bf0fdc72196543bd8248a7adb164b77eccbaa84b5ebb6197ee3c721ddd",
+      "note": "Original 2.2.1 Device Hub capture with synthetic demo content; resized for web without cropping or added captions. Source checkout provenance is recorded above."
+    },
+    {
+      "label": "Personal Reflection",
+      "source": "/Users/victor/github/quotebible/Documentation/releases/2.2.1/screenshots/iphone_6.9/04_reflection.png",
+      "original": "assets/screens/2.2.1/raw/04_reflection.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "37176eca3b209e0f457a9b2dc9d717af7c7c0819f59fcf23b3e5ea390e2a8414",
+      "web": "assets/screens/2.2.1/raw/04_reflection.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "7b59be495cb56c547634402cd94dac037a2cbd3a5b5c062627493f584956eb0c",
+      "note": "Original 2.2.1 Device Hub capture with synthetic demo content; resized for web without cropping or added captions. Source checkout provenance is recorded above."
+    },
+    {
+      "label": "Journal",
+      "source": "/Users/victor/github/quotebible/Documentation/releases/2.2.1/screenshots/iphone_6.9/07_journal.png",
+      "original": "assets/screens/2.2.1/raw/07_journal.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "3dfbc1e9d340d4f397f333fe35a41f1c2378f4148b8d147f95a56302dc79ecb8",
+      "web": "assets/screens/2.2.1/raw/07_journal.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "bc528bd66c3b46354d02fe93a95548f29ade5885396f06741283d0d5fc1a2380",
+      "note": "Original 2.2.1 Device Hub capture with synthetic demo content; resized for web without cropping or added captions. Source checkout provenance is recorded above."
+    }
   ]
 }
