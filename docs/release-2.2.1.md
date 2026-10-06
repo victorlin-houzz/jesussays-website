@@ -12,3 +12,5 @@ Validation: site build, AEO checks (37 articles and 305 redirect stubs), analyti
 Browser review used gstack's headless driver at 390 × 844 and 1440 × 1000. Home and Download load all eight panels without missing images or page overflow; About and both legal pages also have no mobile overflow. The mobile hero keeps the App Store action before the tall screenshot. Legal pages load successfully and show version 2.2.1. Still Waters navigation and its disabled-control fallback were verified; ink interaction could not be verified because this headless browser lacks WebGL 2 floating-point rendering. Its renderer was not changed.
 
 This PR prepares the website update. Merging to main publishes it through the existing Pages configuration.
+
+Follow-up: the three Daily Practice cards use original Elijah, Personal Reflection and Journal captures from the app release, without promotional captions. Raw PNGs and WebP derivatives are preserved under `assets/screens/2.2.1/raw/` and recorded in the screenshot manifest. The eight App Tour promotional panels remain unchanged.
