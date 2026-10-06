@@ -1,0 +1,138 @@
+{
+  "app_version": "2.2.1",
+  "copied_on": "2026-10-05",
+  "source_commit": "99c703b746437e1ef49205270e25923303fc508d",
+  "source_worktree_dirty": true,
+  "source_note": "Existing 2.2.1 finished promotional panels from the release worktree; source commit is the checkout base, not a claim that captures were made from a clean commit. Synthetic demo content. Still Waters reuses earlier genuine gameplay as documented in the app release manifest.",
+  "source_directory": "/Users/victor/github/quotebible/Documentation/releases/2.2.1/promotional/iphone_6.9",
+  "screenshots": [
+    {
+      "device": "iphone_6.9",
+      "label": "Today",
+      "original": "assets/screens/2.2.1/01_today.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "5a574abe4e972e1a87c701a49ab5a35676aeee688fd9bde3db9a69872538ef42",
+      "web": "assets/screens/2.2.1/01_today.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "238c1e5ae180b1f3948733b39047205224d1312a836acd0e63cb29d6679a017d"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Bible",
+      "original": "assets/screens/2.2.1/02_bible.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "afadde6556bd56b67f5b0fa7223955ebc6c83518e9e662bb71add672e617a20e",
+      "web": "assets/screens/2.2.1/02_bible.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "0c48d463b7ecb20db5a721303110bbafe34a9ae813ef19dbce6685b53df15d37"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Talk with Jesus",
+      "original": "assets/screens/2.2.1/03_talk.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "be92829a6362a45ec1dfd3c1cdb754aca796149f321d570abdb30f8467eba277",
+      "web": "assets/screens/2.2.1/03_talk.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "b0cf833248334758dc81a531ad49c7a2d322afa1fd0d896af25ca5e3d8d52607"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Personal Reflection",
+      "original": "assets/screens/2.2.1/04_reflection.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "7f08ea16231c275b7099a6a5565640808dd7a721f7c7bcec77d09e6efc7101fd",
+      "web": "assets/screens/2.2.1/04_reflection.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "65a772ede43c8f3582a9a28f3ba37a191aeab017bad97d5e7dee8a93e63d5c66"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Still Waters",
+      "original": "assets/screens/2.2.1/05_still_waters.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "34604825de989a3a0085be583e14be98b728a8077191e0ee678d02140b6bccc6",
+      "web": "assets/screens/2.2.1/05_still_waters.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "356a298669b00210e7e610e045952b375fcf91520b3080e71009f42b88fc7f10"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Walk with Elijah",
+      "original": "assets/screens/2.2.1/06_elijah.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "001cfd585de82a7ba844e76fb6aa9f72220a9213d3da7e9b794c779e5b204bf5",
+      "web": "assets/screens/2.2.1/06_elijah.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "315fd22d901f714e1d4824ff06e3cc4647d98036bbc61d117bff8bf59860f762"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Journal",
+      "original": "assets/screens/2.2.1/07_journal.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "abb9bd426038172251cabc0730cdc820a13f5cf3717a8eaf2249ec4e2e93c930",
+      "web": "assets/screens/2.2.1/07_journal.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "e018348c267f7beeed52c85af267e527ac134ae8d182e3d1b4fd18279aa19d28"
+    },
+    {
+      "device": "iphone_6.9",
+      "label": "Peace Garden",
+      "original": "assets/screens/2.2.1/08_peace_garden.png",
+      "dimensions": [
+        1320,
+        2868
+      ],
+      "sha256": "aee68666b71c786cd7b560f625a5a7a00bd8004543ab5fcc6de0481d51ec6dea",
+      "web": "assets/screens/2.2.1/08_peace_garden.webp",
+      "web_dimensions": [
+        660,
+        1434
+      ],
+      "web_sha256": "506fa3a635306f70f187b86519b9f3a598fa376c32ac38a97cf8a9bac436e1d9"
+    }
+  ]
+}

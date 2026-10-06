@@ -91,9 +91,7 @@ link builder. Every page also carries the Smart App Banner (`<meta name="apple-i
 
 ## Screenshots
 
-The 2.0 screenshot inventory and original checksums are in `docs/screenshots-2.0.json`. Web images are in
-`assets/screens/2.0/`; full-resolution Apple upload files are preserved in `~/Desktop/JesusSays-2.0-AppStore/`
-(seven iPhone 6.9-inch images and six iPad 13-inch images). Do not upscale web images for Apple uploads.
+The current 2.2.1 iPhone promotional set is recorded in `docs/screenshots-2.2.1.json`: source checkout commit, dirty-worktree provenance, dimensions and SHA-256 hashes for both originals and web derivatives. `assets/screens/2.2.1/` preserves the eight full-resolution PNG originals and optimized 660 × 1434 WebP versions used by the site. They were copied from `../quotebible/Documentation/releases/2.2.1/promotional/iphone_6.9/`, without editing their captions or app content. Do not upscale web derivatives for Apple uploads. Historical 2.0 assets remain for the browser Still Waters preview and older editorial illustrations.
 
 ## Deploying
 

@@ -81,7 +81,8 @@
   <main>
 <nav aria-label="Legal navigation"><a href="/">Jesus Says home</a> · <a href="/privacy_policy.html">Privacy Policy</a> · <a href="/terms_of_use.html">Terms of Use</a></nav>
 <h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>Last Updated: September 30, 2026</strong></p>
+<p><strong>Last Updated: October 5, 2026 — App version
+2.2.1</strong></p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Jesus Says ("we," "our," or "App") is committed to protecting your
 privacy. This Privacy Policy explains how we collect, use, disclose, and
@@ -96,53 +97,63 @@ or personal email address.</p>
 <h2 id="2-information-we-collect">2. Information We Collect</h2>
 <h3 id="21-information-you-provide">2.1 Information You Provide</h3>
 <ul>
-<li><strong>Talk to Jesus Conversation Data</strong>: The App requests
-microphone access to record your spoken reflections. Your voice input is
-transcribed on-device or via Apple's Speech Recognition service,
-depending on your device and language settings, before being sent to our
-servers as text for spiritual guidance generation</li>
-<li><strong>Personal Reflection (Confession) Transcripts</strong>: Audio
-reflections you record in the Personal Reflection feature may be
+<li><p><strong>Talk to Jesus Conversation Data</strong>: The App
+requests microphone access to record your spoken reflections. Your voice
+input is transcribed on-device or via Apple's Speech Recognition
+service, depending on your device and language settings, before being
+sent to our servers as text for spiritual guidance generation</p></li>
+<li><p><strong>Personal Reflection (Confession) Transcripts</strong>:
+Audio reflections you record in the Personal Reflection feature may be
 processed on-device or via Apple's Speech Recognition service, depending
 on your device and language settings, before being sent to our servers
 as text for spiritual guidance generation. Your completed reflection
 entries (response cards and metadata) are stored locally in a unified
-journal store (iOS Keychain, key <code>journal_entries</code>) and may
-sync across your Apple devices only through your own iCloud Keychain
-settings (see §6 and §12.1)</li>
-<li><strong>Devotion Journey Transcripts</strong>: Daily audio check-ins
-you record in the Devotion Journey feature may be processed on-device or
-via Apple's Speech Recognition service, depending on your device and
-language settings, before being sent to our servers as text for
-personalized devotional responses. Your completed devotion entries are
-also stored locally in the unified journal store (iOS Keychain, key
-<code>journal_entries</code>) and may sync across your Apple devices
-only through your own iCloud Keychain settings (see §6 and §12.1)</li>
-<li><strong>Listen Mode Playback</strong>: Listen Mode uses local
+journal store (iOS Keychain, key <code>journal_entries_device_v2</code>)
+with iCloud Keychain sync disabled (see §6 and §12.1)</p></li>
+<li><p><strong>Devotion Journey Transcripts</strong>: Daily audio
+check-ins you record in the Devotion Journey feature may be processed
+on-device or via Apple's Speech Recognition service, depending on your
+device and language settings, before being sent to our servers as text
+for personalized devotional responses. Your completed devotion entries
+are also stored locally in the unified journal store (iOS Keychain, key
+<code>journal_entries_device_v2</code>) with iCloud Keychain sync
+disabled (see §6 and §12.1)</p></li>
+<li><p><strong>Listen Mode Playback</strong>: Listen Mode uses local
 text-to-speech on your device. The spoken playback itself is not
-transmitted to our servers</li>
-<li><strong>Chapel Appearance</strong>: Chapel lets you choose a bundled
-moving wallpaper for Home. Only the selected wallpaper identifier is
-saved in local device preferences; it is cleared on sign-out or
-account/session deletion. Chapel does not upload your selection or
-download videos from our servers. A still image is shown when reduced
-motion is enabled or the device is not on Wi-Fi or Ethernet</li>
-<li><strong>Verse Library</strong>: Saved verses are stored in iOS
+transmitted to our servers</p></li>
+<li><p><strong>Chapel Appearance</strong>: Chapel lets you choose a
+bundled painted or moving view for Today and a day or evening light. The
+selected view and light are saved in local device preferences; both are
+cleared on sign-out or account/session deletion. Chapel does not upload
+your selection or download videos from our servers. A still image is
+shown when reduced motion is enabled or the device is not on Wi-Fi or
+Ethernet</p></li>
+<li><p><strong>Verse Library</strong>: Saved verses are stored in iOS
 Keychain with <code>synchronizable: true</code>, so they may sync across
-your Apple devices through your own iCloud Keychain settings</li>
-<li><strong>Anonymous Firebase Account Information</strong>: When you
+your Apple devices through your own iCloud Keychain settings</p></li>
+<li><p><strong>Anonymous Firebase Account Information</strong>: When you
 begin using the App, Firebase Authentication creates an anonymous
 account identified by a unique UID. We use this anonymous UID to operate
 the Service, enforce security protections, track purchase entitlements,
 restore eligible purchases, and support delete-account requests. By
 itself, this anonymous UID does not directly identify you by name or
-personal email address</li>
-<li><strong>Authentication Information</strong>: If you choose to sign
-in with Apple, your account may also be linked to Apple-provided
+personal email address</p></li>
+<li><p><strong>Authentication Information</strong>: If you choose to
+sign in with Apple, your account may also be linked to Apple-provided
 authentication tokens and any profile data you choose to share. Core
-features and paid entitlement do not require manual Apple sign-in</li>
-<li><strong>Device Information</strong>: Device ID, app version, and
-platform information</li>
+features and paid entitlement do not require manual Apple
+sign-in</p></li>
+<li><p><strong>Device Information</strong>: Device ID, app version, and
+platform information</p></li>
+<li><p><strong>Walk With, Small Steps and Peace Garden</strong>: Your
+sparrow name, small-step progress, earned seeds, garden plants, story
+choices and saved story replies are stored in encrypted, device-only
+Keychain storage. When you send a typed or transcribed story reply, your
+words are sent through our backend to Google Gemini to prepare a
+response. We do not retain these story words as history on our backend.
+Operational allowance counters and request identifiers are retained for
+service security. Walk data is cleared on sign-out or session/account
+deletion.</p></li>
 </ul>
 <h3 id="22-automatically-collected-information">2.2 Automatically
 Collected Information</h3>
@@ -215,7 +226,7 @@ metadata is not retained server-side after the response is generated, is
 not used for advertising or profiling, and does not include free-text
 content beyond your first name. It does not include your birth date or
 precise location. You can opt out of name-based address at any time by
-re-running onboarding or clearing your profile from Menu → Manage My
+re-running onboarding or clearing your profile from Profile → Manage My
 Data</li>
 <li><strong>Google's Retention</strong>: Google may retain transmitted
 transcripts and use them to improve their services according to their
@@ -227,7 +238,7 @@ Policy</a></li>
 <li><strong>Note</strong>: Once data is transmitted to Google, it is
 subject to Google's privacy policy. If you have concerns about a
 specific reflection, delete its transcript before the next Mercy
-Timeline analysis window (Menu → Manage My Data → Clear Transcript
+Timeline analysis window (Profile → Manage My Data → Clear Transcript
 Data)</li>
 </ul>
 <h3 id="52-firebase-google">5.2 Firebase (Google)</h3>
@@ -237,8 +248,8 @@ authentication, optional Apple-linked authentication, and App Check
 security</li>
 <li><strong>Data Shared</strong>: Anonymous Firebase UID, device ID, app
 version, authentication tokens, and account-linked operational records
-such as purchase entitlements, reflection balances, and devotion
-state</li>
+such as purchase entitlements, usage and first-reflection records, daily
+guided-reply allowance counters, and devotion state</li>
 <li><strong>Privacy Policy</strong>: <a
 href="https://firebase.google.com/support/privacy">Firebase Privacy
 Policy</a></li>
@@ -253,43 +264,45 @@ the Service</li>
 <li><strong>Data Shared</strong>: Purchase transactions, product
 identifiers, original transaction identifiers, subscription
 expiration/status information, and verification data are processed by
-Apple; we receive verification results and App Store Server
-Notifications to grant, transfer, update, or revoke entitlement
-status</li>
+Apple; RevenueCat processes Apple subscription notifications and
+purchase records, and our backend reconciles your entitlement from
+RevenueCat</li>
 <li><strong>Privacy Policy</strong>: <a
 href="https://www.apple.com/privacy/">Apple Privacy Policy</a></li>
 </ul>
 <h3 id="54-apple-sign-in">5.4 Apple Sign In</h3>
 <ul>
 <li><strong>Purpose</strong>: Optional user authentication that links
-your app account to your Apple ID for account/data continuity across
-reinstalls or supported devices. App Store purchase restoration is based
-on Apple's purchase records and does not require manual Sign in with
-Apple, although signing in may make account continuity easier</li>
+your app account to your Apple ID for account and operational
+devotion-state continuity across reinstalls or supported devices. It
+does not back up device-only journal entries, transcripts or Walk With
+history. App Store purchase restoration is based on Apple's purchase
+records and does not require manual Sign in with Apple, although signing
+in may make account continuity easier</li>
 <li><strong>Data Shared</strong>: Authentication tokens, basic profile
 information (if you choose to share with the App)</li>
-<li><strong>Token Revocation on Account Deletion</strong>: When you sign
-in with Apple, the App captures the short-lived
-<code>authorization_code</code> that Apple returns and forwards it once
-to our backend. Our backend exchanges it for a refresh token, encrypts
-it with AES-256-GCM, and stores it solely so that — when you later
-delete your account — we can call Apple's <code>/auth/revoke</code>
-endpoint and revoke your Sign in with Apple grant for this app, as
-required by App Store Review Guideline 5.1.1(v). Refresh tokens are
-never read for any other purpose and are deleted as part of account
-deletion. If Apple is unreachable at deletion time, account deletion
-still proceeds; revocation is best-effort</li>
+<li><strong>Token Revocation on Account Deletion</strong>: In the
+current app, signing in does not store a new Apple refresh token on our
+backend. When you delete an Apple-linked account, the App asks Apple to
+confirm again and sends the fresh, short-lived authorization code to our
+backend solely to revoke your Sign in with Apple grant. Cancelling that
+confirmation cancels deletion. Older app versions may have stored an
+encrypted Apple refresh token for revocation; existing tokens remain a
+fallback and are removed during account deletion. Apple revocation is
+best-effort: if Apple is unreachable, deletion still proceeds</li>
 <li><strong>Privacy Policy</strong>: <a
 href="https://www.apple.com/privacy/">Apple Privacy Policy</a></li>
 </ul>
 <h3 id="55-revenuecat">5.5 RevenueCat</h3>
 <ul>
-<li><strong>Purpose</strong>: Subscription event processing and
-entitlement management. RevenueCat receives server-to-server
-subscription lifecycle events from Apple (initial purchase, renewal,
-cancellation, expiration, billing issue, refund) and forwards them to
-our backend so that your Plus entitlement status is updated in real time
-without requiring you to manually restore purchases</li>
+<li><strong>Purpose</strong>: Purchase processing, subscription
+restoration, customer support and entitlement management. RevenueCat
+receives Apple subscription lifecycle events and manages receipt
+transfers. Our backend reads RevenueCat subscription records to
+reconcile your Plus entitlement; the app refreshes that status when
+needed. Restoration follows the Apple Account used for App Store
+purchases, which may differ from your optional Sign in with Apple
+account</li>
 <li><strong>Data Shared</strong>: Apple original transaction
 identifiers, product identifiers, subscription status, and your Firebase
 App User ID. RevenueCat does not receive your voice transcripts,
@@ -337,34 +350,38 @@ reflection and devotion response cards, saved verses, and voice
 transcripts are stored locally on your device using iOS Keychain
 encryption (FlutterSecureStorage). Personal Reflection and Devotion
 Journey entries are stored in a unified journal (Keychain key
-<code>journal_entries</code>, capped at 300 entries). Verse Library
-entries are stored with Keychain <code>synchronizable: true</code>, so
-they may sync through your own iCloud Keychain settings. Listen Mode
-uses local text-to-speech and does not transmit playback audio. If you
-updated from an older version, existing entries in the legacy
-<code>DEVOTION_HISTORY</code> and <code>confession_entries</code>
-Keychain keys were automatically migrated to the unified store at first
-launch. Bible text for in-app verse display is loaded from bundled app
-resources and is never transmitted to our servers. Voice transcripts
-from Personal Reflection and Devotion Journey features are also retained
-separately in encrypted storage to support Mercy Timeline — you may
-delete them independently via Menu → Manage My Data → Clear Transcript
-Data. <strong>Voice transcripts are explicitly device-local: they are
-stored with iCloud Keychain sync disabled, so they do not propagate to
-your other devices</strong></li>
-<li><strong>Apple-Managed Sync (Optional)</strong>: On iOS, journal
-entries and other Keychain-stored entries may synchronize through your
-own iCloud Keychain account when iCloud Keychain is enabled in system
-settings. We do not control Apple iCloud Keychain availability, Apple ID
-state, or sync timing. If iCloud Keychain is disabled, that data remains
-only on the current device. Voice transcripts are excluded from this
-sync (see Local Storage above)</li>
+<code>journal_entries_device_v2</code>, capped at 300 entries). Verse
+Library entries are stored with Keychain
+<code>synchronizable: true</code>, so they may sync through your own
+iCloud Keychain settings. Listen Mode uses local text-to-speech and does
+not transmit playback audio. If you updated from an older version,
+existing entries in the legacy <code>DEVOTION_HISTORY</code> and
+<code>confession_entries</code> Keychain keys were automatically
+migrated to the unified store at first launch. Bible text for in-app
+verse display is loaded from bundled app resources and is never
+transmitted to our servers. Voice transcripts from Personal Reflection
+and Devotion Journey features are also retained separately in encrypted
+storage to support Mercy Timeline — you may delete them independently
+via Profile → Manage My Data → Clear Transcript Data. <strong>Voice
+transcripts are explicitly device-local: they are stored with iCloud
+Keychain sync disabled, so they do not propagate to your other
+devices</strong></li>
+<li><strong>Apple-Managed Sync (Optional)</strong>: Saved Scripture may
+synchronize through your own iCloud Keychain account. Journal entries
+and personal transcripts are stored with sync disabled. This version
+first copies older synced journal entries to device-only storage, then
+removes the old synced journal copy after a successful local write.
+Apple controls sync timing; older app versions on other devices may
+still retain copies. We cannot erase copies outside the app or guarantee
+when Apple propagates a deletion.</li>
 <li><strong>Cloud Storage (Our Backend)</strong>: Authentication tokens,
-App Check data, and operational records (purchase entitlements, Apple
-original transaction identifiers used for subscription ownership,
-devotion progress, usage quotas) are stored securely via Firebase. We do
-<strong>not</strong> store conversation history or voice transcripts on
-our own backend servers after generated responses are created</li>
+App Check data, and operational records (purchase entitlements,
+subscription and purchase event records, devotion plans/progress, usage
+and first-reflection records, daily allowance counters, request-security
+records and account-deletion markers) are stored securely via Firebase.
+We do <strong>not</strong> store conversation history or voice
+transcripts on our own backend servers after generated responses are
+created</li>
 <li><strong>Third-Party Processing (Google)</strong>: Conversation text
 is transmitted to Google Gemini for real-time response generation. When
 Mercy Timeline is enabled, stored transcripts are also transmitted to
@@ -384,11 +401,12 @@ with iCloud Keychain sync disabled and retained to support Mercy
 Timeline. Raw transcripts do not sync across your Apple devices. You
 have the following deletion options:
 <ul>
-<li><strong>Delete transcripts, keep reflection cards</strong>: Menu →
-Manage My Data → Clear Transcript Data (removes raw voice data; your
+<li><strong>Delete transcripts, keep reflection cards</strong>: Profile
+→ Manage My Data → Clear Transcript Data (removes raw voice data; your
 reflection responses and spiritual history remain intact)</li>
-<li><strong>Delete everything</strong>: Menu → Manage My Data → Delete
-Account (removes all local data and backend records)</li>
+<li><strong>Delete your account/session</strong>: Profile → Manage My
+Data → Delete Account or Delete Session &amp; Data (clears local
+personal data and requests backend cleanup, as described below)</li>
 <li>Transcripts already transmitted to Google before a deletion request
 may be retained by Google according to their policy — we cannot delete
 Google's copy</li>
@@ -398,13 +416,27 @@ servers after the response is generated. Stored locally if you choose to
 keep conversation history</li>
 <li><strong>Account Data</strong>: Retained in Firebase for as long as
 your account is active (anonymous-account records, optional Apple-linked
-account records, purchase entitlements, subscription owner records keyed
-by Apple original transaction identifier, devotion progress, usage
-quotas). All signed-in users — including anonymous Firebase accounts —
-may request deletion via <strong>Menu → Manage My Data</strong> in the
-App. Anonymous users see "Delete Session &amp; Data"; Apple-linked users
-see "Delete Account". Deletion removes all associated backend records
-within 30 days (in-app requests are processed immediately)</li>
+account records, purchase entitlements, RevenueCat event records, any
+retained legacy purchase/ownership records, devotion plans/progress,
+usage and first-reflection records, daily allowance counters). All
+signed-in users — including anonymous Firebase accounts — may request
+deletion via <strong>Profile → Manage My Data</strong> in the App.
+Anonymous users see "Delete Session &amp; Data"; Apple-linked users see
+"Delete Account". A successful in-app request removes your
+authentication record immediately and attempts to remove associated
+backend records. If a storage service is unavailable, cleanup may remain
+incomplete after the account is deleted; contact <a
+href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a> to
+request completion. A minimal deletion marker is retained to prevent
+later subscription events from recreating the account. Request-security
+nonces are not linked to an account and carry separate expiration
+timestamps. Deletion does not cancel an App Store subscription.</li>
+<li><strong>Guest Sessions</strong>: Operational records are retained
+for anonymous sessions as well as Apple-linked accounts. Reinstalling
+without first deleting a guest session does not delete those backend
+records; there is currently no automatic cleanup for abandoned guest
+sessions. Transcripts, journal entries and conversation history remain
+local, apart from the processing described above.</li>
 <li><strong>Analytics Data</strong>: Guest events use an anonymous SDK
 identifier; signed-in events are linked to a Firebase UID. Previously
 transmitted records are not erased by resetting the app. Contact us to
@@ -417,22 +449,24 @@ request erasure (see §5.7).</li>
 including what transcripts are stored on your device and what
 operational data Firebase holds</li>
 <li><strong>Deletion</strong>: All signed-in users may request deletion
-of their session and all associated backend data. Use <strong>Menu →
+of their session and associated backend data. Use <strong>Profile →
 Manage My Data → Delete Session &amp; Data</strong> (anonymous users) or
-<strong>Menu → Manage My Data → Delete Account</strong> (Apple-linked
-users). You may also email <a
+<strong>Profile → Manage My Data → Delete Account</strong> (Apple-linked
+users). In-app requests run immediately; backend cleanup limitations are
+described in §7. You may also email <a
 href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a> with the
-subject "Delete My Account" (email requests processed within 30 days;
-in-app requests are immediate). To delete only transcripts while keeping
-your reflection history, use Menu → Manage My Data → Clear Transcript
-Data</li>
+subject "Delete My Account" to request deletion or completion of cleanup
+(email requests processed within 30 days). To delete only transcripts
+while keeping your reflection history, use Profile → Manage My Data →
+Clear Transcript Data</li>
 <li><strong>Correction</strong>: Request correction of inaccurate data
 by contacting <a
 href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a></li>
-<li><strong>Opt-out of Mercy Timeline</strong>: Disable the Mercy
-Timeline feature in the App's Menu at any time to prevent future batch
-transmission of transcripts to Google. The cached analysis is deleted
-and the Timeline card is hidden; no new transmissions occur</li>
+<li><strong>Opt-out of Mercy Timeline (if available)</strong>: Disable
+the Mercy Timeline feature in the App's Profile at any time to prevent
+future batch transmission of transcripts to Google. The cached analysis
+is deleted and the Timeline card is hidden; no new transmissions
+occur</li>
 </ul>
 <h2 id="81-gdpr-eeauk-rights-and-legal-basis">8.1 GDPR (EEA/UK) Rights
 and Legal Basis</h2>
@@ -443,7 +477,7 @@ consent (Article 6(1)(a)) — including consent for Mercy Timeline batch
 transmission to Google — and our legitimate interests in operating and
 securing the Service (Article 6(1)(f)). You may withdraw consent for
 Mercy Timeline batch transmission by disabling the feature in the App's
-Menu, without affecting your ability to use core app features</li>
+Profile, without affecting your ability to use core app features</li>
 <li><strong>Right to Access</strong>: Request a copy of your personal
 data</li>
 <li><strong>Right to Rectification</strong>: Request correction of
@@ -453,11 +487,10 @@ data</li>
 <li><strong>Right to Restrict Processing</strong>: Request temporary
 restriction of processing in certain circumstances</li>
 <li><strong>Right to Data Portability</strong>: Request your data in a
-portable format where legally applicable. Journal continuity across your
-own Apple devices is handled through local encrypted storage and
-optional iCloud Keychain sync. Raw voice transcripts remain on the
-device and are not synced through iCloud Keychain or retained as history
-on our backend</li>
+portable format where legally applicable. Journal entries remain in
+encrypted storage on the current device. Raw voice transcripts remain on
+the device and are not synced through iCloud Keychain or retained as
+history on our backend</li>
 <li><strong>Right to Object</strong>: Object to certain processing where
 applicable under local law</li>
 <li><strong>Right to Withdraw Consent</strong>: Withdraw consent at any
@@ -475,21 +508,22 @@ the California Consumer Privacy Act:</p>
 information we collect, including voice transcripts stored on your
 device and any generated patterns created by Mercy Timeline</li>
 <li><strong>Right to Delete</strong>: You may request deletion of your
-personal information via Menu → Manage My Data → Delete Account (all
-data) or Menu → Manage My Data → Clear Transcript Data (transcripts
-only). In-app delete requests run immediately as soon as you confirm;
-email requests sent to <a
+personal information via Profile → Manage My Data → Delete Account or
+Delete Session &amp; Data (account/session) or Profile → Manage My Data
+→ Clear Transcript Data (transcripts only). In-app delete requests run
+immediately as soon as you confirm; backend cleanup limitations are
+described in §7. Email requests sent to <a
 href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a> are
 processed within 45 days</li>
 <li><strong>Right to Opt Out</strong>: We do not sell personal
-information. You may disable Mercy Timeline in the App's Menu to prevent
-future transcript transmission to Google</li>
+information. You may disable Mercy Timeline in the App's Profile to
+prevent future transcript transmission to Google</li>
 <li><strong>Right to Non-Discrimination</strong>: Exercising your CCPA
 rights will not affect your access to the Service</li>
 </ul>
 <p>To exercise these rights, contact <a
 href="mailto:jesussays889@gmail.com">jesussays889@gmail.com</a> or use
-the data controls in the App's Menu.</p>
+the data controls in the App's Profile.</p>
 <h2 id="9-childrens-privacy">9. Children's Privacy</h2>
 <p>The App is not intended for children under the age of 13. We do not
 knowingly collect personal information from children under 13. If you
@@ -522,6 +556,10 @@ KJV Bible asset rather than being quoted directly from the model</li>
 <h2
 id="121-mercy-timeline--pattern-analysis-across-your-reflections">12.1
 Mercy Timeline — Pattern Analysis Across Your Reflections</h2>
+<p>Mercy Timeline is disabled in the default 2.2.1 release. No Timeline
+batch analysis runs while it is disabled. The following describes its
+data handling only if it is made available and you enable it. Its
+controls are shown only when the feature is available.</p>
 <p>The Mercy Timeline feature (Plus subscribers, 10+ qualifying spoken
 reflections of at least ~20 words each) analyzes your Personal
 Reflection and Devotion Journey transcripts over time to surface
@@ -552,12 +590,12 @@ clinical, or crisis decisions</li>
 </ul>
 <p><strong>Your control:</strong></p>
 <ul>
-<li>Disable Mercy Timeline: Menu → Manage My Data → Mercy Timeline —
+<li>Disable Mercy Timeline: Profile → Manage My Data → Mercy Timeline —
 prevents future batch transmissions, deletes cached analysis, and hides
 the Timeline card</li>
-<li>Delete transcripts: Menu → Manage My Data → Clear Transcript Data —
-removes on-device copies; Google's copies subject to their policy</li>
-<li>Delete everything: Menu → Manage My Data → Delete Account</li>
+<li>Delete transcripts: Profile → Manage My Data → Clear Transcript Data
+— removes on-device copies; Google's copies subject to their policy</li>
+<li>Delete everything: Profile → Manage My Data → Delete Account</li>
 </ul>
 <h2 id="13-clinical-care--crisis-resources">13. Clinical Care &amp;
 Crisis Resources</h2>

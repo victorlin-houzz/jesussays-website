@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Last Updated: September 30, 2026**
+**Last Updated: October 5, 2026 — App version 2.2.1**
 
 These Terms of Use ("Terms", "Terms of Use") govern your relationship with the Jesus Says mobile application ("Service", "App") operated by Jesus Says ("us", "we", or "our").
 
@@ -21,15 +21,17 @@ By accessing and using the "Jesus Says" mobile application ("App"), you accept a
 Jesus Says is a mobile application that provides Bible verse suggestions and spiritual guidance based on user conversations. The App uses Google Gemini generative technology to analyze conversations and suggest relevant Bible references.
 
 The Service allows you to:
-- **Talk to Jesus** — record spoken reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
-- **Personal Reflection** — record private spoken reflections that are transcribed via Apple's Speech Recognition service and receive a three-card Bible-grounded spiritual response
+- **Talk to Jesus** — speak or type reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
+- **Personal Reflection** — speak or type private reflections (spoken input is transcribed via Apple's Speech Recognition service) and receive a three-card Bible-grounded spiritual response
 - **Devotion Journey** — follow a 7-day calendar-based devotion plan with daily voice check-ins (transcribed via Apple's Speech Recognition service), personalized Scripture-grounded responses, and streak tracking
-- **Mercy Timeline** (Plus) — generated analysis of your Personal Reflection and Devotion Journey transcripts over time, surfacing recurring themes, spiritual tone shifts, and released burdens
+- **Mercy Timeline** (when available, Plus) — generated analysis of your Personal Reflection and Devotion Journey transcripts over time, surfacing recurring themes, spiritual tone shifts, and released burdens
 - **Listen Mode** — listen to Daily Practice content through local text-to-speech on your device; playback audio is not transmitted to our servers
 - **Verse Library** — save scripture references stored locally through iOS Keychain, with iCloud Keychain sync controlled by your Apple device settings
 - **Unified Journal** — view all your Personal Reflection and Devotion Journey entries in a calendar-based journal, stored locally on your device
-- **Chapel** — choose a bundled moving wallpaper for Home without a Plus subscription. Your selection stays in local device preferences and is cleared on sign-out or account/session deletion. The App uses a still image when reduced motion is enabled or the device is not on Wi-Fi or Ethernet
+- **Chapel** — choose a bundled painted or moving view for Today and a day or evening light without a Plus subscription. Your selection stays in local device preferences and is cleared on sign-out or account/session deletion. The App uses a still image when reduced motion is enabled or the device is not on Wi-Fi or Ethernet
 - **Be Still** — explore Scripture-grounded experiences, including Still Waters, Peace, Be Still, and Consider the Heavens. These experiences run on your device without sending your interactions to the response-generation service
+- **Walk With** — follow a seven-day painted retelling of Elijah’s story, read the related Bible passages, and choose, type or speak story replies. Typed or transcribed replies may be processed by Google Gemini through our backend
+- **Small Steps and Peace Garden** — name a sparrow companion, take daily steps, earn seeds through practice, and choose plants in the illustrated Seed Shed. Seeds are earned in the App and are not sold for money or redeemable for cash
 - Subscribe to Plus plans for extended guided access to all premium features
 
 ---
@@ -49,7 +51,13 @@ The Service allows you to:
 
 ---
 
+### Bible Story Retellings
+
+Walk With stories are retellings for reflection, not the words of Scripture or a claim to speak for a biblical figure. Read the linked Bible passages for the words of Scripture. Generated story replies may contain errors and are not a substitute for pastoral care or emergency help.
+
 ## 3.1 Mercy Timeline — Spiritual Reflection, Not Clinical Assessment
+
+Mercy Timeline is disabled in the default 2.2.1 release. The following terms apply only if the feature is made available and enabled.
 
 The "Mercy Timeline" feature (available to Plus subscribers with 10 or more qualifying spoken reflections of at least approximately 20 words each) analyzes your spoken reflections across weeks or months to surface recurring themes, notable shifts in spiritual tone, and what seems released. This analysis is provided for **spiritual reflection and personal insight only**.
 
@@ -88,7 +96,7 @@ For service operation, security, fraud prevention, and usage controls, the App m
 
 ### 5.2 Optional Sign In with Apple
 
-Sign in with Apple is **optional**. If you choose to sign in with Apple, your account will be linked to your Apple ID. This can help preserve app account continuity, data continuity, and recovery if you reinstall the App or use another device supported by the Service. Manual Sign in with Apple is not required to start a trial, purchase Plus, or use eligible paid entitlement.
+Sign in with Apple is **optional**. If you choose to sign in with Apple, your account will be linked to your Apple ID. This can help preserve your app account and operational devotion state across reinstalls or supported devices. It does not upload or back up your device-only journal, transcripts or Walk With history. Saved verses may sync separately through your own iCloud Keychain settings. Manual Sign in with Apple is not required to start a trial, purchase Plus, or use eligible paid entitlement.
 
 ### 5.3 Account Responsibility
 
@@ -99,7 +107,7 @@ If you use an account, whether through Sign in with Apple or an anonymous Fireba
 
 ### 5.4 Account Deletion
 
-All signed-in users — including anonymous Firebase accounts created automatically on first use — may request permanent deletion of their session and associated data. Use **Menu → Manage My Data → Delete Session & Data** (anonymous users) or **Menu → Manage My Data → Delete Account** (Apple-linked users). Deletion removes your Firebase authentication record, purchase records, devotion progress, usage quotas, and all other backend data associated with your session.
+All signed-in users — including anonymous Firebase accounts created automatically on first use — may request permanent deletion of their session and associated data. Use **Profile → Manage My Data → Delete Session & Data** (anonymous users) or **Profile → Manage My Data → Delete Account** (Apple-linked users). When the request succeeds, your Firebase authentication record is removed and the App clears local personal data. Our backend then attempts to remove associated purchase records, devotion progress and usage quotas. If a storage service is unavailable, some backend cleanup may remain incomplete even after the account is deleted. Contact jesussays889@gmail.com to request completion. A minimal deletion marker is retained to prevent later subscription events from recreating the deleted account. Deleting your app account does not cancel an App Store subscription.
 
 ### 5.5 Account Termination by Us
 
@@ -112,19 +120,20 @@ We reserve the right to suspend or terminate your account at any time for violat
 ### 6.1 Guided Access and Usage Controls
 
 - The current App experience is subscription-first for supported app versions
-- Eligible users may receive a 7-day App Store free trial that begins at the time of purchase confirmation in the App Store. The in-app spirituality features that require a subscription become accessible only after your first completed reflection, but the free-trial period itself starts at the App Store purchase moment, consistent with Apple's billing system
+- Your first successful reflection comes before any subscription purchase prompt. Free guided-reply allowances may apply and are shown in the App; Plus extends guided access. The bundled Bible and Be Still experiences remain available without a Plus subscription
+- Any eligible introductory offer, its duration, price and subscription period are displayed on the purchase screen. An App Store trial begins at purchase confirmation, not at installation or your first reflection
 - Plus subscribers receive guided access through their active subscription entitlement
 
 ### 6.2 In-App Purchases
 
-- **Plus Monthly** and **Plus Annual**: Recurring subscriptions for guided access. Monthly may include a 7-day App Store free trial if you are eligible; after any free trial each plan auto-renews at the price displayed on the in-app purchase screen until you cancel
+- **Plus Monthly** and **Plus Annual**: Recurring subscriptions for guided access. An introductory offer may be available if you are eligible; after any free trial each plan auto-renews at the price displayed on the in-app purchase screen until you cancel
 - All purchases are processed through Apple's App Store. If Apple confirms an eligible free trial, the first subscription charge is due when that trial ends; otherwise Apple charges your Apple ID at purchase confirmation
 - Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the price disclosed on the purchase screen. You can manage or cancel subscriptions at any time in **Settings → Apple ID → Subscriptions** on iOS
 - Purchases are final and non-refundable (subject to Apple's refund policy)
 - Prices are subject to change. Apple will notify you of any price increases according to App Store rules; you may decline by cancelling before the next renewal
-- Subscription entitlements are tied to your App Store account and can be restored through the App's Restore Purchases flow. To prevent duplicate access from one App Store subscription, our backend records the Apple original transaction identifier as the canonical subscription owner and may transfer the entitlement to the current Firebase account when you restore
+- Subscription entitlements are tied to your App Store account and can be restored through the App's Restore Purchases flow. RevenueCat manages receipt transfers and our backend reconciles the current app account’s entitlement from RevenueCat. Restoration follows the Apple Account used for App Store purchases, which can differ from the account used for optional Sign in with Apple. Restore Purchases is available in Profile for non-premium users without opening the paywall
 - If you cancel a subscription, Apple generally keeps the subscription active until the end of the already-paid period. The App may continue to show Plus access until that period expires, subject to Apple's billing status. Billing retry or grace-period states may temporarily keep access active while Apple resolves payment status
-- You can manage or cancel subscriptions through your Apple ID subscription settings. The App provides a Manage Subscription link that opens Apple's subscription management page
+- You can manage or cancel subscriptions through your Apple ID subscription settings. Active subscribers can open Subscription Support in Profile for RevenueCat Customer Center, with Apple’s subscription page as a fallback
 
 ### 6.3 Refunds
 
@@ -191,17 +200,17 @@ By using the App, you acknowledge that:
 When the Mercy Timeline feature is enabled, transcripts from your Personal Reflection and Devotion Journey sessions are stored securely on your device (iOS Keychain encryption) and periodically transmitted to Google Gemini in batches for pattern analysis (at most once per 24 hours).
 
 **What this means for your data:**
-- Transcripts are stored locally in encrypted storage on your device (iOS Keychain), not on our backend servers. Personal Reflection and Devotion Journey entries are stored in a unified journal store (`journal_entries` Keychain key). If you previously used an older version of the App, your existing entries are automatically migrated to the unified store at startup
-- Raw voice transcripts are stored with iCloud Keychain sync disabled and remain on the current device. Journal response cards may sync across your Apple devices through your own iCloud Keychain settings; if iCloud Keychain is off, those entries remain on the current device
+- Transcripts are stored locally in encrypted storage on your device (iOS Keychain), not on our backend servers. Personal Reflection and Devotion Journey entries are stored in a unified journal store (`journal_entries_device_v2` Keychain key). If you previously used an older version of the App, your existing entries are automatically migrated to the unified store at startup
+- Raw voice transcripts are stored with iCloud Keychain sync disabled and remain on the current device. Journal entries, including response cards and your words, remain on the current device with iCloud Keychain sync disabled
 - For Mercy Timeline analysis, transcripts are transmitted to Google Gemini as a batch. Google processes this data according to their own privacy policy ([Google Privacy Policy](https://policies.google.com/privacy))
 - **Google may retain transmitted transcripts** according to their policy. We have no control over Google's retention or use of that data
 - We do not retain raw transcripts on our own backend servers after the analysis call completes
 - Analysis results (patterns, themes, tone shifts) are cached on your device only
 
 **Your control:**
-- You may disable Mercy Timeline at any time in Menu → Manage My Data, which prevents future batch transmissions, deletes cached analysis, and hides the Timeline card
-- You may keep iCloud Keychain disabled; if you do, journal continuity across devices may be unavailable. Raw transcripts never sync through iCloud Keychain. Local data may be lost if the device is replaced or reset without a backup
-- You may delete individual transcripts or all transcripts independently of your reflection cards via Menu → Manage My Data → Clear Transcript Data
+- You may disable Mercy Timeline at any time in Profile → Manage My Data, which prevents future batch transmissions, deletes cached analysis, and hides the Timeline card
+- Saved Scripture may sync through iCloud Keychain; journal entries and raw transcripts remain on the current device. Local data may be lost if the device is replaced or reset without a backup
+- You may delete individual transcripts or all transcripts independently of your reflection cards via Profile → Manage My Data → Clear Transcript Data
 - Deleting transcripts does not delete your reflection history or spiritual progress
 - Once transcripts have been transmitted to Google, we cannot delete Google's copy. If you have concerns about a specific reflection, delete its transcript before the next 24-hour analysis window
 
@@ -268,12 +277,12 @@ Your continued use of the Service after any such changes constitutes your accept
 
 You may stop using the Service at any time by deleting the App from your device. Please note that **deleting the App does not delete your account or backend data stored on our servers, including anonymous Firebase account records, purchase records, or devotion progress.**
 
-To permanently delete your session and all associated backend data:
-- **Anonymous users**: use **Menu → Manage My Data → Delete Session & Data** in the App's settings panel
-- **Apple-linked users**: use **Menu → Manage My Data → Delete Account** in the App's settings panel
+To request permanent deletion of your session and associated backend data:
+- **Anonymous users**: use **Profile → Manage My Data → Delete Session & Data** in the App's settings panel
+- **Apple-linked users**: use **Profile → Manage My Data → Delete Account** in the App's settings panel
 - **Either type**: contact us at jesussays889@gmail.com with the subject "Delete My Account" (processed within 30 days)
 
-This complies with App Store Guideline 5.1.1(v). Account deletion is available in the app regardless of whether you signed in with Apple.
+Account deletion is available in the app regardless of whether you signed in with Apple. The authentication record is removed before backend data cleanup; the limitations and support path in §5.4 also apply here.
 
 ### 15.2 Termination by Us
 
@@ -295,9 +304,9 @@ If you are located outside the United States, you are responsible for compliance
 
 ## 17. Additional Rights for EU/EEA and California Users
 
-**EU/EEA Users (GDPR):** If you are located in the European Union or European Economic Area, you have the following rights under GDPR: (a) access your personal data; (b) request correction or deletion of your personal data; (c) data portability; (d) restriction of processing; and (e) lodge a complaint with a supervisory authority. The legal bases for processing your data are your consent (Article 6(1)(a)) — including consent for Mercy Timeline batch transmission where applicable — and our legitimate interest in providing the Service (Article 6(1)(f)). You may withdraw consent for Mercy Timeline batch transmission at any time by disabling the feature in the App's Menu without affecting your use of core app features.
+**EU/EEA Users (GDPR):** If you are located in the European Union or European Economic Area, you have the following rights under GDPR: (a) access your personal data; (b) request correction or deletion of your personal data; (c) data portability; (d) restriction of processing; and (e) lodge a complaint with a supervisory authority. The legal bases for processing your data are your consent (Article 6(1)(a)) — including consent for Mercy Timeline batch transmission where applicable — and our legitimate interest in providing the Service (Article 6(1)(f)). You may withdraw consent for Mercy Timeline batch transmission at any time by disabling the feature in the App's Profile without affecting your use of core app features.
 
-**California Users (CCPA):** If you are a California resident, you have the right to: (a) know what personal information we collect about you, including voice transcripts and generated patterns if Mercy Timeline is enabled; (b) request deletion of your personal information, including transcripts stored on your device; and (c) opt out of the sale of your personal information. We do not sell personal information. You may exercise these rights by contacting jesussays889@gmail.com or using the data controls in the App's Menu.
+**California Users (CCPA):** If you are a California resident, you have the right to: (a) know what personal information we collect about you, including voice transcripts and generated patterns if Mercy Timeline is enabled; (b) request deletion of your personal information, including transcripts stored on your device; and (c) opt out of the sale of your personal information. We do not sell personal information. You may exercise these rights by contacting jesussays889@gmail.com or using the data controls in the App's Profile.
 
 To exercise any of these rights, contact us at jesussays889@gmail.com.
 
@@ -360,3 +369,7 @@ By using the App, you acknowledge that:
 ---
 
 **By using Jesus Says, you acknowledge that you understand the App uses generative technology, that responses are generated and not reviewed by religious authorities, and that the App is not a replacement for church services or professional spiritual guidance.**
+
+### Walk With data (when available)
+
+Walk With stores your sparrow name, garden and story progress, choices and saved replies in device-only encrypted storage. Sending your own words requests processing through our service by Google Gemini. Story text is written in advance; generated replies are labeled. Sign-out or session/account deletion clears local Walk data. Availability depends on the features enabled in your version.
