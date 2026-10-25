@@ -307,7 +307,7 @@
       "description": "A five-minute daily devotional for today: one KJV passage from Lamentations 3, a short reflection, a written prayer, one step, and a week of readings.",
       "label": "Daily devotional for today",
       "published": "2026-05-08",
-      "modified": "2026-09-29",
+      "modified": "2026-10-24",
       "related": [
         "how-to-pray-according-to-the-bible",
         "7-day-devotional-for-new-faith",
@@ -345,6 +345,22 @@
         "christian-advice-for-doubt",
         "daily-devotional-today"
       ]
+    },
+    {
+      "title": "Quiet Time With God: A Simple Guide",
+      "h1": "Quiet Time With God: A Simple Guide",
+      "description": "A simple guide to quiet time with God: read a short KJV passage, reflect, and pray in five or fifteen minutes, with help for distraction and missed days.",
+      "label": "Quiet time with God",
+      "category": "prayer-devotion",
+      "kind": "Prayer Guide",
+      "related": [
+        "daily-devotional-today",
+        "how-to-pray-according-to-the-bible",
+        "7-day-devotional-for-new-faith"
+      ],
+      "slug": "quiet-time-with-god",
+      "published": "2026-10-24",
+      "modified": "2026-10-24"
     },
     {
       "slug": "bible-verses-about-faith-and-trust",
