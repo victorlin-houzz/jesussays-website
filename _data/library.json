@@ -547,7 +547,7 @@
       "description": "A written prayer for your family and marriage, KJV verses to pray, simple steps for praying for a spouse or children, and what to do if home isn't safe.",
       "label": "Prayer for family and marriage",
       "published": "2026-05-08",
-      "modified": "2026-09-29",
+      "modified": "2026-10-24",
       "related": [
         "christian-advice-for-relationships",
         "daily-devotional-on-forgiveness",
@@ -585,6 +585,22 @@
         "bible-verses-for-strength-hard-times",
         "bible-verses-about-faith-and-trust"
       ]
+    },
+    {
+      "title": "Prayer for My Husband During Hard Times",
+      "h1": "A Prayer for My Husband During Hard Times",
+      "description": "A prayer for your husband during hard times, with KJV verses for work, money, illness, and discouragement, plus practical support and healthy boundaries.",
+      "label": "Prayer for a husband in hard times",
+      "category": "relationships",
+      "kind": "Prayer",
+      "related": [
+        "prayer-for-family-and-marriage",
+        "bible-verses-for-strength-hard-times",
+        "christian-advice-for-relationships"
+      ],
+      "slug": "prayer-for-husband-during-hard-times",
+      "published": "2026-10-24",
+      "modified": "2026-10-24"
     },
     {
       "slug": "best-christian-prayer-apps",
