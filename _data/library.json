@@ -363,6 +363,22 @@
       "modified": "2026-10-24"
     },
     {
+      "title": "Morning Prayer for Family: A Short Prayer Together",
+      "h1": "Morning Prayer for Family: A Short Prayer to Say Together",
+      "description": "A short morning prayer for family to say aloud, with KJV verses, optional children’s parts, and simple ways to make room for prayer on busy mornings.",
+      "label": "Morning prayer for family",
+      "category": "prayer-devotion",
+      "kind": "Prayer",
+      "related": [
+        "prayer-for-family-and-marriage",
+        "morning-prayer-for-protection",
+        "how-to-pray-according-to-the-bible"
+      ],
+      "slug": "morning-prayer-for-family",
+      "published": "2026-10-24",
+      "modified": "2026-10-24"
+    },
+    {
       "slug": "bible-verses-about-faith-and-trust",
       "category": "faith-purpose",
       "kind": "Bible Verses",
