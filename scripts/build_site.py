@@ -477,10 +477,15 @@ def render_llms(catalog: dict) -> str:
         f"- App Store: {chrome.APP_STORE_URL}",
         "- Platforms: iPhone and iPad (no Android version).",
         "- Price: free to download; first reflection before any purchase prompt. Optional Plus Monthly and Plus Annual subscriptions; eligible introductory offers are shown in the app.",
-        "- Daily practice: one verse, one reflection, one prayer, and one step for today (\"Today with God\").",
-        "- Speak or type a private reflection and receive Scripture, a short reflection, and a prayer.",
-        "- Also: a 7-day path through Scripture, Be Still quiet moments (Still Waters, Peace Be Still, Consider the Heavens), "
-        "Listen Mode read-aloud, a private Verse Library and journal, and the full King James Bible.",
+        "- Four rooms: Today, Chat, Bible and Explore (version 2.3.0).",
+        "- Today opens on a King James verse, then two more passages, for twenty-two ways your heart can be (more than "
+        "eight hundred passages). Each verse is read aloud from a recording made with a generated voice; the readings work offline.",
+        "- Pray the verse back to God (touch a word, pray in silence, say Amen), or pray in your own words by voice or text "
+        "and receive Scripture, a short reflection, and a prayer.",
+        "- Chat: topic cards and an Ask a question bar with a microphone; answers come back to the Bible.",
+        "- Bible: the full King James Bible, offline, opening where you left off, with a book and chapter picker, search and saved verses.",
+        "- Explore: Elijah's seven-day painted story, Be Still (Still Waters, Peace Be Still, Consider the Heavens), the Peace Garden, "
+        "a private Journal, devotion paths and Journeys.",
         "- Responses are generated from Scripture and are not reviewed by religious authorities. The app is not a replacement "
         "for church, pastoral care, counseling, medical care, or emergency services.",
         "- Website Scripture quotations use the King James Version (public domain), matching the app's Bible reader.",
