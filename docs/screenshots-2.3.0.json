@@ -1,0 +1,205 @@
+{
+ "app_version": "2.3.0",
+ "build": "33",
+ "copied_on": "2026-11-02",
+ "source_commit": "e120a88",
+ "source_repository": "quotebible (main)",
+ "source_note": "Finished 2.3.0 (33) promotional panels and raw captures from the release folder. Synthetic demo content. Still Waters reuses earlier genuine gameplay, as in previous releases.",
+ "source_directory": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9",
+ "web_conversion": "Pillow LANCZOS resize to 660x1434, WebP quality 82, method 6 (no cwebp on this machine)",
+ "screenshots": [
+  {
+   "device": "iphone_6.9",
+   "label": "Today",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/01_today.png",
+   "original": "assets/screens/2.3.0/01_today.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "cc718f80ea32a2cc0fd5b35699c7c2bcad74ed06ef2284912fd5bb6df3b045d8",
+   "web": "assets/screens/2.3.0/01_today.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "525199af88fc5f3c78663348bfcb6b3f035fd47579cbf44936a1258157390288"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Bible",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/02_bible.png",
+   "original": "assets/screens/2.3.0/02_bible.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "25762188485d06b7fc076f3ab760c7be48fbb9bdc9da2b8fae5cb243dc85be23",
+   "web": "assets/screens/2.3.0/02_bible.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "08417ca522e559684f0492cb77ceeb44c3be596f11e074d0fc27cf05e7dfede2"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Talk with Jesus",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/03_talk.png",
+   "original": "assets/screens/2.3.0/03_talk.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "710b9fa1e5e28e03dc3cdca54b85c98658f7421985f855047cdfb4f331f629d3",
+   "web": "assets/screens/2.3.0/03_talk.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "8fa5bbe4709fc6f2fd042e3951d19fb2884e2d349fe94f643f514e0bb7139c25"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Personal Reflection",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/04_reflection.png",
+   "original": "assets/screens/2.3.0/04_reflection.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "ef0ada0359dcca454aecf351c5ca96d71eddea8d47696eeb22bc3be2f464fcb5",
+   "web": "assets/screens/2.3.0/04_reflection.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "16fcb59a1bac7da850bb34a6d4056bba33eaa40af23f5c5c2caedf64afcc7f20"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Still Waters",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/05_still_waters.png",
+   "original": "assets/screens/2.3.0/05_still_waters.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "34604825de989a3a0085be583e14be98b728a8077191e0ee678d02140b6bccc6",
+   "web": "assets/screens/2.3.0/05_still_waters.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "7183427f4a6545b5e85e048ecffd105bd52d861a13cb8ceff9f93d54d3cfb11d",
+   "note": "Still Waters panel uses the genuine 2.0.2 gameplay capture (Documentation/releases/2.0.2/raw/iphone_6.9/06_stillwaters.png) cropped x167 y575 w986 h2100, because the offline capture build has no WebGL ink."
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Walk with Elijah",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/06_elijah.png",
+   "original": "assets/screens/2.3.0/06_elijah.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "7f28e9f497e4a6867c57caa4ede903e27403ba5739c90b70518da4d074acee51",
+   "web": "assets/screens/2.3.0/06_elijah.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "1a0d6e58b03876c3b6fac4fb573f85cea0a102a5ac2fa456bd7c6021637f8dbd"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Journal",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/07_journal.png",
+   "original": "assets/screens/2.3.0/07_journal.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "6e1a0c1b82cfa87ccfc9548d92f5d9d5cb659edb94be653cbe3aed5eefd29059",
+   "web": "assets/screens/2.3.0/07_journal.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "fb7cd5fbb752ea574f911de2bf3c0fa29c21875766bfe8850fcf85f1b6c7a459"
+  },
+  {
+   "device": "iphone_6.9",
+   "label": "Peace Garden",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/promotional/iphone_6.9/08_peace_garden.png",
+   "original": "assets/screens/2.3.0/08_peace_garden.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "f5562ba494f2d5b5a5e40d18d0112276ef1d6be383adc590e90e8b615c6ea5dc",
+   "web": "assets/screens/2.3.0/08_peace_garden.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "33c8272f8947ca54139284fa156209abfe9d912f7b063878267028ac2c25f1f5"
+  }
+ ],
+ "daily_practice_raw_screenshots": [
+  {
+   "label": "Today",
+   "used_for": "home page daily-practice morning card",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/screenshots/iphone_6.9/01_today.png",
+   "original": "assets/screens/2.3.0/raw/01_today.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "a1afc379e00592e49073d8f1a305ed86c0111fc03dc3485901f294d221c63802",
+   "web": "assets/screens/2.3.0/raw/01_today.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "2227ba0d898fe0671b005b5ade7a0524b43315769d1f38d3b58dce74a1c29860",
+   "note": "Original 2.3.0 Device Hub capture with synthetic demo content; resized for web without cropping or added captions."
+  },
+  {
+   "label": "Personal Reflection",
+   "used_for": "home page daily-practice midday card",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/screenshots/iphone_6.9/04_reflection.png",
+   "original": "assets/screens/2.3.0/raw/04_reflection.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "4289adfd9c38d095aa1d297d4215b1d6580b0e625a6dcd481e63aafaeeb542b1",
+   "web": "assets/screens/2.3.0/raw/04_reflection.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "41029b90b7885688e9b285ba0c6f270ef0ae0259e022724bde0289594ea2743a",
+   "note": "Original 2.3.0 Device Hub capture with synthetic demo content; resized for web without cropping or added captions."
+  },
+  {
+   "label": "Journal",
+   "used_for": "home page daily-practice evening card",
+   "source": "/Users/victor/github/quotebible/Documentation/releases/2.3.0-b33/screenshots/iphone_6.9/07_journal.png",
+   "original": "assets/screens/2.3.0/raw/07_journal.png",
+   "dimensions": [
+    1320,
+    2868
+   ],
+   "sha256": "2ef300b6f871c1265aaff84acc07c7e6911ca4c3ef6054aa918b863cad262a76",
+   "web": "assets/screens/2.3.0/raw/07_journal.webp",
+   "web_dimensions": [
+    660,
+    1434
+   ],
+   "web_sha256": "c0444ad5399a4aa01d7378e65fd1825eca15bd0757a3063cf40156632ac535b0",
+   "note": "Original 2.3.0 Device Hub capture with synthetic demo content; resized for web without cropping or added captions."
+  }
+ ]
+}
