@@ -1,8 +1,8 @@
 # Terms of Use
 
-**Last Updated: October 5, 2026 — App version 2.2.1**
+**Last Updated: November 4, 2026 — App version 3.0.0**
 
-These Terms of Use ("Terms", "Terms of Use") govern your relationship with the Jesus Says mobile application ("Service", "App") operated by Jesus Says ("us", "we", or "our").
+These Terms of Use ("Terms", "Terms of Use") govern your relationship with the Bible: Daily Prayer & Verse mobile application ("Service", "App") operated by the makers of Bible: Daily Prayer & Verse ("us", "we", or "our").
 
 Please read these Terms of Use carefully before using our Service.
 
@@ -12,13 +12,13 @@ By accessing or using the Service, you agree to be bound by these Terms. If you 
 
 ## 1. Acceptance of Terms
 
-By accessing and using the "Jesus Says" mobile application ("App"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+By accessing and using the "Bible: Daily Prayer & Verse" mobile application ("App"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
 
 ---
 
 ## 2. Description of Service
 
-Jesus Says is a mobile application that provides Bible verse suggestions and spiritual guidance based on user conversations. The App uses Google Gemini generative technology to analyze conversations and suggest relevant Bible references.
+Bible: Daily Prayer & Verse is a mobile application that provides Bible verse suggestions and spiritual guidance based on user conversations. The App uses Google Gemini generative technology to analyze conversations and suggest relevant Bible references.
 
 The Service allows you to:
 - **Talk to Jesus** — speak or type reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
@@ -122,7 +122,7 @@ We reserve the right to suspend or terminate your account at any time for violat
 - The current App experience is subscription-first for supported app versions
 - Your first successful reflection comes before any subscription purchase prompt. Free guided-reply allowances may apply and are shown in the App; Plus extends guided access. The bundled Bible and Be Still experiences remain available without a Plus subscription
 - Any eligible introductory offer, its duration, price and subscription period are displayed on the purchase screen. An App Store trial begins at purchase confirmation, not at installation or your first reflection
-- Plus subscribers receive guided access through their active subscription entitlement
+- Plus subscribers receive guided access through their active subscription entitlement. Plus includes up to 50 guided replies per day and 300 per calendar month (counted in UTC) across all guided features, so the Service stays available to everyone; the bundled Bible stays available after a limit is reached
 
 ### 6.2 In-App Purchases
 
@@ -162,7 +162,7 @@ You agree NOT to use the Service:
 
 ### 8.1 Our Content
 
-The Service and its original content, features, and functionality are owned by Jesus Says and are protected by international copyright, trademark, and other intellectual property laws.
+The Service and its original content, features, and functionality are owned by Bible: Daily Prayer & Verse and are protected by international copyright, trademark, and other intellectual property laws.
 
 ### 8.2 Generated Content
 
@@ -314,7 +314,7 @@ To exercise any of these rights, contact us at jesussays889@gmail.com.
 
 ## 18. Clinical Care & Crisis Resources
 
-Jesus Says is a spiritual guidance app and is **not** a substitute for professional clinical care, crisis intervention, or emergency services. If you or someone you know needs immediate crisis support, please contact a professional resource immediately:
+Bible: Daily Prayer & Verse is a spiritual guidance app and is **not** a substitute for professional clinical care, crisis intervention, or emergency services. If you or someone you know needs immediate crisis support, please contact a professional resource immediately:
 
 - **988 Suicide & Crisis Lifeline**: Call or text **988** (US) — [988lifeline.org](https://988lifeline.org)
 - **Crisis Text Line**: Text **HOME** to **741741** — [crisistextline.org](https://www.crisistextline.org)
@@ -368,7 +368,7 @@ By using the App, you acknowledge that:
 
 ---
 
-**By using Jesus Says, you acknowledge that you understand the App uses generative technology, that responses are generated and not reviewed by religious authorities, and that the App is not a replacement for church services or professional spiritual guidance.**
+**By using Bible: Daily Prayer & Verse, you acknowledge that you understand the App uses generative technology, that responses are generated and not reviewed by religious authorities, and that the App is not a replacement for church services or professional spiritual guidance.**
 
 ### Walk With data (when available)
 
