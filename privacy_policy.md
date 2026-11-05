@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-Jesus Says ("we," "our," or "App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. You may use the App's core features without manually creating an account or signing in with Apple. To operate the Service securely and apply abuse protections, purchase restoration, and usage limits, the App creates an anonymous Firebase Authentication account when you begin using the Service. That anonymous account is identified by a Firebase-generated UID rather than directly identifying information such as your real name or personal email address.
+Bible: Daily Prayer & Verse ("we," "our," or "App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. You may use the App's core features without manually creating an account or signing in with Apple. To operate the Service securely and apply abuse protections, purchase restoration, and usage limits, the App creates an anonymous Firebase Authentication account when you begin using the Service. That anonymous account is identified by a Firebase-generated UID rather than directly identifying information such as your real name or personal email address.
 
 ## 2. Information We Collect
 
@@ -192,7 +192,7 @@ The Mercy Timeline feature (Plus subscribers, 10+ qualifying spoken reflections 
 
 ## 13. Clinical Care & Crisis Resources
 
-Jesus Says is a spiritual guidance app and is **not** a substitute for professional clinical care or crisis intervention. Generated responses are not reviewed by licensed clinical professionals. If you or someone you know needs immediate help, please contact:
+Bible: Daily Prayer & Verse is a spiritual guidance app and is **not** a substitute for professional clinical care or crisis intervention. Generated responses are not reviewed by licensed clinical professionals. If you or someone you know needs immediate help, please contact:
 
 - **988 Suicide & Crisis Lifeline**: Call or text **988** (US) — [988lifeline.org](https://988lifeline.org)
 - **Crisis Text Line**: Text **HOME** to **741741** — [crisistextline.org](https://www.crisistextline.org)
@@ -212,4 +212,4 @@ By using the App, you consent to:
 
 ---
 
-**By using Jesus Says, you acknowledge that you have read and understood this Privacy Policy, including how your data is shared with third-party services like Google Gemini.**
+**By using Bible: Daily Prayer & Verse, you acknowledge that you have read and understood this Privacy Policy, including how your data is shared with third-party services like Google Gemini.**
