@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Last Updated: November 4, 2026 — App version 3.0.0**
+**Last Updated: November 5, 2026 — App version 3.0.1**
 
 These Terms of Use ("Terms", "Terms of Use") govern your relationship with the Bible: Daily Prayer & Verse mobile application ("Service", "App") operated by the makers of Bible: Daily Prayer & Verse ("us", "we", or "our").
 
@@ -21,7 +21,7 @@ By accessing and using the "Bible: Daily Prayer & Verse" mobile application ("Ap
 Bible: Daily Prayer & Verse is a mobile application that provides Bible verse suggestions and spiritual guidance based on user conversations. The App uses Google Gemini generative technology to analyze conversations and suggest relevant Bible references.
 
 The Service allows you to:
-- **Talk to Jesus** — speak or type reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
+- **Pray it through** — speak or type reflections; the App transcribes your voice using Apple's Speech Recognition service (on-device or via Apple's servers depending on your device and language settings) and returns Bible-based spiritual guidance
 - **Personal Reflection** — speak or type private reflections (spoken input is transcribed via Apple's Speech Recognition service) and receive a three-card Bible-grounded spiritual response
 - **Devotion Journey** — follow a 7-day calendar-based devotion plan with daily voice check-ins (transcribed via Apple's Speech Recognition service), personalized Scripture-grounded responses, and streak tracking
 - **Mercy Timeline** (when available, Plus) — generated analysis of your Personal Reflection and Devotion Journey transcripts over time, surfacing recurring themes, spiritual tone shifts, and released burdens
@@ -57,7 +57,7 @@ Walk With stories are retellings for reflection, not the words of Scripture or a
 
 ## 3.1 Mercy Timeline — Spiritual Reflection, Not Clinical Assessment
 
-Mercy Timeline is disabled in the default 2.2.1 release. The following terms apply only if the feature is made available and enabled.
+Mercy Timeline is disabled in the current release. The following terms apply only if the feature is made available and enabled.
 
 The "Mercy Timeline" feature (available to Plus subscribers with 10 or more qualifying spoken reflections of at least approximately 20 words each) analyzes your spoken reflections across weeks or months to surface recurring themes, notable shifts in spiritual tone, and what seems released. This analysis is provided for **spiritual reflection and personal insight only**.
 
@@ -122,7 +122,7 @@ We reserve the right to suspend or terminate your account at any time for violat
 - The current App experience is subscription-first for supported app versions
 - Your first successful reflection comes before any subscription purchase prompt. Free guided-reply allowances may apply and are shown in the App; Plus extends guided access. The bundled Bible and Be Still experiences remain available without a Plus subscription
 - Any eligible introductory offer, its duration, price and subscription period are displayed on the purchase screen. An App Store trial begins at purchase confirmation, not at installation or your first reflection
-- Plus subscribers receive guided access through their active subscription entitlement. Plus includes up to 50 guided replies per day and 300 per calendar month (counted in UTC) across all guided features, so the Service stays available to everyone; the bundled Bible stays available after a limit is reached
+- Plus subscribers receive guided access through their active subscription entitlement. Plus includes up to 40 guided replies in any six hours, 50 per day and 300 per calendar month (days and months counted in UTC) across all guided features, so the Service stays available to everyone; the bundled Bible stays available after a limit is reached
 
 ### 6.2 In-App Purchases
 
