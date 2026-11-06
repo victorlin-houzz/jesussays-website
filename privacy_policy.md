@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last Updated: October 5, 2026 — App version 2.2.1**
+**Last Updated: November 5, 2026 — App version 3.0.1**
 
 ## 1. Introduction
 
@@ -10,7 +10,7 @@ Bible: Daily Prayer & Verse ("we," "our," or "App") is committed to protecting y
 
 ### 2.1 Information You Provide
 
-- **Talk to Jesus Conversation Data**: The App requests microphone access to record your spoken reflections. Your voice input is transcribed on-device or via Apple's Speech Recognition service, depending on your device and language settings, before being sent to our servers as text for spiritual guidance generation
+- **Pray it through Conversation Data**: The App requests microphone access to record your spoken reflections. Your voice input is transcribed on-device or via Apple's Speech Recognition service, depending on your device and language settings, before being sent to our servers as text for spiritual guidance generation
 - **Personal Reflection (Confession) Transcripts**: Audio reflections you record in the Personal Reflection feature may be processed on-device or via Apple's Speech Recognition service, depending on your device and language settings, before being sent to our servers as text for spiritual guidance generation. Your completed reflection entries (response cards and metadata) are stored locally in a unified journal store (iOS Keychain, key `journal_entries_device_v2`) with iCloud Keychain sync disabled (see §6 and §12.1)
 - **Devotion Journey Transcripts**: Daily audio check-ins you record in the Devotion Journey feature may be processed on-device or via Apple's Speech Recognition service, depending on your device and language settings, before being sent to our servers as text for personalized devotional responses. Your completed devotion entries are also stored locally in the unified journal store (iOS Keychain, key `journal_entries_device_v2`) with iCloud Keychain sync disabled (see §6 and §12.1)
 - **Listen Mode Playback**: Listen Mode uses local text-to-speech on your device. The spoken playback itself is not transmitted to our servers
@@ -27,6 +27,12 @@ Bible: Daily Prayer & Verse ("we," "our," or "App") is committed to protecting y
 - **Usage Data**: How you interact with the App
 - **Device Information**: Device type, operating system, unique device identifiers
 - **Log Data**: App performance and error logs
+
+### 2.3 Sharing a Verse, the Verse Widget and Scripture Narration
+
+- **Sharing a Verse**: When you choose Share, the App draws a picture card on your device containing only the verse, its reference, the App's artwork, the App's name and, if you pick that style, the line "I prayed this for you", with no link, code or words of your own, and hands it to the iOS share sheet. Where it goes next is your choice. If you choose Save Image, iOS asks for add-only access to Photos; the App can add the image but does not read or see your photo library
+- **Home-Screen and Lock-Screen Verse Widget**: To keep the widget current, the App writes the coming week's verse references, their King James text, whether you kept each one, and the light and sparrow it shows into storage shared only with the App's widget on your device (an App Group). Your Today answers, reflections and other words are never written there. When you tap Keep on the widget, the reference is saved to your Verse Library the next time you open the App. This shared storage is cleared on sign-out or account/session deletion and is not sent to our servers
+- **Scripture Narration**: Recordings of the King James text, made with a generated voice, are bundled in the App and play without a network request. If a passage's recording is not bundled, the App may download it once from our public Cloudflare R2 storage and keep it in the App's cache (cleared on sign-out or account/session deletion). Like any web request, this reveals your device's IP address to Cloudflare; no account identifier or personal content is sent. If a recording is unavailable, your device's own voice reads the passage
 
 ## 3. How We Use Your Information
 
@@ -105,7 +111,7 @@ We use the information we collect to:
   - **Delete transcripts, keep reflection cards**: Profile → Manage My Data → Clear Transcript Data (removes raw voice data; your reflection responses and spiritual history remain intact)
   - **Delete your account/session**: Profile → Manage My Data → Delete Account or Delete Session & Data (clears local personal data and requests backend cleanup, as described below)
   - Transcripts already transmitted to Google before a deletion request may be retained by Google according to their policy — we cannot delete Google's copy
-- **Talk to Jesus Conversations**: Not stored on our servers after the response is generated. Stored locally if you choose to keep conversation history
+- **Pray it through Conversations**: Not stored on our servers after the response is generated. Stored locally if you choose to keep conversation history
 - **Account Data**: Retained in Firebase for as long as your account is active (anonymous-account records, optional Apple-linked account records, purchase entitlements, RevenueCat event records, any retained legacy purchase/ownership records, devotion plans/progress, usage and first-reflection records, daily allowance counters). All signed-in users — including anonymous Firebase accounts — may request deletion via **Profile → Manage My Data** in the App. Anonymous users see "Delete Session & Data"; Apple-linked users see "Delete Account". A successful in-app request removes your authentication record immediately and attempts to remove associated backend records. If a storage service is unavailable, cleanup may remain incomplete after the account is deleted; contact jesussays889@gmail.com to request completion. A minimal deletion marker is retained to prevent later subscription events from recreating the account. Request-security nonces are not linked to an account and carry separate expiration timestamps. Deletion does not cancel an App Store subscription.
 - **Guest Sessions**: Operational records are retained for anonymous sessions as well as Apple-linked accounts. Reinstalling without first deleting a guest session does not delete those backend records; there is currently no automatic cleanup for abandoned guest sessions. Transcripts, journal entries and conversation history remain local, apart from the processing described above.
 - **Analytics Data**: Guest events use an anonymous SDK identifier; signed-in events are linked to a Firebase UID. Previously transmitted records are not erased by resetting the app. Contact us to request erasure (see §5.7).
@@ -168,7 +174,7 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 ## 12.1 Mercy Timeline — Pattern Analysis Across Your Reflections
 
-Mercy Timeline is disabled in the default 2.2.1 release. No Timeline batch analysis runs while it is disabled. The following describes its data handling only if it is made available and you enable it. Its controls are shown only when the feature is available.
+Mercy Timeline is disabled in the current release. No Timeline batch analysis runs while it is disabled. The following describes its data handling only if it is made available and you enable it. Its controls are shown only when the feature is available.
 
 The Mercy Timeline feature (Plus subscribers, 10+ qualifying spoken reflections of at least ~20 words each) analyzes your Personal Reflection and Devotion Journey transcripts over time to surface recurring themes, notable shifts in spiritual tone, and what seems resolved.
 
